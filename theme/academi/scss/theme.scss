@@ -1,0 +1,83 @@
+@import 'typography';
+@import 'standard';
+@import 'header';
+@import 'blocks';
+@import 'carousel';
+@import 'frontpage';
+@import 'course';
+@import 'login';
+@import 'footer';
+
+/* 1. Paksa dorong wadah logo kampus ke kanan agar tidak tertutup tombol laci */
+header .navbar .navbar-brand,
+.header-main .navbar-brand,
+#page-wrapper header .navbar-brand,
+.navbar-header,
+.logo {
+    margin-left: 65px !important;
+    position: relative !important;
+}
+
+/* 2. Atur ukuran gambar logo agar tampil proporsional, rapi, dan tidak terpotong */
+.logo img, 
+.site-name img,
+header .logo img,
+.navbar-brand img {
+    height: 45px !important;
+    max-height: 45px !important;
+    width: auto !important;
+    object-fit: contain;
+}
+
+/* 3. Posisi tombol laci sidebar di sebelah kiri luar navbar (aman di bawah header) */
+.drawer-toggler.drawer-left-toggle {
+    position: absolute !important;
+    top: 135px !important;
+    left: 15px !important;
+    z-index: 1050 !important;
+    background: #0056b3 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 4. Atur agar kontainer halaman utama pas, lebar, dan tidak sempit */
+#page.drawers {
+    position: relative;
+}
+
+#page.drawers #page-wrapper,
+#page.drawers .header-maxwidth,
+#page.drawers .container,
+#page.drawers .container-fluid {
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* 5. Posisi pas untuk konten utama saat sidebar kiri terbuka */
+#page.drawers.show-drawer-left #page-wrapper {
+    margin-left: 260px !important;
+    width: calc(100% - 260px) !important;
+}
+
+/* 6. Penyesuaian aman jika sidebar kanan aktif */
+#page.drawers.show-drawer-right #page-wrapper {
+    margin-right: 270px !important;
+    width: calc(100% - 270px) !important;
+}
+
+/* 7. Pastikan Navbar berada di paling atas dan Sidebar Kiri di bawah Navbar (tidak menimpa) */
+#header,
+#header.fixed-top,
+.header-main {
+    z-index: 1040 !important;
+}
+
+.drawer.drawer-left,
+#theme_boost-drawers-courseindex {
+    position: fixed !important;
+    top: 60px !important;
+    height: calc(100vh - 60px) !important;
+    z-index: 1020 !important;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
+}
