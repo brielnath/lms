@@ -2,19 +2,16 @@
 /**
  * Script Sinkronisasi SIAKAD → LMS USH
  * File: local/siakad_sync/sync.php
- * 
+ *
  * CARA PAKAI:
- * 1. Export data mahasiswa dari SIAKAD sebagai CSV
- * 2. Upload CSV ke: /home/sugengha/siakad_sync/data_mahasiswa.csv
- * 3. Jalankan: php /home/sugengha/lms.ush.ac.id/local/siakad_sync/sync.php
- * 
- * CRON JOB (dijalankan otomatis jam 01.00 setiap hari):
+ * 1. Upload file Excel/CSV dari SIAKAD ke /home/sugengha/siakad_sync/
+ * 2. php /home/sugengha/lms.ush.ac.id/local/siakad_sync/sync.php
+ *
+ * CRON JOB (otomatis setiap hari jam 01.00):
  * 0 1 * * * php /home/sugengha/lms.ush.ac.id/local/siakad_sync/sync.php >> /home/sugengha/siakad_sync/logs/cron.log 2>&1
  */
 
-// ============================================================
-// BOOTSTRAP MOODLE
-// ============================================================
+// Bootstrap Moodle
 define('CLI_SCRIPT', true);
 require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/clilib.php');
@@ -24,335 +21,278 @@ require_once($CFG->dirroot . '/cohort/lib.php');
 require_once(__DIR__ . '/config.php');
 
 // ============================================================
-// INISIALISASI LOG
+// SETUP LOG
 // ============================================================
-$timestamp   = date('Y-m-d_H-i-s');
-$logFile     = LOG_PATH . 'sync_' . $timestamp . '.log';
-
 if (!is_dir(LOG_PATH)) {
     mkdir(LOG_PATH, 0755, true);
 }
+$logFile  = LOG_PATH . 'sync_' . date('Y-m-d_H-i-s') . '.log';
+$stats    = ['total'=>0,'created'=>0,'updated'=>0,'suspended'=>0,'cohort_add'=>0,'skipped'=>0,'errors'=>[]];
 
-$stats = [
-    'total'      => 0,
-    'created'    => 0,
-    'updated'    => 0,
-    'suspended'  => 0,
-    'cohort_add' => 0,
-    'skipped'    => 0,
-    'errors'     => [],
-];
-
-function writeLog($msg, $level = 'INFO') {
+function wlog($msg, $lvl = 'INFO') {
     global $logFile;
-    $line = '[' . date('Y-m-d H:i:s') . '] [' . $level . '] ' . $msg . PHP_EOL;
+    $line = '[' . date('Y-m-d H:i:s') . '] [' . $lvl . '] ' . $msg . PHP_EOL;
     file_put_contents($logFile, $line, FILE_APPEND);
     echo $line;
 }
 
-writeLog('========================================');
-writeLog('MULAI SINKRONISASI SIAKAD → LMS USH');
-writeLog('Waktu: ' . date('d/m/Y H:i:s'));
-writeLog('========================================');
+wlog('========================================');
+wlog('MULAI SINKRONISASI SIAKAD -> LMS USH');
+wlog('Waktu: ' . date('d/m/Y H:i:s'));
+wlog('========================================');
 
 // ============================================================
-// BACA FILE (EXCEL ATAU CSV)
+// CEK FILE INPUT
 // ============================================================
 if (!file_exists(CSV_INPUT_PATH)) {
-    writeLog('ERROR: File tidak ditemukan di: ' . CSV_INPUT_PATH, 'ERROR');
-    writeLog('Pastikan file sudah diupload ke folder yang benar.', 'ERROR');
+    wlog('ERROR: File tidak ditemukan: ' . CSV_INPUT_PATH, 'ERROR');
+    wlog('Pastikan file Excel/CSV sudah diupload ke server.', 'ERROR');
     exit(1);
 }
+wlog('File ditemukan: ' . CSV_INPUT_PATH);
 
-writeLog('File ditemukan: ' . CSV_INPUT_PATH);
+// ============================================================
+// BACA DATA (EXCEL ATAU CSV)
+// ============================================================
 $rows = [];
 
 if (USE_EXCEL) {
-    // ---- Baca file Excel (.xlsx) menggunakan PhpSpreadsheet ----
-    // PhpSpreadsheet sudah tersedia di Moodle 4.x
-    $spreadsheetPaths = [
+    // Cari PhpSpreadsheet di Moodle
+    $autoloadPaths = [
         $CFG->dirroot . '/lib/phpspreadsheet/vendor/autoload.php',
-        $CFG->dirroot . '/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php',
+        $CFG->dirroot . '/vendor/autoload.php',
     ];
     $loaded = false;
-    foreach ($spreadsheetPaths as $path) {
-        if (file_exists($path)) {
-            require_once($path);
+    foreach ($autoloadPaths as $ap) {
+        if (file_exists($ap)) {
+            require_once($ap);
             $loaded = true;
             break;
         }
     }
-
     if (!$loaded) {
-        // Fallback: gunakan PhpSpreadsheet via composer jika tersedia
-        if (file_exists($CFG->dirroot . '/vendor/autoload.php')) {
-            require_once($CFG->dirroot . '/vendor/autoload.php');
-            $loaded = true;
-        }
-    }
-
-    if (!$loaded) {
-        writeLog('ERROR: PhpSpreadsheet tidak ditemukan. Konversi file ke CSV dan set USE_EXCEL = false.', 'ERROR');
+        wlog('ERROR: PhpSpreadsheet tidak ditemukan. Ganti USE_EXCEL = false dan upload CSV.', 'ERROR');
         exit(1);
     }
-
     try {
         $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load(CSV_INPUT_PATH);
         $sheet       = $spreadsheet->getSheet(EXCEL_SHEET);
         $allRows     = $sheet->toArray(null, true, true, false);
-
-        // Skip baris header
-        $rows = array_slice($allRows, CSV_SKIP_ROWS);
-        writeLog('Excel berhasil dibaca. Total baris data: ' . count($rows));
+        $rows        = array_slice($allRows, CSV_SKIP_ROWS);
+        wlog('Excel berhasil dibaca. Total baris data: ' . count($rows));
     } catch (\Exception $e) {
-        writeLog('ERROR membaca Excel: ' . $e->getMessage(), 'ERROR');
+        wlog('ERROR membaca Excel: ' . $e->getMessage(), 'ERROR');
         exit(1);
     }
-
 } else {
-    // ---- Baca file CSV biasa ----
     $handle = fopen(CSV_INPUT_PATH, 'r');
     if (!$handle) {
-        writeLog('ERROR: Tidak bisa membuka file CSV.', 'ERROR');
+        wlog('ERROR: Tidak bisa membuka CSV.', 'ERROR');
         exit(1);
     }
-    // Skip header
     for ($i = 0; $i < CSV_SKIP_ROWS; $i++) {
         fgetcsv($handle, 0, CSV_SEPARATOR);
     }
-    while (($row = fgetcsv($handle, 0, CSV_SEPARATOR)) !== false) {
-        $rows[] = $row;
+    while (($csvRow = fgetcsv($handle, 0, CSV_SEPARATOR)) !== false) {
+        $rows[] = $csvRow;
     }
     fclose($handle);
-    writeLog('CSV berhasil dibaca. Total baris data: ' . count($rows));
+    wlog('CSV berhasil dibaca. Total baris data: ' . count($rows));
 }
 
 $prodiMap = json_decode(PRODI_COHORT_MAP, true);
-writeLog('Memproses ' . count($rows) . ' data mahasiswa...');
-
+wlog('Memproses ' . count($rows) . ' baris data...');
 
 // ============================================================
-// PROSES SETIAP BARIS MAHASISWA
+// PROSES SETIAP MAHASISWA
 // ============================================================
 foreach ($rows as $row) {
-    
+
     // Skip baris kosong
-    if (empty(array_filter($row))) continue;
-    if (!is_array($row)) continue;
+    if (!is_array($row) || empty(array_filter($row))) {
+        continue;
+    }
 
-    $stats['total']++;
+    // Ambil kolom
+    $nim    = isset($row[COL_NIM])    ? trim((string)$row[COL_NIM])    : '';
+    $nama   = isset($row[COL_NAMA])   ? trim((string)$row[COL_NAMA])   : '';
+    $prodi  = isset($row[COL_PRODI])  ? trim((string)$row[COL_PRODI])  : '';
+    $status = isset($row[COL_STATUS]) ? strtolower(trim((string)$row[COL_STATUS])) : 'aktif';
+    $email  = isset($row[COL_EMAIL])  ? trim((string)$row[COL_EMAIL])  : '';
+    $tahun  = isset($row[COL_TAHUN])  ? trim((string)$row[COL_TAHUN])  : date('Y');
 
-    // Ambil data dari kolom CSV
-    $nim    = isset($row[COL_NIM])    ? trim($row[COL_NIM])    : '';
-    $nama   = isset($row[COL_NAMA])   ? trim($row[COL_NAMA])   : '';
-    $prodi  = isset($row[COL_PRODI])  ? trim($row[COL_PRODI])  : '';
-    $kelas  = isset($row[COL_KELAS])  ? trim($row[COL_KELAS])  : '';
-    $status = isset($row[COL_STATUS]) ? strtolower(trim($row[COL_STATUS])) : 'aktif';
-    $email  = isset($row[COL_EMAIL])  ? trim($row[COL_EMAIL])  : '';
-    $tahun  = isset($row[COL_TAHUN])  ? trim($row[COL_TAHUN])  : date('Y');
-
-    // Validasi data wajib
-    if (empty($nim) || empty($nama)) {
-        writeLog("SKIP: Baris {$stats['total']} - NIM atau Nama kosong", 'WARN');
+    // Validasi wajib
+    if (empty($nim) || empty($nama) || !is_numeric(substr($nim, 0, 4))) {
+        wlog("SKIP: NIM '{$nim}' atau Nama '{$nama}' tidak valid", 'WARN');
         $stats['skipped']++;
         continue;
     }
 
-    // Gunakan email default jika kosong atau tidak valid
+    $stats['total']++;
+    $username  = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $nim));
+    $suspended = (strpos($status, 'non') !== false || strpos($status, 'keluar') !== false ||
+                  strpos($status, 'cuti') !== false) ? 1 : 0;
+
+    // Generate email unik dari NIM jika kosong/tidak valid
     if (empty($email) || strpos($email, '@') === false) {
-        // Gunakan NIM sebagai basis email agar selalu unik
-        $email = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $nim)) . '@mhs.ush.ac.id';
-    }
-    // Pastikan email unik — cek di database
-    $emailExists = $DB->get_record('user', ['email' => $email, 'deleted' => 0]);
-    if ($emailExists && $emailExists->username !== strtolower($nim)) {
-        // Jika email sudah dipakai akun lain, tambahkan suffix NIM
-        $email = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $nim)) . '_' . time() . '@mhs.ush.ac.id';
+        $email = $username . '@mhs.ush.ac.id';
     }
 
-    // Pecah nama menjadi firstname & lastname
+    // Tahun angkatan: ambil 4 digit angka dari kolom tahun
+    preg_match('/\d{4}/', $tahun, $tahunMatch);
+    $tahunAngkatan = isset($tahunMatch[0]) ? $tahunMatch[0] : date('Y');
+
+    // Pecah nama
     $namaParts = explode(' ', $nama, 2);
     $firstname = $namaParts[0];
     $lastname  = isset($namaParts[1]) ? $namaParts[1] : '-';
 
-    // Tentukan username dari NIM
-    $username  = strtolower($nim);
-
-    // Tentukan status suspend
-    $suspended = (strpos($status, 'aktif') !== false && strpos($status, 'non') === false) ? 0 : 1;
-
-    // --------------------------------------------------------
-    // PROSES USER — dibungkus try-catch agar 1 error tidak stop semua
-    // --------------------------------------------------------
+    // ---- PROSES SATU BARIS — dibungkus try-catch ----
     try {
 
-    // CEK APAKAH USER SUDAH ADA DI MOODLE
-    $existingUser = $DB->get_record('user', ['username' => $username, 'deleted' => 0]);
-
-    if (!$existingUser) {
-        // ---- BUAT AKUN BARU ----
-        $newUser = new stdClass();
-        $newUser->username    = $username;
-        $newUser->password    = hash_internal_user_password(DEFAULT_PASSWORD);
-        $newUser->firstname   = $firstname;
-        $newUser->lastname    = $lastname;
-        $newUser->email       = $email;
-        $newUser->city        = DEFAULT_CITY;
-        $newUser->country     = DEFAULT_COUNTRY;
-        $newUser->lang        = DEFAULT_LANG;
-        $newUser->confirmed   = 1;
-        $newUser->suspended   = $suspended;
-        $newUser->timecreated = time();
-        $newUser->timemodified = time();
-        $newUser->mnethostid  = $CFG->mnet_localhost_id;
-        $newUser->auth        = 'manual';
-
-        if (FORCE_PWD_CHANGE) {
-            $newUser->preference_auth_forcepasswordchange = 1;
+        // Cek apakah email sudah dipakai akun lain
+        $emailOwner = $DB->get_record('user', ['email' => $email, 'deleted' => 0]);
+        if ($emailOwner && $emailOwner->username !== $username) {
+            $email = $username . '_' . substr($tahunAngkatan, -2) . '@mhs.ush.ac.id';
         }
 
-        try {
+        // Cek user existing
+        $existingUser = $DB->get_record('user', ['username' => $username, 'deleted' => 0]);
+
+        if (!$existingUser) {
+            // ---- BUAT AKUN BARU ----
+            $newUser                  = new stdClass();
+            $newUser->username        = $username;
+            $newUser->password        = hash_internal_user_password(DEFAULT_PASSWORD);
+            $newUser->firstname       = $firstname;
+            $newUser->lastname        = $lastname;
+            $newUser->email           = $email;
+            $newUser->city            = DEFAULT_CITY;
+            $newUser->country         = DEFAULT_COUNTRY;
+            $newUser->lang            = DEFAULT_LANG;
+            $newUser->confirmed       = 1;
+            $newUser->suspended       = $suspended;
+            $newUser->timecreated     = time();
+            $newUser->timemodified    = time();
+            $newUser->mnethostid      = $CFG->mnet_localhost_id;
+            $newUser->auth            = 'manual';
             $newUser->id = $DB->insert_record('user', $newUser);
-            writeLog("BARU: [{$nim}] {$nama} — Akun berhasil dibuat");
+
+            if (FORCE_PWD_CHANGE) {
+                set_user_preference('auth_forcepasswordchange', 1, $newUser->id);
+            }
+
+            wlog("BARU: [{$nim}] {$nama}");
             $stats['created']++;
             $existingUser = $newUser;
-        } catch (Exception $e) {
-            writeLog("ERROR: Gagal buat akun [{$nim}] {$nama}: " . $e->getMessage(), 'ERROR');
-            $stats['errors'][] = "Gagal buat akun [{$nim}] {$nama}";
-            continue;
-        }
-    } else {
-        // ---- UPDATE AKUN YANG SUDAH ADA ----
-        $needUpdate = false;
 
-        if ($existingUser->suspended != $suspended) {
-            $existingUser->suspended = $suspended;
-            $needUpdate = true;
-            if ($suspended) {
-                writeLog("SUSPEND: [{$nim}] {$nama} — Status Non-Aktif dari SIAKAD");
-                $stats['suspended']++;
+        } else {
+            // ---- UPDATE JIKA ADA PERUBAHAN ----
+            $needUpdate = false;
+            if ($existingUser->suspended != $suspended) {
+                $existingUser->suspended = $suspended;
+                $needUpdate = true;
+                if ($suspended) {
+                    wlog("SUSPEND: [{$nim}] {$nama}");
+                    $stats['suspended']++;
+                }
+            }
+            if (!empty($email) && $existingUser->email !== $email) {
+                $existingUser->email = $email;
+                $needUpdate = true;
+            }
+            if ($needUpdate) {
+                $existingUser->timemodified = time();
+                $DB->update_record('user', $existingUser);
+                $stats['updated']++;
             }
         }
 
-        if ($existingUser->email !== $email && !empty($email)) {
-            $existingUser->email = $email;
-            $needUpdate = true;
+        // ---- COHORT ----
+        $prodiCode = '';
+        foreach ($prodiMap as $prodiNama => $code) {
+            if (stripos($prodi, $prodiNama) !== false || stripos($prodi, $code) !== false) {
+                $prodiCode = $code;
+                break;
+            }
+        }
+        if (empty($prodiCode)) {
+            $prodiCode = strtoupper(substr(preg_replace('/[^a-zA-Z]/', '', $prodi), 0, 4));
         }
 
-        if ($needUpdate) {
-            $existingUser->timemodified = time();
-            $DB->update_record('user', $existingUser);
-            $stats['updated']++;
+        $cohortIdCode = $prodiCode . $tahunAngkatan;
+        $cohort = $DB->get_record('cohort', ['idnumber' => $cohortIdCode]);
+        if (!$cohort) {
+            $newCohort              = new stdClass();
+            $newCohort->name        = trim($prodi) . ' Angkatan ' . $tahunAngkatan;
+            $newCohort->idnumber    = $cohortIdCode;
+            $newCohort->contextid   = context_system::instance()->id;
+            $newCohort->timecreated = time();
+            $newCohort->timemodified = time();
+            $newCohort->component   = '';
+            $newCohort->id = $DB->insert_record('cohort', $newCohort);
+            $cohort = $newCohort;
+            wlog("COHORT BARU: {$cohortIdCode}");
         }
-    }
 
-    // --------------------------------------------------------
-    // TAMBAHKAN KE COHORT (Berdasarkan Prodi + Tahun)
-    // --------------------------------------------------------
-    // Tentukan ID cohort: misal SIF2023, SBD2024
-    $prodiCode   = '';
-    foreach ($prodiMap as $prodiNama => $code) {
-        if (stripos($prodi, $prodiNama) !== false || stripos($prodi, $code) !== false) {
-            $prodiCode = $code;
-            break;
+        $inCohort = $DB->record_exists('cohort_members', [
+            'cohortid' => $cohort->id,
+            'userid'   => $existingUser->id,
+        ]);
+        if (!$inCohort) {
+            cohort_add_member($cohort->id, $existingUser->id);
+            $stats['cohort_add']++;
         }
+
+    } catch (\Exception $e) {
+        $errMsg = "ERROR [{$nim}] {$nama}: " . $e->getMessage();
+        wlog($errMsg, 'ERROR');
+        $stats['errors'][] = $errMsg;
     }
 
-    // Jika prodi tidak ditemukan di map, gunakan 4 huruf pertama prodi
-    if (empty($prodiCode)) {
-        $prodiCode = strtoupper(substr(preg_replace('/[^a-zA-Z]/', '', $prodi), 0, 4));
-    }
-
-    $cohortIdCode = $prodiCode . $tahun; // Contoh: SIF2023
-
-    // Cari atau buat cohort
-    $cohort = $DB->get_record('cohort', ['idnumber' => $cohortIdCode]);
-
-    if (!$cohort) {
-        // Buat cohort baru otomatis
-        $newCohort            = new stdClass();
-        $newCohort->name      = $prodi . ' Angkatan ' . $tahun;
-        $newCohort->idnumber  = $cohortIdCode;
-        $newCohort->contextid = context_system::instance()->id;
-        $newCohort->timecreated  = time();
-        $newCohort->timemodified = time();
-        $newCohort->component    = '';
-        $newCohort->id = $DB->insert_record('cohort', $newCohort);
-        $cohort = $newCohort;
-        writeLog("COHORT BARU: {$cohortIdCode} — {$prodi} Angkatan {$tahun}");
-    }
-
-    // Cek apakah mahasiswa sudah ada di cohort
-    $inCohort = $DB->record_exists('cohort_members', [
-        'cohortid' => $cohort->id,
-        'userid'   => $existingUser->id,
-    ]);
-
-    if (!$inCohort) {
-        cohort_add_member($cohort->id, $existingUser->id);
-        writeLog("COHORT: [{$nim}] {$nama} → ditambahkan ke {$cohortIdCode}");
-        $stats['cohort_add']++;
-    }
-}
-
-fclose($handle);
+} // akhir foreach
 
 // ============================================================
 // LAPORAN AKHIR
 // ============================================================
-writeLog('');
-writeLog('========================================');
-writeLog('HASIL SINKRONISASI SELESAI');
-writeLog('========================================');
-writeLog("Total data dibaca   : {$stats['total']}");
-writeLog("Akun baru dibuat    : {$stats['created']}");
-writeLog("Akun diperbarui     : {$stats['updated']}");
-writeLog("Akun disuspend      : {$stats['suspended']}");
-writeLog("Ditambah ke Cohort  : {$stats['cohort_add']}");
-writeLog("Dilewati (skip)     : {$stats['skipped']}");
-writeLog("Error               : " . count($stats['errors']));
-if (!empty($stats['errors'])) {
-    foreach ($stats['errors'] as $err) {
-        writeLog("  → " . $err, 'ERROR');
-    }
+wlog('');
+wlog('========================================');
+wlog('SELESAI — HASIL SINKRONISASI');
+wlog('========================================');
+wlog("Total diproses      : {$stats['total']}");
+wlog("Akun baru dibuat    : {$stats['created']}");
+wlog("Akun diperbarui     : {$stats['updated']}");
+wlog("Akun disuspend      : {$stats['suspended']}");
+wlog("Ditambah ke Cohort  : {$stats['cohort_add']}");
+wlog("Dilewati (skip)     : {$stats['skipped']}");
+wlog("Error               : " . count($stats['errors']));
+foreach ($stats['errors'] as $err) {
+    wlog("  -> " . $err, 'ERROR');
 }
-writeLog('Log tersimpan di: ' . $logFile);
-writeLog('========================================');
+wlog('Log tersimpan di: ' . $logFile);
+wlog('========================================');
 
-// ============================================================
-// KIRIM EMAIL LAPORAN KE ADMIN
-// ============================================================
-if (SEND_EMAIL_REPORT) {
-    $subject = '[LMS USH] Laporan Sync SIAKAD — ' . date('d/m/Y H:i');
-    $body    = "Sinkronisasi SIAKAD → LMS USH selesai.\n\n";
+// Kirim email laporan ke admin
+if (SEND_EMAIL_REPORT && !empty(ADMIN_EMAIL)) {
+    $subject = '[LMS USH] Laporan Sync SIAKAD ' . date('d/m/Y H:i');
+    $body    = "Sinkronisasi SIAKAD -> LMS USH\n\n";
     $body   .= "Tanggal    : " . date('d/m/Y H:i:s') . "\n";
-    $body   .= "Total Data : {$stats['total']}\n";
-    $body   .= "Akun Baru  : {$stats['created']}\n";
+    $body   .= "Total      : {$stats['total']}\n";
+    $body   .= "Baru       : {$stats['created']}\n";
     $body   .= "Diperbarui : {$stats['updated']}\n";
     $body   .= "Disuspend  : {$stats['suspended']}\n";
-    $body   .= "Cohort Add : {$stats['cohort_add']}\n";
+    $body   .= "Cohort     : {$stats['cohort_add']}\n";
     $body   .= "Error      : " . count($stats['errors']) . "\n";
-
     if (!empty($stats['errors'])) {
         $body .= "\nDETAIL ERROR:\n";
-        foreach ($stats['errors'] as $err) {
-            $body .= "- " . $err . "\n";
-        }
+        foreach ($stats['errors'] as $err) { $body .= "- $err\n"; }
     }
-
-    $body .= "\nLog lengkap tersimpan di server: " . $logFile;
-
-    $adminUser        = new stdClass();
-    $adminUser->email = ADMIN_EMAIL;
-    $adminUser->name  = 'Admin LMS USH';
-
-    $supportUser        = new stdClass();
-    $supportUser->email = $CFG->supportemail ?? ADMIN_EMAIL;
-    $supportUser->name  = 'LMS USH System';
-
-    email_to_user($adminUser, $supportUser, $subject, $body);
-    writeLog('Email laporan terkirim ke: ' . ADMIN_EMAIL);
+    $admin = core_user::get_support_user();
+    $adminDest = new stdClass();
+    $adminDest->email = ADMIN_EMAIL;
+    $adminDest->name  = 'Admin LMS USH';
+    email_to_user($adminDest, $admin, $subject, $body);
+    wlog('Email laporan terkirim ke: ' . ADMIN_EMAIL);
 }
 
-writeLog('Sinkronisasi selesai pada: ' . date('d/m/Y H:i:s'));
 exit(0);
