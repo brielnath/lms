@@ -56,40 +56,89 @@ writeLog('Waktu: ' . date('d/m/Y H:i:s'));
 writeLog('========================================');
 
 // ============================================================
-// CEK FILE CSV
+// BACA FILE (EXCEL ATAU CSV)
 // ============================================================
 if (!file_exists(CSV_INPUT_PATH)) {
-    writeLog('ERROR: File CSV tidak ditemukan di: ' . CSV_INPUT_PATH, 'ERROR');
-    writeLog('Pastikan file CSV sudah diupload ke folder yang benar.', 'ERROR');
+    writeLog('ERROR: File tidak ditemukan di: ' . CSV_INPUT_PATH, 'ERROR');
+    writeLog('Pastikan file sudah diupload ke folder yang benar.', 'ERROR');
     exit(1);
 }
 
-writeLog('File CSV ditemukan: ' . CSV_INPUT_PATH);
+writeLog('File ditemukan: ' . CSV_INPUT_PATH);
+$rows = [];
+
+if (USE_EXCEL) {
+    // ---- Baca file Excel (.xlsx) menggunakan PhpSpreadsheet ----
+    // PhpSpreadsheet sudah tersedia di Moodle 4.x
+    $spreadsheetPaths = [
+        $CFG->dirroot . '/lib/phpspreadsheet/vendor/autoload.php',
+        $CFG->dirroot . '/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php',
+    ];
+    $loaded = false;
+    foreach ($spreadsheetPaths as $path) {
+        if (file_exists($path)) {
+            require_once($path);
+            $loaded = true;
+            break;
+        }
+    }
+
+    if (!$loaded) {
+        // Fallback: gunakan PhpSpreadsheet via composer jika tersedia
+        if (file_exists($CFG->dirroot . '/vendor/autoload.php')) {
+            require_once($CFG->dirroot . '/vendor/autoload.php');
+            $loaded = true;
+        }
+    }
+
+    if (!$loaded) {
+        writeLog('ERROR: PhpSpreadsheet tidak ditemukan. Konversi file ke CSV dan set USE_EXCEL = false.', 'ERROR');
+        exit(1);
+    }
+
+    try {
+        $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load(CSV_INPUT_PATH);
+        $sheet       = $spreadsheet->getSheet(EXCEL_SHEET);
+        $allRows     = $sheet->toArray(null, true, true, false);
+
+        // Skip baris header
+        $rows = array_slice($allRows, CSV_SKIP_ROWS);
+        writeLog('Excel berhasil dibaca. Total baris data: ' . count($rows));
+    } catch (\Exception $e) {
+        writeLog('ERROR membaca Excel: ' . $e->getMessage(), 'ERROR');
+        exit(1);
+    }
+
+} else {
+    // ---- Baca file CSV biasa ----
+    $handle = fopen(CSV_INPUT_PATH, 'r');
+    if (!$handle) {
+        writeLog('ERROR: Tidak bisa membuka file CSV.', 'ERROR');
+        exit(1);
+    }
+    // Skip header
+    for ($i = 0; $i < CSV_SKIP_ROWS; $i++) {
+        fgetcsv($handle, 0, CSV_SEPARATOR);
+    }
+    while (($row = fgetcsv($handle, 0, CSV_SEPARATOR)) !== false) {
+        $rows[] = $row;
+    }
+    fclose($handle);
+    writeLog('CSV berhasil dibaca. Total baris data: ' . count($rows));
+}
+
 $prodiMap = json_decode(PRODI_COHORT_MAP, true);
+writeLog('Memproses ' . count($rows) . ' data mahasiswa...');
 
-// ============================================================
-// BACA FILE CSV
-// ============================================================
-$handle = fopen(CSV_INPUT_PATH, 'r');
-if (!$handle) {
-    writeLog('ERROR: Tidak bisa membuka file CSV.', 'ERROR');
-    exit(1);
-}
-
-// Skip baris header
-for ($i = 0; $i < CSV_SKIP_ROWS; $i++) {
-    fgetcsv($handle, 0, CSV_SEPARATOR);
-}
-
-writeLog('Membaca data mahasiswa dari CSV...');
 
 // ============================================================
 // PROSES SETIAP BARIS MAHASISWA
 // ============================================================
-while (($row = fgetcsv($handle, 0, CSV_SEPARATOR)) !== false) {
+foreach ($rows as $row) {
     
     // Skip baris kosong
     if (empty(array_filter($row))) continue;
+    if (!is_array($row)) continue;
 
     $stats['total']++;
 
@@ -162,7 +211,6 @@ while (($row = fgetcsv($handle, 0, CSV_SEPARATOR)) !== false) {
             $stats['errors'][] = "Gagal buat akun [{$nim}] {$nama}";
             continue;
         }
-
     } else {
         // ---- UPDATE AKUN YANG SUDAH ADA ----
         $needUpdate = false;

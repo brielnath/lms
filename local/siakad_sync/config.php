@@ -24,6 +24,7 @@ define('COL_TAHUN',     12);  // Kolom Tahun Angkatan
 define('CSV_SEPARATOR',  ',');    // Pemisah kolom: ',' atau ';'
 define('CSV_ENCODING',   'UTF-8'); // Encoding file CSV
 define('CSV_SKIP_ROWS',  1);      // Jumlah baris header yang dilewati (1 = lewati baris pertama)
+define('EXCEL_SHEET',    0);      // Index sheet Excel yang dibaca (0 = sheet pertama)
 
 // ============================================================
 // MAPPING PRODI → COHORT ID DI MOODLE
@@ -57,5 +58,11 @@ define('SEND_EMAIL_REPORT',  true);                // true = kirim email laporan
 // PATH FILE CSV
 // Letakkan file CSV SIAKAD di folder ini sebelum sync dijalankan
 // ============================================================
-define('CSV_INPUT_PATH', '/home/sugengha/siakad_sync/data_mahasiswa.csv');
+// Path file data mahasiswa dari SIAKAD
+// Bisa berupa .csv ATAU .xlsx langsung dari SIAKAD
+define('CSV_INPUT_PATH', '/home/sugengha/siakad_sync/Data mahasiswa Semua Prodi Tahun Masuk _ Semua Tahun.xlsx');
 define('LOG_PATH',       '/home/sugengha/siakad_sync/logs/');
+
+// Set ke true jika file berformat Excel (.xlsx/.xls)
+// Set ke false jika file berformat CSV (.csv)
+define('USE_EXCEL', true);
