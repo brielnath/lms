@@ -158,9 +158,16 @@ foreach ($rows as $row) {
         continue;
     }
 
-    // Gunakan email default jika kosong
-    if (empty($email)) {
-        $email = strtolower(str_replace(' ', '.', $nim)) . '@mhs.ush.ac.id';
+    // Gunakan email default jika kosong atau tidak valid
+    if (empty($email) || strpos($email, '@') === false) {
+        // Gunakan NIM sebagai basis email agar selalu unik
+        $email = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $nim)) . '@mhs.ush.ac.id';
+    }
+    // Pastikan email unik — cek di database
+    $emailExists = $DB->get_record('user', ['email' => $email, 'deleted' => 0]);
+    if ($emailExists && $emailExists->username !== strtolower($nim)) {
+        // Jika email sudah dipakai akun lain, tambahkan suffix NIM
+        $email = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $nim)) . '_' . time() . '@mhs.ush.ac.id';
     }
 
     // Pecah nama menjadi firstname & lastname
@@ -175,8 +182,11 @@ foreach ($rows as $row) {
     $suspended = (strpos($status, 'aktif') !== false && strpos($status, 'non') === false) ? 0 : 1;
 
     // --------------------------------------------------------
-    // CEK APAKAH USER SUDAH ADA DI MOODLE
+    // PROSES USER — dibungkus try-catch agar 1 error tidak stop semua
     // --------------------------------------------------------
+    try {
+
+    // CEK APAKAH USER SUDAH ADA DI MOODLE
     $existingUser = $DB->get_record('user', ['username' => $username, 'deleted' => 0]);
 
     if (!$existingUser) {

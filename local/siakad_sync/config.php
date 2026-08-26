@@ -23,7 +23,7 @@ define('COL_TAHUN',     12);  // Kolom Tahun Angkatan
 // ============================================================
 define('CSV_SEPARATOR',  ',');    // Pemisah kolom: ',' atau ';'
 define('CSV_ENCODING',   'UTF-8'); // Encoding file CSV
-define('CSV_SKIP_ROWS',  1);      // Jumlah baris header yang dilewati (1 = lewati baris pertama)
+define('CSV_SKIP_ROWS',  3);      // SIAKAD Excel punya 3 baris header: judul, filter, nama kolom
 define('EXCEL_SHEET',    0);      // Index sheet Excel yang dibaca (0 = sheet pertama)
 
 // ============================================================
