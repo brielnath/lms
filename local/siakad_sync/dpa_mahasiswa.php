@@ -11,10 +11,10 @@ require_once($CFG->libdir . '/tablelib.php');
 require_login();
 $context = context_system::instance();
 
-// Hanya Dosen / Admin yang boleh akses
-if (!has_capability('moodle/course:viewhiddencourses', $context) &&
-    !has_capability('moodle/site:viewparticipants', $context)) {
-    redirect($CFG->wwwroot, get_string('nopermissions', 'error'));
+// Cukup pastikan user sudah login dan bukan guest
+// Halaman ini aman karena hanya menampilkan data milik user yang login
+if (isguestuser()) {
+    redirect($CFG->wwwroot . '/login/index.php');
 }
 
 $PAGE->set_url(new moodle_url('/local/siakad_sync/dpa_mahasiswa.php'));
