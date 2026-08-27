@@ -93,6 +93,7 @@ foreach ($rows as $index => $row) {
     $nama   = isset($row[COL_NAMA])   ? trim((string)$row[COL_NAMA])   : '';
     $prodi  = isset($row[COL_PRODI])  ? trim((string)$row[COL_PRODI])  : '';
     $status = isset($row[COL_STATUS]) ? strtolower(trim((string)$row[COL_STATUS])) : 'aktif';
+    $dpa    = isset($row[COL_DPA])    ? trim((string)$row[COL_DPA])    : '';
     $email  = isset($row[COL_EMAIL])  ? trim((string)$row[COL_EMAIL])  : '';
     $tahun  = isset($row[COL_TAHUN])  ? trim((string)$row[COL_TAHUN])  : date('Y');
 
@@ -144,6 +145,13 @@ foreach ($rows as $index => $row) {
 
             $newUserId = user_create_user($userObj, false, false);
             set_user_preference('auth_forcepasswordchange', 1, $newUserId);
+            // Simpan DPA agar bisa dicari di halaman Mahasiswa Bimbingan
+            if (!empty($dpa) && strtolower($dpa) !== 'belum di set') {
+                set_user_preference('siakad_dpa', $dpa, $newUserId);
+                set_user_preference('siakad_prodi', $prodi, $newUserId);
+                set_user_preference('siakad_nim', $nim, $newUserId);
+                set_user_preference('siakad_angkatan', $tahunAngkatan, $newUserId);
+            }
 
             wlog("BARU: [{$nim}] {$nama}");
             $stats['created']++;
@@ -161,6 +169,13 @@ foreach ($rows as $index => $row) {
                 } else {
                     $stats['updated']++;
                 }
+            }
+            // Update DPA setiap sync
+            if (!empty($dpa) && strtolower($dpa) !== 'belum di set') {
+                set_user_preference('siakad_dpa', $dpa, $existingUser->id);
+                set_user_preference('siakad_prodi', $prodi, $existingUser->id);
+                set_user_preference('siakad_nim', $nim, $existingUser->id);
+                set_user_preference('siakad_angkatan', $tahunAngkatan, $existingUser->id);
             }
         }
 

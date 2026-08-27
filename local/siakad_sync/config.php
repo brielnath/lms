@@ -15,6 +15,7 @@ define('COL_NAMA',      2);   // Kolom Nama Lengkap
 define('COL_PRODI',     3);   // Kolom Program Studi
 define('COL_KELAS',     4);   // Kolom Kelas
 define('COL_STATUS',    5);   // Kolom Status (Aktif/Non-Aktif)
+define('COL_DPA',       6);   // Kolom Dosen Pembimbing Akademik (DPA)
 define('COL_EMAIL',     8);   // Kolom Email mahasiswa
 define('COL_TAHUN',     12);  // Kolom Tahun Angkatan
 
