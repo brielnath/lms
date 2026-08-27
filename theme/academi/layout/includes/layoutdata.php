@@ -213,8 +213,9 @@ if (isloggedin() && !isguestuser()) {
                         </div>
                     </div>
                     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                        <a href="https://siakad.sugenghartono.ac.id" target="_blank" style="background: #ffffff; border: 1px solid #cbd5e1; padding: 9px 16px; border-radius: 30px; color: #0f172a; font-weight: 700; font-size: 12.5px; text-decoration: none;">🏛️ Input Nilai SIAKAD Dosen</a>
+                        <a href="https://acc.sugenghartono.ac.id" target="_blank" style="background: #ffffff; border: 1px solid #cbd5e1; padding: 9px 16px; border-radius: 30px; color: #0f172a; font-weight: 700; font-size: 12.5px; text-decoration: none;">🏛️ Input Nilai SIAKAD Dosen</a>
                         <a href="' . $dash_url . 'courses.php" style="background: #ffffff; border: 1px solid #cbd5e1; padding: 9px 16px; border-radius: 30px; color: #0f172a; font-weight: 700; font-size: 12.5px; text-decoration: none;">📚 Kelas Pengajaran Dosen</a>
+                        <a href="' . $CFG->wwwroot . '/my/" style="background: #38bdf8; border: 1px solid #0284c7; padding: 9px 16px; border-radius: 30px; color: #ffffff; font-weight: 700; font-size: 12.5px; text-decoration: none;">👨‍🎓 Mahasiswa Bimbingan DPA</a>
                     </div>
                 </div>';
             }
