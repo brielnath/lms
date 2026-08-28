@@ -4,9 +4,9 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = 'mysqli';
+$CFG->dbtype    = 'mariadb';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'localhost';
+$CFG->dbhost    = '127.0.0.1';
 $CFG->dbname    = 'sugengha_lms';
 $CFG->dbuser    = 'sugengha_lms';
 $CFG->dbpass    = 'USHKU@2026';
