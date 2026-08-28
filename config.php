@@ -4,9 +4,9 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = 'mariadb';
+$CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = '127.0.0.1';
+$CFG->dbhost    = 'agrigento-db.id.domainesia.com';
 $CFG->dbname    = 'sugengha_lms';
 $CFG->dbuser    = 'sugengha_lms';
 $CFG->dbpass    = 'USHKU@2026';
