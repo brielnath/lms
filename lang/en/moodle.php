@@ -2379,8 +2379,8 @@ $string['warningdeleteresource'] = 'Warning: {$a} is referred in a resource. Wou
 $string['webpage'] = 'Web page';
 $string['week'] = 'Week';
 $string['weeks'] = 'weeks';
-$string['welcomeback'] = 'Hi, {$a->firstname}! 👋';
-$string['welcometosite'] = 'Welcome, {$a->firstname}! 👋';
+$string['welcomeback'] = 'Hi, {$a->firstname}!';
+$string['welcometosite'] = 'Welcome, {$a->firstname}!';
 $string['welcometocourse'] = 'Welcome to {$a}';
 $string['welcometocoursetext'] = 'Welcome to {$a->coursename}!
 
