@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Academic calendar block for the dashboard.
+ * Install the academic calendar block on dashboards.
  *
  * @package   block_ush_calendar
  * @copyright 2026 Universitas Sugeng Hartono
@@ -24,8 +24,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2026083102;
-$plugin->requires  = 2024100100;
-$plugin->component = 'block_ush_calendar';
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.0';
+/**
+ * Add the calendar block to dashboards when the plugin is installed.
+ */
+function xmldb_block_ush_calendar_install() {
+    global $CFG;
+    require_once($CFG->dirroot . '/blocks/ush_calendar/lib.php');
+    block_ush_calendar_setup_dashboard();
+}

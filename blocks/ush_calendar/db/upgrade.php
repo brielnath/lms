@@ -15,17 +15,27 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Academic calendar block for the dashboard.
+ * Upgrade steps for the academic calendar block.
  *
  * @package   block_ush_calendar
  * @copyright 2026 Universitas Sugeng Hartono
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+/**
+ * Upgrade the academic calendar block.
+ *
+ * @param int $oldversion
+ * @return bool
+ */
+function xmldb_block_ush_calendar_upgrade($oldversion) {
+    global $CFG;
 
-$plugin->version   = 2026083102;
-$plugin->requires  = 2024100100;
-$plugin->component = 'block_ush_calendar';
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.0';
+    if ($oldversion < 2026083102) {
+        require_once($CFG->dirroot . '/blocks/ush_calendar/lib.php');
+        block_ush_calendar_setup_dashboard();
+        upgrade_plugin_savepoint(true, 2026083102, 'block', 'ush_calendar');
+    }
+
+    return true;
+}
