@@ -1,0 +1,73 @@
+{{!
+    @template block_ush_calendar/main
+}}
+<div class="ushcal">
+    <header class="ushcal__header">
+        <h2 class="ushcal__title">{{title}}</h2>
+        <p class="ushcal__desc">{{description}}</p>
+        <form class="ushcal__filter" method="get" action="{{{formurl}}}">
+            <input type="hidden" name="ushcalyear" value="{{year}}">
+            <input type="hidden" name="ushcalmonth" value="{{month}}">
+            <label class="sr-only" for="ushcalprodi">{{choosecategory}}</label>
+            <select id="ushcalprodi" name="ushcalprodi" class="ushcal__select" onchange="this.form.submit()">
+                <option value="">{{choosecategory}}</option>
+                {{#categories}}
+                    <option value="{{id}}" {{#selected}}selected{{/selected}}>{{name}}</option>
+                {{/categories}}
+            </select>
+        </form>
+    </header>
+
+    <div class="ushcal__grid">
+        <section class="ushcal__month" aria-label="{{monthlabel}}">
+            <div class="ushcal__month-nav">
+                <a class="ushcal__navbtn" href="{{{prevurl}}}" aria-label="Previous">&laquo;</a>
+                <h3 class="ushcal__month-label">{{monthlabel}}</h3>
+                <a class="ushcal__navbtn" href="{{{nexturl}}}" aria-label="Next">&raquo;</a>
+            </div>
+            <div class="ushcal__weekdays">
+                {{#weekdays}}
+                    <span>{{label}}</span>
+                {{/weekdays}}
+            </div>
+            {{#weeks}}
+                <div class="ushcal__week">
+                    {{#days}}
+                        {{#empty}}
+                            <span class="ushcal__day is-empty"></span>
+                        {{/empty}}
+                        {{^empty}}
+                            <a class="ushcal__day{{#hastasks}} has-tasks{{/hastasks}}{{#istoday}} is-today{{/istoday}}{{#isselected}} is-selected{{/isselected}}" href="{{{url}}}">{{day}}</a>
+                        {{/empty}}
+                    {{/days}}
+                </div>
+            {{/weeks}}
+        </section>
+
+        <section class="ushcal__list" aria-label="{{title}}">
+            {{#hasitems}}
+                {{#items}}
+                    <article class="ushcal__item">
+                        <div class="ushcal__item-main">
+                            <h3 class="ushcal__item-title"><a href="{{{courseurl}}}">{{title}}</a></h3>
+                            <p class="ushcal__item-provider">{{provider}}</p>
+                            <div class="ushcal__tags">
+                                {{#tags}}
+                                    <span class="ushcal__tag {{class}}">{{label}}</span>
+                                {{/tags}}
+                            </div>
+                            <div class="ushcal__dates">
+                                <span><i class="fa fa-calendar"></i> {{registrationlabel}}: {{registration}}</span>
+                                <span><i class="fa fa-clock-o"></i> {{implementationlabel}}: {{implementation}}</span>
+                            </div>
+                        </div>
+                        <div class="ushcal__item-side">{{formatlabel}}</div>
+                    </article>
+                {{/items}}
+            {{/hasitems}}
+            {{^hasitems}}
+                <p class="ushcal__empty">{{noitems}}</p>
+            {{/hasitems}}
+        </section>
+    </div>
+</div>

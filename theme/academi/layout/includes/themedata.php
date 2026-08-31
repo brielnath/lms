@@ -53,11 +53,22 @@ if ($custommenu == "") {
     $navbarclass = "navbar-toggler d-lg-none";
 }
 
+$ushcategories = [];
+if (class_exists(\block_ush_calendar\local\prodi::class)) {
+    $ushcategories = \block_ush_calendar\local\prodi::navbar_items();
+}
+
 $templatecontext = [
     "logourl" => $logourl,
     "navbarclass" => $navbarclass,
     "themestyleheader" => $themestyleheader,
     'showsitename' => $showsitename,
     'showlogo' => $showlogo,
+    'ushcategories' => $ushcategories,
+    'ushisloggedin' => isloggedin() && !isguestuser(),
+    'ushloginurl' => (new \moodle_url('/login/index.php'))->out(false),
+    'ushsignupurl' => (new \moodle_url('/login/signup.php'))->out(false),
+    'ushpanduanurl' => (new \moodle_url('/course/index.php'))->out(false),
+    'ushsearchurl' => (new \moodle_url('/course/search.php'))->out(false),
 ];
 $templatecontext += footer();

@@ -15,17 +15,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version configuration for the theme academi
- * @package    theme_academi
- * @copyright  2015 onwards LMSACE Dev Team (http://www.lmsace.com)
- * @author    LMSACE Dev Team
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Academic calendar block for the dashboard.
+ *
+ * @package   block_ush_calendar
+ * @copyright 2026 Universitas Sugeng Hartono
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die;
+defined('MOODLE_INTERNAL') || die();
 
-$plugin->version    = 2026042004; // This component release level.
-$plugin->maturity   = MATURITY_STABLE; // This version's maturity level.
-$plugin->release    = 'v5.2'; // This version's release version.
-$plugin->requires   = 2024050000; // This version's moodle require release.
-$plugin->component  = 'theme_academi'; // This component type_name.
+$plugin->version   = 2026083101;
+$plugin->requires  = 2024100100;
+$plugin->component = 'block_ush_calendar';
+$plugin->maturity  = MATURITY_STABLE;
+$plugin->release   = '1.0';

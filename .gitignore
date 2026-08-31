@@ -1,2 +1,5 @@
+# Config Moodle berbeda di setiap server. Jangan di-commit/push.
+/config.php
+
 course/format/remuiformat/.gitignore
 course/format/remuiformat/

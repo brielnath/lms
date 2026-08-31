@@ -1,0 +1,226 @@
+.block_ush_calendar,
+.block_ush_calendar .card,
+.block_ush_calendar .card-body {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.block_ush_calendar .card-body {
+    padding: 0 !important;
+}
+
+.ushcal {
+    --ushcal-teal: #1aa6a0;
+    --ushcal-text: #111827;
+    --ushcal-muted: #6b7280;
+    --ushcal-line: #e5e7eb;
+    font-family: inherit;
+    color: var(--ushcal-text);
+    margin: 8px 0 28px;
+}
+
+.ushcal__title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 6px;
+    color: #111;
+}
+
+.ushcal__desc {
+    color: var(--ushcal-muted);
+    margin: 0 0 16px;
+}
+
+.ushcal__select {
+    width: 100%;
+    max-width: 100%;
+    height: 46px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0 14px;
+    background: #fff;
+    color: var(--ushcal-muted);
+}
+
+.ushcal__grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 340px) 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: start;
+}
+
+.ushcal__month {
+    background: #fff;
+    border: 1px solid var(--ushcal-line);
+    border-radius: 12px;
+    padding: 16px 16px 20px;
+}
+
+.ushcal__month-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.ushcal__month-label {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ushcal__navbtn {
+    color: var(--ushcal-teal);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0 8px;
+}
+
+.ushcal__weekdays,
+.ushcal__week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.ushcal__weekdays {
+    color: var(--ushcal-teal);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    margin-bottom: 8px;
+}
+
+.ushcal__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    color: #111;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.ushcal__day.is-empty {
+    visibility: hidden;
+}
+
+.ushcal__day.has-tasks {
+    font-weight: 700;
+    box-shadow: inset 0 -2px 0 var(--ushcal-teal);
+}
+
+.ushcal__day.is-today,
+.ushcal__day.is-selected {
+    background: var(--ushcal-teal);
+    color: #fff !important;
+}
+
+.ushcal__list {
+    background: #fff;
+    border: 1px solid var(--ushcal-line);
+    border-radius: 12px;
+    max-height: 560px;
+    overflow-y: auto;
+}
+
+.ushcal__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 18px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.ushcal__item-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.ushcal__item-title a {
+    color: #111;
+    text-decoration: none;
+}
+
+.ushcal__item-provider {
+    color: var(--ushcal-muted);
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+}
+
+.ushcal__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.ushcal__tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.ushcal__tag.is-type {
+    background: var(--ushcal-teal);
+    color: #fff;
+}
+
+.ushcal__tag.is-done {
+    background: #fff;
+    color: #16a34a;
+    border-color: #16a34a;
+}
+
+.ushcal__tag.is-open,
+.ushcal__tag.is-soon {
+    background: #fff;
+    color: var(--ushcal-teal);
+    border-color: var(--ushcal-teal);
+}
+
+.ushcal__tag.is-closed {
+    background: #fff;
+    color: #dc2626;
+    border-color: #dc2626;
+}
+
+.ushcal__dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: var(--ushcal-muted);
+    font-size: 0.82rem;
+}
+
+.ushcal__dates i {
+    color: var(--ushcal-teal);
+    margin-right: 4px;
+}
+
+.ushcal__item-side {
+    color: var(--ushcal-teal);
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+.ushcal__empty {
+    padding: 24px;
+    color: var(--ushcal-muted);
+    margin: 0;
+}
+
+@media (max-width: 991.98px) {
+    .ushcal__grid {
+        grid-template-columns: 1fr;
+    }
+    .ushcal__list {
+        max-height: none;
+    }
+}

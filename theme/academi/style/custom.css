@@ -1,3 +1,206 @@
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
+
+/* Navbar USH: Logo | Kategori | Search | Panduan Masuk Daftar */
+.ush-navbar,
+#header.ush-navbar.fixed-top {
+    background: #fff !important;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: none;
+    min-height: 88px;
+    padding: 16px 24px;
+    z-index: 1040 !important;
+}
+
+.ush-navbar .ush-navbar__inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.ush-navbar .ush-navbar__left,
+.ush-navbar .ush-navbar__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+}
+
+.ush-navbar .ush-navbar__right {
+    margin-left: 0;
+    gap: 18px;
+}
+
+.ush-navbar .navbar-brand,
+.ush-navbar .ush-navbar__brand,
+.ush-navbar .logo {
+    margin-left: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+}
+
+.ush-navbar .ush-navbar__logo img,
+.ush-navbar .navbar-brand img {
+    height: 36px !important;
+    max-height: 36px !important;
+    width: auto !important;
+}
+
+.ush-navbar .ush-navbar__logo-fallback {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.ush-navbar .ush-navbar__kategori .nav-link,
+.ush-navbar .ush-navbar__link {
+    color: #111 !important;
+    font-weight: 600;
+    padding: 6px 8px !important;
+    background: transparent !important;
+    white-space: nowrap;
+}
+
+.ush-navbar .ush-navbar__kategori .nav-link:hover,
+.ush-navbar .ush-navbar__link:hover {
+    color: #0f172a !important;
+    text-decoration: none;
+}
+
+.ush-navbar .ush-navbar__search {
+    flex: 1 1 auto;
+    max-width: 560px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ush-navbar .ush-navbar__search-icon {
+    position: absolute;
+    left: 16px;
+    color: #111;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ush-navbar .ush-navbar__search input.form-control {
+    width: 100%;
+    height: 48px;
+    padding: 8px 16px 8px 42px;
+    border: 1.5px solid #111;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: none;
+}
+
+.ush-navbar .ush-navbar__search input.form-control:focus {
+    border-color: #111;
+    box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.08);
+}
+
+.ush-navbar .usermenu .login,
+.ush-navbar .usermenu a.dropdown-toggle,
+.ush-navbar .usermenu .usertext,
+.ush-navbar .usermenu a.dropdown-toggle:focus {
+    color: #111 !important;
+}
+
+/* Ikon notifikasi, pesan, dan edit mode: jangan putih di navbar putih */
+.ush-navbar #usernavigation .nav-link,
+.ush-navbar #usernavigation .nav-link .icon,
+.ush-navbar .popover-region .popover-region-toggle.nav-link,
+.ush-navbar .popover-region .popover-region-toggle.nav-link .icon,
+.ush-navbar .popover-region .popover-region-toggle.nav-link .icon:before,
+.ush-navbar .popover-region .nav-link i,
+.ush-navbar .popover-region svg,
+.ush-navbar #usernavigation svg,
+.ush-navbar .editmode-switch-form label,
+.ush-navbar .editmode-switch-form .col-form-label {
+    color: #111 !important;
+    fill: currentColor !important;
+}
+
+.ush-navbar .popover-region .count-container {
+    color: #fff !important;
+    background: #dc3545 !important;
+}
+
+.ush-navbar .editmode-switch-form .form-switch .form-check-input,
+.ush-navbar .editmode-switch-form input[type="checkbox"] {
+    background-color: #cbd5e1 !important;
+    border-color: #94a3b8 !important;
+}
+.ush-navbar .editmode-switch-form .form-switch .form-check-input:checked {
+    background-color: #0f172a !important;
+    border-color: #0f172a !important;
+}
+
+/* Menu Moodle (Dashboard, Site administration) untuk user yang login */
+.ush-navbar .ush-navbar__moodle-nav {
+    align-items: center;
+    margin: 0;
+}
+.ush-navbar .ush-navbar__moodle-nav .moremenu,
+.ush-navbar .ush-navbar__moodle-nav .more-nav {
+    flex-wrap: nowrap;
+    border: 0;
+}
+.ush-navbar .ush-navbar__moodle-nav .nav-tabs {
+    border: 0;
+}
+.ush-navbar .ush-navbar__moodle-nav .nav-link {
+    color: #111 !important;
+    font-weight: 600;
+    padding: 6px 10px !important;
+    background: transparent !important;
+    border: 0 !important;
+    white-space: nowrap;
+}
+.ush-navbar .ush-navbar__moodle-nav .nav-link:hover,
+.ush-navbar .ush-navbar__moodle-nav .nav-link.active {
+    color: #0f172a !important;
+    background: transparent !important;
+}
+
+.header-main {
+    display: none !important;
+}
+
+#page.drawers {
+    margin-top: 0;
+}
+
+.drawer.drawer-left,
+.drawer.drawer-right,
+#theme_boost-drawers-courseindex {
+    top: 88px !important;
+    height: calc(100vh - 88px) !important;
+}
+
+@media (max-width: 767.98px) {
+    .ush-navbar .ush-navbar__inner {
+        flex-wrap: wrap;
+    }
+    .ush-navbar .ush-navbar__search {
+        order: 3;
+        flex: 1 1 100%;
+        max-width: none;
+    }
+    .ush-navbar .ush-navbar__kategori {
+        display: none;
+    }
+    .ush-navbar .ush-navbar__moodle-nav {
+        display: none !important;
+    }
+}
