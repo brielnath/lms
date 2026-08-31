@@ -204,3 +204,55 @@
         display: none !important;
     }
 }
+
+/* Course overview: tombol Kartu/Daftar yang selalu terlihat */
+.block-myoverview [data-region="filter"],
+.block_myoverview [data-region="filter"],
+.ush-myoverview-toolbar {
+    overflow: visible !important;
+    flex-wrap: wrap !important;
+}
+
+.ush-courselayout {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0 4px 12px;
+    flex-wrap: wrap;
+}
+
+.ush-courselayout__label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.ush-courselayout__btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    color: #0f172a !important;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.4;
+    text-decoration: none !important;
+    background: #fff;
+}
+
+.ush-courselayout__btn:hover {
+    border-color: #1aa6a0;
+    color: #0f766e !important;
+}
+
+.ush-courselayout__btn.is-active {
+    background: #1aa6a0;
+    border-color: #1aa6a0;
+    color: #fff !important;
+}
+
+#page-my-index .block-myoverview .dashboard-card .card-img-top {
+    min-height: 140px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #1aa6a0, #0f766e);
+}

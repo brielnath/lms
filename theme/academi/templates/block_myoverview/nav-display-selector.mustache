@@ -1,0 +1,13 @@
+{{!
+    @template block_myoverview/nav-display-selector
+    Visible Card/List switcher for Academi dashboard.
+}}
+<div class="ush-courselayout" data-region="ush-courselayout">
+    <span class="ush-courselayout__label">Tampilan</span>
+    <a href="#" class="ush-courselayout__btn{{#card}} is-active{{/card}}"
+       data-display-option="display" data-value="card" data-pref="card"
+       role="button">Kartu</a>
+    <a href="#" class="ush-courselayout__btn{{#list}} is-active{{/list}}"
+       data-display-option="display" data-value="list" data-pref="list"
+       role="button">Daftar</a>
+</div>

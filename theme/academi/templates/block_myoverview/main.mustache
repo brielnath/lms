@@ -1,0 +1,49 @@
+{{!
+    @template block_myoverview/main
+    Academi: always show layout switcher (Kartu / Daftar).
+}}
+<div id="block-myoverview-{{uniqid}}" class="block-myoverview block-cards" data-region="myoverview">
+    <div role="search" data-region="filter" class="d-flex flex-wrap align-items-center my-2 ush-myoverview-toolbar" aria-label="{{#str}} aria:controls, block_myoverview {{/str}}">
+        <div class="row g-0 w-100 align-items-center">
+            {{> block_myoverview/nav-grouping-selector }}
+
+            {{< block_myoverview/nav-search-widget }}
+                {{$searchrole}}{{/searchrole}}
+            {{/ block_myoverview/nav-search-widget }}
+
+            {{> block_myoverview/nav-sort-selector }}
+            {{> block_myoverview/nav-display-selector }}
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        {{> block_myoverview/courses-view }}
+    </div>
+</div>
+{{#js}}
+require(['jquery', 'block_myoverview/main', 'core_user/repository'], function($, Main, UserRepo) {
+    var root = $('#block-myoverview-{{uniqid}}');
+    var view = root.find('[data-region="courses-view"]');
+    var migrated = false;
+    try {
+        migrated = window.localStorage.getItem('ush_myoverview_card_migrated') === '1';
+    } catch (e) {}
+    if (view.length && view.attr('data-display') !== 'card' && !migrated) {
+        view.attr('data-display', 'card');
+        view.attr('data-prev-display', 'card');
+        if (UserRepo && UserRepo.setUserPreference) {
+            UserRepo.setUserPreference('block_myoverview_user_view_preference', 'card');
+        }
+        try {
+            window.localStorage.setItem('ush_myoverview_card_migrated', '1');
+        } catch (e) {}
+        root.find('[data-display-option]').removeClass('is-active');
+        root.find('[data-pref="card"]').addClass('is-active');
+    }
+    root.on('click', '[data-display-option]', function() {
+        root.find('[data-display-option]').removeClass('is-active');
+        $(this).addClass('is-active');
+    });
+    Main.init(root);
+});
+{{/js}}
