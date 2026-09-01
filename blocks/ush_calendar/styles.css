@@ -224,3 +224,30 @@
         max-height: none;
     }
 }
+
+@media (max-width: 767.98px) {
+    .ushcal {
+        margin: 4px 0 16px;
+    }
+    .ushcal__header {
+        margin-bottom: 8px;
+    }
+    .ushcal__title {
+        font-size: 1.4rem;
+    }
+    .ushcal__month {
+        padding: 12px;
+    }
+    .ushcal__item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .ushcal__item-side {
+        white-space: normal;
+    }
+    .ushcal__dates {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

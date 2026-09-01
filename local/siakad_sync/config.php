@@ -32,12 +32,16 @@ define('EXCEL_SHEET',    0);      // Index sheet Excel yang dibaca (0 = sheet pe
 // Sesuaikan dengan nama Cohort yang sudah dibuat di LMS
 // ============================================================
 define('PRODI_COHORT_MAP', json_encode([
-    'Sistem Informasi'      => 'SIF',
-    'Bisnis Digital'        => 'SBD',
-    'Ilmu Gizi'             => 'SGZ',
+    'Akuntansi'             => 'ABD',
+    'Pariwisata'            => 'PAR',
+    'Bahasa'                => 'BKI',
+    'Teknologi Pangan'      => 'TPG',
     'Hukum'                 => 'HKM',
     'Manajemen'             => 'MNJ',
-    // Tambahkan prodi lain di sini jika ada
+    'Gizi'                  => 'SGZ',
+    'Bisnis Digital'        => 'SBD',
+    'Sistem Informasi'      => 'SIF',
+    'Informatika'           => 'SIF',
 ]));
 
 // ============================================================

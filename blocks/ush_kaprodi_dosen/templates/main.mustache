@@ -1,0 +1,31 @@
+{{!
+    @template block_ush_kaprodi_dosen/main
+}}
+<div class="ush-kpdosen">
+    <header class="ush-kpdosen__header">
+        <h2 class="ush-kpdosen__title">{{title}}</h2>
+        <p class="ush-kpdosen__desc">{{description}}</p>
+        {{#prodilabel}}
+            <p class="ush-kpdosen__prodi">{{prodilabel}} · {{count}}</p>
+        {{/prodilabel}}
+    </header>
+    {{#hasdosen}}
+        <ul class="ush-kpdosen__list">
+            {{#dosen}}
+                <li class="ush-kpdosen__item">
+                    <a class="ush-kpdosen__link" href="{{{profileurl}}}">
+                        <span class="ush-kpdosen__avatar">{{{picture}}}</span>
+                        <span class="ush-kpdosen__meta">
+                            <span class="ush-kpdosen__name">{{fullname}}</span>
+                            <span class="ush-kpdosen__sub">{{coursecount}}</span>
+                            {{#email}}<span class="ush-kpdosen__email">{{email}}</span>{{/email}}
+                        </span>
+                    </a>
+                </li>
+            {{/dosen}}
+        </ul>
+    {{/hasdosen}}
+    {{^hasdosen}}
+        <p class="ush-kpdosen__empty">{{nodosen}}</p>
+    {{/hasdosen}}
+</div>

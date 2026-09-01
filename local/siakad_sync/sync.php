@@ -12,6 +12,7 @@ require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/clilib.php');
 require_once($CFG->dirroot . '/cohort/lib.php');
 require_once(__DIR__ . '/config.php');
+require_once(__DIR__ . '/locallib.php');
 
 // Tingkatkan memory dan waktu eksekusi
 raise_memory_limit(MEMORY_HUGE);
@@ -89,7 +90,6 @@ $fp = fopen($csvTempPath, 'w');
 // Header kolom CSV Moodle
 fputcsv($fp, ['username','password','firstname','lastname','email','city','country','lang','idnumber','institution','department']);
 
-$prodiMap     = json_decode(PRODI_COHORT_MAP, true);
 $studentData  = []; // Simpan untuk proses cohort & DPA setelah upload
 $skipped      = 0;
 $csvRowsCount = 0;
@@ -216,28 +216,18 @@ foreach ($studentData as $mhs) {
         }
 
         // Cohort management
-        $prodiCode = '';
-        foreach ($prodiMap as $prodiNama => $code) {
-            if (stripos($mhs['prodi'], $prodiNama) !== false || stripos($mhs['prodi'], $code) !== false) {
-                $prodiCode = $code; break;
-            }
-        }
-        if (empty($prodiCode)) {
+        $mapped = siakad_map_prodi($mhs['prodi']);
+        if ($mapped) {
+            $prodiCode = $mapped['code'];
+            $prodiLabel = $mapped['label'];
+        } else {
             $prodiCode = strtoupper(substr(preg_replace('/[^a-zA-Z]/', '', $mhs['prodi']), 0, 4));
+            $prodiLabel = trim($mhs['prodi']);
         }
 
         $cohortIdCode = $prodiCode . $mhs['tahun'];
-        $cohort = $DB->get_record('cohort', ['idnumber' => $cohortIdCode]);
-        if (!$cohort) {
-            $newCohort               = new stdClass();
-            $newCohort->name         = trim($mhs['prodi']) . ' Angkatan ' . $mhs['tahun'];
-            $newCohort->idnumber     = $cohortIdCode;
-            $newCohort->contextid    = context_system::instance()->id;
-            $newCohort->timecreated  = time();
-            $newCohort->timemodified = time();
-            $newCohort->component    = '';
-            $newCohort->id           = $DB->insert_record('cohort', $newCohort);
-            $cohort                  = $newCohort;
+        list($cohort, $isnew) = siakad_find_or_create_cohort($prodiCode, $prodiLabel, $mhs['tahun']);
+        if ($isnew) {
             wlog("COHORT BARU: {$cohortIdCode}");
         }
 

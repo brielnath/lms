@@ -17,7 +17,7 @@
 }}
 {{!
     @template theme_academi/navbar
-    Navbar: Logo + Kategori | Search | Panduan + Masuk/Daftar
+    Navbar: Logo + Kategori | Search | Panduan + Masuk
 }}
 <nav id="header" class="ush-navbar fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex" aria-label="{{#str}}sitemenubar, admin{{/str}}">
     <div class="container-fluid ush-navbar__inner">
@@ -82,10 +82,9 @@
         </form>
 
         <div class="ush-navbar__right" id="usernavigation">
-            <a class="ush-navbar__link" href="{{{ushpanduanurl}}}">Panduan</a>
+            <a class="ush-navbar__link ush-navbar__panduan" href="{{{ushpanduanurl}}}">Panduan</a>
             {{^ushisloggedin}}
-                <a class="ush-navbar__link" href="{{{ushloginurl}}}">Masuk</a>
-                <a class="ush-navbar__link" href="{{{ushsignupurl}}}">Daftar</a>
+                <a class="ush-navbar__link ush-navbar__login" href="{{{ushloginurl}}}">Masuk</a>
             {{/ushisloggedin}}
             {{#ushisloggedin}}
                 {{{ output.navbar_plugin_output }}}

@@ -2,7 +2,7 @@
 -------------------------*/
 [[setting:customcss]]
 
-/* Navbar USH: Logo | Kategori | Search | Panduan Masuk Daftar */
+/* Navbar USH: Logo | Kategori | Search | Panduan Masuk */
 .ush-navbar,
 #header.ush-navbar.fixed-top {
     background: #fff !important;
@@ -189,20 +189,129 @@
 }
 
 @media (max-width: 767.98px) {
+    .ush-navbar,
+    #header.ush-navbar.fixed-top {
+        min-height: 0;
+        padding: 8px 12px 10px;
+    }
     .ush-navbar .ush-navbar__inner {
         flex-wrap: wrap;
+        gap: 8px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .ush-navbar .ush-navbar__left,
+    .ush-navbar .ush-navbar__right {
+        gap: 6px;
+    }
+    .ush-navbar .ush-navbar__right {
+        margin-left: auto;
+        gap: 4px;
+    }
+    .ush-navbar .ush-navbar__logo img,
+    .ush-navbar .navbar-brand img {
+        height: 28px !important;
+        max-height: 28px !important;
+    }
+    .ush-navbar .ush-navbar__logo-fallback {
+        width: 28px;
+        height: 28px;
     }
     .ush-navbar .ush-navbar__search {
         order: 3;
         flex: 1 1 100%;
         max-width: none;
+        margin: 0;
     }
-    .ush-navbar .ush-navbar__kategori {
-        display: none;
+    .ush-navbar .ush-navbar__search input.form-control {
+        height: 40px;
+        padding: 6px 12px 6px 38px;
+        font-size: 16px; /* hindari zoom iOS */
     }
-    .ush-navbar .ush-navbar__moodle-nav {
+    .ush-navbar .ush-navbar__search-icon {
+        left: 12px;
+    }
+    .ush-navbar .ush-navbar__kategori,
+    .ush-navbar .ush-navbar__panduan,
+    .ush-navbar .ush-navbar__moodle-nav,
+    .ush-navbar .editmode-switch-form,
+    .ush-navbar .usermenu .usertext {
         display: none !important;
     }
+    .ush-navbar .ush-navbar__login {
+        font-size: 14px;
+        padding: 6px 10px !important;
+        white-space: nowrap;
+    }
+    .ush-navbar #usernavigation .nav-link {
+        padding: 4px 6px !important;
+    }
+    .ush-navbar .site-name,
+    .ush-navbar .nav-site-name {
+        font-size: 13px;
+        max-width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .drawer.drawer-left,
+    .drawer.drawer-right,
+    #theme_boost-drawers-courseindex {
+        top: 0 !important;
+        height: 100vh !important;
+        z-index: 1050 !important;
+    }
+
+    #page.drawers .main-inner {
+        margin-top: 8px;
+        padding: 12px !important;
+        max-width: 100%;
+    }
+
+    .ush-dosen-hero-server,
+    .ush-kaprodi-hero-server {
+        padding: 16px !important;
+        margin: 8px 0 16px !important;
+        border-radius: 12px !important;
+    }
+    .ush-dosen-hero-server h2,
+    .ush-kaprodi-hero-server h2 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+        word-break: break-word;
+    }
+    .ush-dosen-hero-server p,
+    .ush-kaprodi-hero-server p {
+        font-size: 13px !important;
+        margin-bottom: 12px !important;
+    }
+    .ush-dosen-hero-server a,
+    .ush-kaprodi-hero-server a {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .ush-courselayout {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .block-myoverview .dashboard-card-deck,
+    #page-my-index .dashboard-card-deck {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ushcal__title {
+        font-size: 1.4rem;
+    }
+}
+
+/* Sembunyikan sisa tautan daftar mandiri */
+a[href*="/login/signup.php"],
+.login-signup {
+    display: none !important;
 }
 
 /* Course overview: tombol Kartu/Daftar yang selalu terlihat */

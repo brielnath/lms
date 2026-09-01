@@ -56,12 +56,35 @@ define('LOGOANDSITENAME', 2);
  * @return void
  */
 function theme_academi_page_init(moodle_page $page) {
+    global $CFG;
+
     $page->requires->js_call_amd('theme_academi/theme', 'init');
+
+    // Akun hanya dari SIAKAD/admin; nonaktifkan daftar mandiri.
+    if (!empty($CFG->registerauth)) {
+        set_config('registerauth', '');
+        $CFG->registerauth = '';
+    }
 
     // Pastikan Course overview punya layout kartu (dropdown Moodle sering tersembunyi).
     $layouts = get_config('block_myoverview', 'layouts');
     if ($layouts === false || $layouts === '' || strpos(',' . $layouts . ',', ',card,') === false) {
         set_config('layouts', 'card,list,summary', 'block_myoverview');
+    }
+
+    // User production masih mode list; pindahkan ke kartu sekali (tombol Daftar tetap bisa dipakai setelah itu).
+    if (isloggedin() && !isguestuser()) {
+        if (!get_user_preferences('theme_academi_myoverview_card_migrated')) {
+            set_user_preference('block_myoverview_user_view_preference', 'card');
+            set_user_preference('theme_academi_myoverview_card_migrated', 1);
+        }
+    }
+
+    // Git pull tidak menghapus cache Moodle; bersihkan sekali setelah versi ini ter-deploy.
+    $bust = '2026042007';
+    if (get_config('theme_academi', 'ushcachebust') !== $bust) {
+        theme_reset_all_caches();
+        set_config('ushcachebust', $bust, 'theme_academi');
     }
 }
 

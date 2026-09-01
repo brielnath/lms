@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2026083102;
+$plugin->version   = 2026083103;
 $plugin->requires  = 2024100100;
 $plugin->component = 'block_ush_calendar';
 $plugin->maturity  = MATURITY_STABLE;

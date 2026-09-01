@@ -67,7 +67,6 @@ $templatecontext = [
     'ushcategories' => $ushcategories,
     'ushisloggedin' => isloggedin() && !isguestuser(),
     'ushloginurl' => (new \moodle_url('/login/index.php'))->out(false),
-    'ushsignupurl' => (new \moodle_url('/login/signup.php'))->out(false),
     'ushpanduanurl' => (new \moodle_url('/course/index.php'))->out(false),
     'ushsearchurl' => (new \moodle_url('/course/search.php'))->out(false),
 ];
