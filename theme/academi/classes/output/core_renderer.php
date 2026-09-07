@@ -74,4 +74,25 @@ class core_renderer extends \theme_boost\output\core_renderer {
         }
         return $content;
     }
+
+    /**
+     * Login form: lambang saja (compact logo), tanpa wordmark universitas.
+     *
+     * @param \core_auth\output\login $form
+     * @return string
+     */
+    public function render_login(\core_auth\output\login $form) {
+        global $SITE;
+
+        $context = $form->export_for_template($this);
+        $context->errorformatted = $this->error_text($context->error);
+        $context->logourl = theme_academi_get_login_logo_url();
+        $context->sitename = format_string(
+            $SITE->fullname,
+            true,
+            ['context' => \context_course::instance(SITEID), 'escape' => false]
+        );
+
+        return $this->render_from_template('core/loginform', $context);
+    }
 }

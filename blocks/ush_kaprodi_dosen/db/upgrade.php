@@ -10,5 +10,9 @@ function xmldb_block_ush_kaprodi_dosen_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2026090100, 'block', 'ush_kaprodi_dosen');
     }
 
+    if ($oldversion < 2026090401) {
+        upgrade_plugin_savepoint(true, 2026090401, 'block', 'ush_kaprodi_dosen');
+    }
+
     return true;
 }

@@ -34,9 +34,15 @@ $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $jumbotronclass = (!empty(theme_academi_get_setting('jumbotronstatus'))) ? 'jumbotron-element' : '';
 // Slide show contnet added in the templatecontext.
 $templatecontext += $sliderconfig;
+$ushhomelogo = theme_academi_get_login_logo_url();
+if ($ushhomelogo === '') {
+    $headerlogo = theme_academi_get_logo_url('header');
+    $ushhomelogo = is_object($headerlogo) ? $headerlogo->out(false) : (string) $headerlogo;
+}
 $templatecontext += [
     'bodyattributes' => $bodyattributes,
     'jumbotronclass' => $jumbotronclass,
+    'ushhomelogo' => $ushhomelogo,
 ];
 
 echo $OUTPUT->render_from_template('theme_academi/frontpage', $templatecontext);

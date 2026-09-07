@@ -6,10 +6,51 @@
         <h2 class="ush-kpdosen__title">{{title}}</h2>
         <p class="ush-kpdosen__desc">{{description}}</p>
         {{#prodilabel}}
-            <p class="ush-kpdosen__prodi">{{prodilabel}} · {{count}}</p>
+            <p class="ush-kpdosen__prodi">{{prodilabel}}</p>
         {{/prodilabel}}
     </header>
+
+    {{#summary}}
+    <div class="ush-kpdosen__cards">
+        <div class="ush-kpdosen__card">
+            <div class="ush-kpdosen__num">{{total}}</div>
+            <div class="ush-kpdosen__lbl">Mata kuliah</div>
+        </div>
+        <div class="ush-kpdosen__card ush-kpdosen__card--warn">
+            <div class="ush-kpdosen__num">{{pendingcourses}}</div>
+            <div class="ush-kpdosen__lbl">Ada yang belum kerjakan</div>
+        </div>
+    </div>
+    {{/summary}}
+
+    {{#hascourses}}
+        <h3 class="ush-kpdosen__section">Perlu dipantau</h3>
+        <ul class="ush-kpdosen__courselist">
+            {{#courses}}
+                <li class="ush-kpdosen__course">
+                    <a class="ush-kpdosen__courselink" href="{{{detailurl}}}">
+                        <span class="ush-kpdosen__cname">{{fullname}}</span>
+                        <span class="ush-kpdosen__cmeta">{{summaryline}}</span>
+                        <span class="ush-kpdosen__cteach">{{teachers}} · {{studentslabel}}</span>
+                    </a>
+                </li>
+            {{/courses}}
+        </ul>
+        <p class="ush-kpdosen__more"><a href="{{{monitorurl}}}">{{monitorlabel}}</a></p>
+    {{/hascourses}}
+    {{#allok}}
+        <p class="ush-kpdosen__empty">{{alloklabel}}</p>
+        <p class="ush-kpdosen__more"><a href="{{{monitorurl}}}">{{monitorlabel}}</a></p>
+    {{/allok}}
+    {{^hascourses}}
+        {{^allok}}
+            <p class="ush-kpdosen__empty">{{nocourses}}</p>
+        {{/allok}}
+    {{/hascourses}}
+
     {{#hasdosen}}
+        <h3 class="ush-kpdosen__section">{{dosentitle}}</h3>
+        <p class="ush-kpdosen__desc">{{dosendesc}} · {{count}}</p>
         <ul class="ush-kpdosen__list">
             {{#dosen}}
                 <li class="ush-kpdosen__item">
@@ -24,8 +65,5 @@
                 </li>
             {{/dosen}}
         </ul>
-    {{/hasdosen}}
-    {{^hasdosen}}
-        <p class="ush-kpdosen__empty">{{nodosen}}</p>
     {{/hasdosen}}
 </div>

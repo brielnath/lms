@@ -365,3 +365,262 @@ a[href*="/login/signup.php"],
     object-fit: cover;
     background: linear-gradient(135deg, #1aa6a0, #0f766e);
 }
+
+/* Halaman login USH: Dosen/Admin vs Mahasiswa */
+body.pagelayout-login #header,
+body.pagelayout-login .ush-navbar,
+body.pagelayout-login #page-footer,
+body.pagelayout-login .login-signup,
+body.pagelayout-login a[href*="/login/signup.php"] {
+    display: none !important;
+}
+
+body.pagelayout-login #page-wrapper,
+body.pagelayout-login #page {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff;
+}
+
+body.pagelayout-login #page .login-layout-left {
+    background: linear-gradient(135deg, #1e1b4b 0%, #1c0ccb 55%, #210acd 100%) !important;
+    background-image: none !important;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 48px 40px;
+}
+
+body.pagelayout-login #page .login-layout-right {
+    background: #fff !important;
+    background-image: none !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body.pagelayout-login .login-layout-right-content,
+body.pagelayout-login .login-container {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    box-shadow: none;
+    background: transparent;
+}
+
+.ush-login-panel {
+    text-align: center;
+    color: #fff;
+    max-width: 420px;
+}
+body.pagelayout-login .ush-login-panel__title,
+.ush-login-panel__title {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 2.25rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 28px !important;
+    color: #060606 !important;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    line-height: 1.2;
+}
+.ush-login-panel__logowrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+.ush-login-panel__logo {
+    max-height: 168px;
+    max-width: 220px;
+    width: auto;
+    height: auto;
+    filter: none;
+}
+
+.ush-login-formlogo {
+    margin-bottom: 16px;
+}
+.ush-login-formlogo img {
+    max-height: 52px;
+    width: auto;
+}
+@media (min-width: 992px) {
+    .ush-login-formlogo {
+        display: none;
+    }
+}
+
+.ush-loginform .ush-login-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 20px;
+    color: #1e1b4b;
+}
+.ush-login-as {
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 10px;
+}
+.ush-login-roles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+.ush-login-role {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 10px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 12px;
+    background: #fff;
+    color: #1e1b4b;
+    font-weight: 600;
+    cursor: pointer;
+}
+.ush-login-role:hover {
+    border-color: #1c0ccb;
+}
+.ush-login-role.is-active {
+    border-color: #1c0ccb;
+    box-shadow: 0 0 0 1px #1c0ccb;
+}
+.ush-login-role.is-active::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1c0ccb url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23e9e62a' d='M6.2 11.2 3.4 8.4l1.2-1.2 1.6 1.6 4.2-4.2 1.2 1.2z'/%3E%3C/svg%3E") center/12px no-repeat;
+}
+.ush-login-role__icon {
+    font-size: 28px;
+    color: #1c0ccb;
+}
+.ush-login-role__label {
+    font-size: 13px;
+    text-align: center;
+}
+.ush-loginform label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #1e1b4b;
+}
+.ush-loginform .form-control {
+    border-radius: 10px;
+    border-color: #d1d5db;
+    min-height: 48px;
+    font-size: 16px;
+}
+.ush-loginform .form-control:focus {
+    border-color: #1c0ccb;
+    box-shadow: 0 0 0 3px rgba(28, 12, 203, 0.16);
+}
+.ush-login-submit {
+    background: #1e1b4b !important;
+    border-color: #1e1b4b !important;
+    border-radius: 10px !important;
+    min-height: 48px;
+    font-weight: 700;
+}
+.ush-login-submit:hover {
+    background: #1c0ccb !important;
+    border-color: #1c0ccb !important;
+}
+.ush-loginform .login-form-forgotpassword a {
+    color: #1c0ccb;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+    body.pagelayout-login #page .login-layout-right {
+        min-height: 100vh;
+        align-items: flex-start;
+    }
+    body.pagelayout-login .login-container {
+        padding-top: 40px;
+    }
+}
+
+/* Beranda: lambang rapi, tanpa header Moodle yang numpuk teks */
+body.pagelayout-frontpage #page-header,
+body.pagelayout-frontpage .page-context-header .page-header-headings,
+body.pagelayout-frontpage .page-header-headings {
+    display: none !important;
+}
+
+.ush-home-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 28px 16px 8px;
+    background: #fff;
+}
+.ush-home-brand__title {
+    margin: 0 0 16px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1e1b4b;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+.ush-home-brand__logo {
+    width: 148px;
+    height: 148px;
+    max-width: 70vw;
+    object-fit: contain;
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+.promoted-courses .titlebar {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 20px;
+    padding: 0 16px;
+}
+.promoted-courses .titlebar h2 {
+    color: #1e1b4b;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+.promoted-courses .titlebar p {
+    display: none !important;
+}
+
+.promoted-courses .promatedcourse-slider .slider-item .course-box .thumb {
+    height: 180px;
+    background: #f8fafc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.promoted-courses .promatedcourse-slider .slider-item .course-box .thumb:before {
+    display: none;
+}
+.promoted-courses .promatedcourse-slider .slider-item .course-box .thumb img {
+    object-fit: contain !important;
+    background: #f8fafc;
+}
+.promoted-courses .promatedcourse-slider .slider-item .course-box .info a {
+    color: #1e1b4b !important;
+    font-weight: 700;
+}

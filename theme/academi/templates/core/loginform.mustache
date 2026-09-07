@@ -1,0 +1,148 @@
+{{!
+    @template core/loginform
+    USH: Masuk sebagai Dosen/Admin atau Mahasiswa. Tanpa daftar mandiri.
+}}
+<div class="loginform ush-loginform">
+    {{#logourl}}
+        <div class="ush-login-formlogo">
+            <img src="{{logourl}}" alt="{{sitename}}">
+        </div>
+    {{/logourl}}
+    <h1 class="ush-login-title">Masuk</h1>
+    {{#maintenance}}
+        <div class="alert alert-danger login-maintenance">{{{maintenance}}}</div>
+    {{/maintenance}}
+    {{#error}}
+        <div class="alert alert-danger" id="loginerrormessage" role="alert">{{error}}</div>
+    {{/error}}
+    {{#info}}
+        <div class="alert alert-info" id="logininfomessage" role="status">{{info}}</div>
+    {{/info}}
+
+    {{#showloginform}}
+        <p class="ush-login-as">Masuk sebagai</p>
+        <div class="ush-login-roles" role="group" aria-label="Pilih jenis akun">
+            <button type="button" class="ush-login-role is-active" data-ush-role="staff" id="ush-role-staff">
+                <span class="ush-login-role__icon" aria-hidden="true">
+                    <i class="fa fa-user-circle-o"></i>
+                </span>
+                <span class="ush-login-role__label">Dosen / Admin</span>
+            </button>
+            <button type="button" class="ush-login-role" data-ush-role="student" id="ush-role-student">
+                <span class="ush-login-role__icon" aria-hidden="true">
+                    <i class="fa fa-graduation-cap"></i>
+                </span>
+                <span class="ush-login-role__label">Mahasiswa</span>
+            </button>
+        </div>
+
+        <form class="login-form" action="{{loginurl}}" method="post" id="login">
+            <input id="anchor" type="hidden" name="anchor" value="">
+            <script>document.getElementById('anchor').value = location.hash;</script>
+            <input type="hidden" name="logintoken" value="{{logintoken}}">
+
+            <div class="login-form-username mb-3">
+                <label for="username" id="ush-user-label">Username / Email</label>
+                <input type="text" name="username" id="username" class="form-control form-control-lg"
+                    value="{{username}}" placeholder="Masukkan username atau email" autocomplete="username">
+            </div>
+            <div class="login-form-password mb-3">
+                <label for="password">Kata sandi</label>
+                <input type="password" name="password" id="password" value=""
+                    class="form-control form-control-lg" placeholder="Masukkan kata sandi" autocomplete="current-password">
+            </div>
+            {{#recaptcha}}
+                <div class="login-form-recaptcha mb-3">{{{recaptcha}}}</div>
+            {{/recaptcha}}
+            <div class="login-form-forgotpassword mb-3 text-end">
+                <a href="{{forgotpasswordurl}}">Lupa kata sandi?</a>
+            </div>
+            <div class="login-form-submit mb-3">
+                <button class="btn btn-primary btn-lg w-100 ush-login-submit" type="submit" id="loginbtn">Masuk</button>
+            </div>
+        </form>
+    {{/showloginform}}
+
+    {{#hasidentityproviders}}
+        <div class="login-identityproviders mt-3">
+            {{#identityproviders}}
+                <a class="btn login-identityprovider-btn btn-block" href="{{url}}">
+                    {{#iconurl}}<img src="{{iconurl}}" alt="" width="24" height="24"/>{{/iconurl}}
+                    {{name}}
+                </a>
+            {{/identityproviders}}
+        </div>
+    {{/hasidentityproviders}}
+
+    <div class="ush-login-foot d-flex mt-4">
+        {{#languagemenu}}
+            <div class="login-languagemenu">{{>core/action_menu}}</div>
+        {{/languagemenu}}
+    </div>
+</div>
+
+{{#js}}
+    require(['jquery'], function($) {
+        var applyRole = function(role) {
+            var student = role === 'student';
+            $('.ush-login-role').removeClass('is-active');
+            $('.ush-login-role[data-ush-role="' + role + '"]').addClass('is-active');
+            $('#ush-user-label').text(student ? 'NIM' : 'Username / Email');
+            $('#username').attr('placeholder', student ? 'Masukkan NIM Anda' : 'Masukkan username atau email');
+            try { window.localStorage.setItem('ush_login_role', role); } catch (e) {}
+        };
+        $(document).on('click', '.ush-login-role', function() {
+            applyRole($(this).attr('data-ush-role'));
+        });
+        var saved = 'staff';
+        try { saved = window.localStorage.getItem('ush_login_role') || 'staff'; } catch (e) {}
+        applyRole(saved);
+    });
+    {{^error}}
+        {{#autofocusform}}
+            require(['core_form/events'], function(FormEvent) {
+                function autoFocus() {
+                    const userNameField = document.getElementById('username');
+                    const passwordField = document.getElementById('password');
+                    if (userNameField && userNameField.value.length == 0) {
+                        userNameField.focus();
+                    } else if (passwordField) {
+                        passwordField.focus();
+                    }
+                }
+                autoFocus();
+                window.addEventListener(FormEvent.eventTypes.fieldStructureChanged, autoFocus);
+            });
+        {{/autofocusform}}
+    {{/error}}
+    require(['core/pending'], function(Pending) {
+        const errorMessageDiv = document.getElementById('loginerrormessage');
+        const infoMessageDiv = document.getElementById('logininfomessage');
+        const errorMessage = errorMessageDiv?.textContent.trim();
+        const infoMessage = infoMessageDiv?.textContent.trim();
+        if (errorMessage || infoMessage) {
+            const pendingJS = new Pending('login-move-focus');
+            const usernameField = document.getElementById('username');
+            setTimeout(function() {
+                if (errorMessage && usernameField) {
+                    usernameField.focus();
+                }
+                if (errorMessage) {
+                    errorMessageDiv.innerHTML += "&nbsp;";
+                }
+                if (infoMessage) {
+                    infoMessageDiv.innerHTML += "&nbsp;";
+                }
+                pendingJS.resolve();
+            }, 500);
+        }
+    });
+    {{#togglepassword}}
+        require(['core/togglesensitive'], function(ToggleSensitive) {
+            ToggleSensitive.init("password", {{smallscreensonly}});
+        });
+    {{/togglepassword}}
+    require(['core_form/submit'], function(Submit) {
+        Submit.init("loginbtn");
+    });
+{{/js}}

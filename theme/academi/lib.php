@@ -81,7 +81,7 @@ function theme_academi_page_init(moodle_page $page) {
     }
 
     // Git pull tidak menghapus cache Moodle; bersihkan sekali setelah versi ini ter-deploy.
-    $bust = '2026042007';
+    $bust = '2026042015';
     if (get_config('theme_academi', 'ushcachebust') !== $bust) {
         theme_reset_all_caches();
         set_config('ushcachebust', $bust, 'theme_academi');
@@ -145,6 +145,8 @@ function theme_academi_pluginfile($course, $cm, $context, $filearea, $args, $for
     if ($context->contextlevel == CONTEXT_SYSTEM) {
         if ($filearea === 'logo') {
             return $theme->setting_file_serve('logo', $args, $forcedownload, $options);
+        } else if ($filearea === 'loginlogo') {
+            return $theme->setting_file_serve('loginlogo', $args, $forcedownload, $options);
         } else if ($filearea === 'footerlogo') {
             return $theme->setting_file_serve('footerlogo', $args, $forcedownload, $options);
         } else if ($filearea === 'pagebackground') {
@@ -215,6 +217,20 @@ function theme_academi_get_logo_url($type = 'header') {
         $logo = empty($logo) ? '' : $logo;
     }
     return $logo;
+}
+
+/**
+ * Logo khusus halaman login (tidak memakai logo navbar).
+ *
+ * @return string
+ */
+function theme_academi_get_login_logo_url() {
+    $theme = theme_config::load('academi');
+    $logo = $theme->setting_file_url('loginlogo', 'loginlogo');
+    if (empty($logo)) {
+        return '';
+    }
+    return is_object($logo) ? $logo->out(false) : (string) $logo;
 }
 
 /**
@@ -326,6 +342,10 @@ function theme_academi_get_extra_scss($theme) {
 
     // Remove Boost login background and watermark.
     $extrascss .= 'body.pagelayout-login #page .login-layout-left::after { display: none; }';
+    $extrascss .= 'body.pagelayout-login .ush-login-panel__title {'
+        . ' display: block !important; visibility: visible !important;'
+        . ' color: #e9e62a !important; font-size: 2.25rem !important;'
+        . ' font-weight: 800 !important; margin: 0 0 28px !important; }';
 
     // Add our custom login background logic.
     $loginbackgroundimageurl = $theme->setting_file_url('loginbackgroundimage', 'loginbackgroundimage');
@@ -337,7 +357,8 @@ function theme_academi_get_extra_scss($theme) {
         $extrascss .= $customloginbg;
     } else {
         $emptyloginbg = 'body.pagelayout-login #page .login-layout-left { ';
-        $emptyloginbg .= 'background-image: none; background-size: none; background-position: initial; position: relative;';
+        $emptyloginbg .= 'background: linear-gradient(135deg, #1e1b4b 0%, #1c0ccb 55%, #210acd 100%) !important; ';
+        $emptyloginbg .= 'background-image: none; position: relative;';
         $emptyloginbg .= ' }';
         $extrascss .= $emptyloginbg;
     }

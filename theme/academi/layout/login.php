@@ -36,7 +36,7 @@ $leftinstructions = !empty($CFG->auth_instructions)
 $hasloginbackgroundimage = !empty($theme->setting_file_url('loginbackgroundimage', 'loginbackgroundimage'));
 $showdefaultloginpanel = theme_academi_get_setting('showdefaultloginpanel') ?? false;
 
-$showleftpanel = !empty($leftinstructions) || $hasloginbackgroundimage || $showdefaultloginpanel;
+$showleftpanel = true;
 
 $templatecontext += [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -44,6 +44,8 @@ $templatecontext += [
     'bodyattributes' => $bodyattributes,
     'leftinstructions' => $leftinstructions,
     'showleftpanel' => $showleftpanel,
-    'showdefaultloginpanel' => $showdefaultloginpanel,
+    'showdefaultloginpanel' => true,
 ];
+// Jangan pakai += untuk logourl: themedata sudah mengisi logo navbar.
+$templatecontext['logourl'] = theme_academi_get_login_logo_url();
 echo $OUTPUT->render_from_template('theme_academi/login', $templatecontext);

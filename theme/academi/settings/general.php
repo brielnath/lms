@@ -49,6 +49,13 @@ $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
 
+$name = 'theme_academi/loginlogo';
+$title = get_string('loginlogo', 'theme_academi');
+$description = get_string('loginlogo_desc', 'theme_academi');
+$setting = new admin_setting_configstoredfile($name, $title, $description, 'loginlogo');
+$setting->set_updatedcallback('theme_reset_all_caches');
+$temp->add($setting);
+
 // Favicon upload option.
 $name = 'theme_academi/favicon';
 $title = get_string('favicon', 'theme_academi', null, true);

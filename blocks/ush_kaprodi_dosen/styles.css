@@ -13,7 +13,7 @@
     background: #fff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    padding: 20px 22px 8px;
+    padding: 20px 22px 12px;
     margin: 8px 0 28px;
     color: #111827;
 }
@@ -35,6 +35,93 @@
     font-weight: 600;
     color: #1aa6a0;
     margin: 0 0 12px;
+}
+
+.ush-kpdosen__section {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 16px 0 6px;
+}
+
+.ush-kpdosen__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 12px 0 8px;
+}
+
+.ush-kpdosen__card {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.ush-kpdosen__card--warn {
+    background: #fffbeb;
+    border-color: #fde68a;
+}
+
+.ush-kpdosen__card--danger {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+.ush-kpdosen__num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.ush-kpdosen__lbl {
+    font-size: 0.78rem;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+.ush-kpdosen__courselist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ush-kpdosen__course {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #f3f4f6;
+    padding: 10px 0;
+}
+
+.ush-kpdosen__courselink {
+    flex: 1;
+    min-width: 0;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.ush-kpdosen__cname {
+    display: block;
+    font-weight: 700;
+}
+
+.ush-kpdosen__cmeta,
+.ush-kpdosen__cteach {
+    display: block;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.ush-kpdosen__remind,
+.ush-kpdosen__more a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0f766e;
+    text-decoration: none;
+}
+
+.ush-kpdosen__more {
+    margin: 8px 0 4px;
 }
 
 .ush-kpdosen__list {
@@ -92,15 +179,356 @@
     padding: 8px 0 16px;
 }
 
+/* Full monitor page */
+.ush-kpmon {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px;
+    margin: 8px 0 28px;
+}
+
+.ush-kpmon__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.ush-kpmon__title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+}
+
+.ush-kpmon__desc {
+    color: #6b7280;
+    margin: 0;
+}
+
+.ush-kpmon__prodi {
+    color: #1aa6a0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 4px 0 0;
+}
+
+.ush-kpmon__back {
+    white-space: nowrap;
+    font-weight: 600;
+    color: #0f766e;
+}
+
+.ush-kpmon__coursehead {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    margin: 8px 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.ush-kpmon__coursename {
+    margin: 0 0 4px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.ush-kpmon__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.ush-kpmon__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ush-kpmon__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-decoration: none !important;
+    color: inherit;
+    background: #fff;
+}
+
+.ush-kpmon__item--pending {
+    border-color: #fde68a;
+    background: #fffbeb;
+}
+
+.ush-kpmon__item:hover {
+    border-color: #0f766e;
+}
+
+.ush-kpmon__cname {
+    font-weight: 800;
+}
+
+.ush-kpmon__summary {
+    margin-top: 6px;
+    font-size: 0.88rem;
+    color: #374151;
+}
+
+.ush-kpmon__go {
+    white-space: nowrap;
+    font-weight: 700;
+    color: #0f766e;
+    font-size: 0.85rem;
+}
+
+.ush-kpmon__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 14px;
+}
+
+.ush-kpmon__chip {
+    appearance: none;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #374151;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 650;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.ush-kpmon__chip:hover {
+    border-color: #0f766e;
+    color: #0f766e;
+}
+
+.ush-kpmon__chip.is-active {
+    background: #0f766e;
+    border-color: #0f766e;
+    color: #fff;
+}
+
+.ush-kpmon__filternone {
+    color: #6b7280;
+    font-size: 0.92rem;
+    margin: 8px 0 0;
+}
+
+.ush-kpmon__act[hidden] {
+    display: none !important;
+}
+
+.ush-kpmon__acts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ush-kpmon__act {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    background: #fafafa;
+}
+
+.ush-kpmon__act--pending {
+    background: #fffbeb;
+    border-color: #fde68a;
+}
+
+.ush-kpmon__acttop {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.ush-kpmon__type {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7280;
+    letter-spacing: 0.04em;
+}
+
+.ush-kpmon__actname {
+    margin: 2px 0 0;
+    font-size: 1rem;
+}
+
+.ush-kpmon__actname a {
+    color: #111827;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.ush-kpmon__counts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.ush-kpmon__done { color: #047857; }
+.ush-kpmon__pend { color: #b45309; }
+
+.ush-kpmon__pendinglist {
+    margin: 10px 0 0;
+    font-size: 0.85rem;
+    color: #4b5563;
+}
+
+.ush-kpmon__cards {
+    display: none;
+}
+
+.ush-kpmon__card {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.ush-kpmon__card--warn { background: #fffbeb; border-color: #fde68a; }
+.ush-kpmon__card--danger { background: #fef2f2; border-color: #fecaca; }
+
+.ush-kpmon__num {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.ush-kpmon__lbl {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.ush-kpmon__hint {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin: 0 0 12px;
+}
+
+.ush-kpmon__tablewrap {
+    overflow-x: auto;
+}
+
+.ush-kpmon__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.ush-kpmon__table th,
+.ush-kpmon__table td {
+    padding: 10px 8px;
+    border-top: 1px solid #f3f4f6;
+    text-align: left;
+    vertical-align: top;
+}
+
+.ush-kpmon__table th {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #6b7280;
+    border-top: 0;
+}
+
+.ush-kpmon__sub {
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+.ush-kpmon__badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.ush-kpmon__badge--ok { background: #ecfdf5; color: #047857; }
+.ush-kpmon__badge--warn { background: #fffbeb; color: #b45309; }
+.ush-kpmon__badge--danger { background: #fef2f2; color: #b91c1c; }
+
+.ush-kpmon__meter {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 90px;
+}
+
+.ush-kpmon__bar {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.ush-kpmon__bar span {
+    display: block;
+    height: 100%;
+    background: #0f766e;
+}
+
+.ush-kpmon__bar--absen span {
+    background: #1d4ed8;
+}
+
+.ush-kpmon__btn {
+    display: inline-block;
+    margin: 0 4px 4px 0;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: #f3f4f6;
+    color: #111827;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.ush-kpmon__btn--mail {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.ush-kpmon__low td {
+    background: #fafafa;
+    font-size: 0.82rem;
+    color: #4b5563;
+}
+
+.ush-kpmon__empty {
+    color: #6b7280;
+}
+
 @media (max-width: 767.98px) {
-    .ush-kpdosen {
-        padding: 14px 14px 4px;
-        margin: 4px 0 16px;
+    .ush-kpdosen,
+    .ush-kpmon {
+        padding: 14px;
     }
-    .ush-kpdosen__title {
-        font-size: 1.15rem;
+    .ush-kpdosen__cards,
+    .ush-kpmon__cards {
+        grid-template-columns: 1fr;
     }
     .ush-kpdosen__email {
         display: none;
+    }
+    .ush-kpmon__top {
+        flex-direction: column;
     }
 }

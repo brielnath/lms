@@ -57,6 +57,12 @@
         {{{ output.standard_top_of_body_html }}}
         {{> theme_academi/header }}
         {{> theme_academi/slideshow }}
+        <div class="ush-home-brand">
+            <p class="ush-home-brand__title">LMS USH</p>
+            {{#ushhomelogo}}
+                <img class="ush-home-brand__logo" src="{{ushhomelogo}}" alt="LMS USH">
+            {{/ushhomelogo}}
+        </div>
         {{#courseindex}}
             {{< theme_boost/drawer }}
                 {{$id}}theme_boost-drawers-courseindex{{/id}}

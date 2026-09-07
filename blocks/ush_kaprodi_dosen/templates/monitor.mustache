@@ -1,0 +1,148 @@
+{{!
+    @template block_ush_kaprodi_dosen/monitor
+}}
+<div class="ush-kpmon">
+    <div class="ush-kpmon__top">
+        <div>
+            <h2 class="ush-kpmon__title">{{title}}</h2>
+            <p class="ush-kpmon__desc">{{description}}</p>
+            {{#prodilabel}}<p class="ush-kpmon__prodi">{{prodilabel}}</p>{{/prodilabel}}
+        </div>
+        <a class="ush-kpmon__back" href="{{{backurl}}}">{{backlabel}}</a>
+    </div>
+
+    {{#forbidden}}
+        <p class="ush-kpmon__empty">{{message}}</p>
+    {{/forbidden}}
+
+    {{#isdetail}}
+        {{#course}}
+        <div class="ush-kpmon__coursehead">
+            <div>
+                <h3 class="ush-kpmon__coursename">{{fullname}}</h3>
+                <p class="ush-kpmon__sub">{{shortname}}</p>
+                <p class="ush-kpmon__sub">Dosen: {{teachers}}</p>
+                <p class="ush-kpmon__sub">{{studentslabel}}</p>
+            </div>
+            <div class="ush-kpmon__actions">
+                <a class="ush-kpmon__btn" href="{{{courseurl}}}">Buka kelas</a>
+                <a class="ush-kpmon__btn" href="{{{participantsurl}}}">Peserta</a>
+            </div>
+        </div>
+
+        {{#hasactivities}}
+        <div class="ush-kpmon__filters" role="toolbar" aria-label="Filter aktivitas" data-ush-kpmon-filters>
+            <button type="button" class="ush-kpmon__chip" data-filter="all">{{#str}}filterall, block_ush_kaprodi_dosen{{/str}}</button>
+            <button type="button" class="ush-kpmon__chip is-active" data-filter="pending">{{#str}}filterpending, block_ush_kaprodi_dosen{{/str}}</button>
+            <button type="button" class="ush-kpmon__chip" data-filter="assign">{{#str}}typeassign, block_ush_kaprodi_dosen{{/str}}</button>
+            <button type="button" class="ush-kpmon__chip" data-filter="quiz">{{#str}}typequiz, block_ush_kaprodi_dosen{{/str}}</button>
+            <button type="button" class="ush-kpmon__chip" data-filter="attendance">{{#str}}typeattendance, block_ush_kaprodi_dosen{{/str}}</button>
+        </div>
+        <div class="ush-kpmon__acts" data-ush-kpmon-acts>
+            {{#activities}}
+            <article class="ush-kpmon__act {{#haspending}}ush-kpmon__act--pending{{/haspending}}"
+                     data-type="{{typekey}}"
+                     data-pending="{{pendingflag}}">
+                <div class="ush-kpmon__acttop">
+                    <div>
+                        <span class="ush-kpmon__type">{{type}}</span>
+                        <h4 class="ush-kpmon__actname"><a href="{{{activityurl}}}">{{name}}</a></h4>
+                    </div>
+                    <div class="ush-kpmon__counts">
+                        <span class="ush-kpmon__done">{{donelabel}}</span>
+                        <span class="ush-kpmon__pend">{{pendinglabel}}</span>
+                    </div>
+                </div>
+                <div class="ush-kpmon__meter">
+                    <div class="ush-kpmon__bar"><span style="width: {{pct}}%"></span></div>
+                    <span>{{pctlabel}} selesai</span>
+                </div>
+                {{#haspendingusers}}
+                <p class="ush-kpmon__pendinglist">
+                    <strong>Belum:</strong>
+                    {{#pendingusers}}
+                        {{#profileurl}}<a href="{{{profileurl}}}">{{fullname}}</a>{{/profileurl}}{{^profileurl}}{{fullname}}{{/profileurl}}{{^last}}, {{/last}}
+                    {{/pendingusers}}
+                </p>
+                {{/haspendingusers}}
+            </article>
+            {{/activities}}
+        </div>
+        <p class="ush-kpmon__filternone" data-ush-kpmon-empty hidden>{{#str}}filternone, block_ush_kaprodi_dosen{{/str}}</p>
+        {{/hasactivities}}
+        {{^hasactivities}}
+            <p class="ush-kpmon__empty">{{noactivities}}</p>
+        {{/hasactivities}}
+        {{/course}}
+    {{/isdetail}}
+
+    {{^isdetail}}
+        {{^forbidden}}
+        {{#hascourses}}
+        <div class="ush-kpmon__list">
+            {{#courses}}
+            <a class="ush-kpmon__item {{#haspending}}ush-kpmon__item--pending{{/haspending}}" href="{{{detailurl}}}">
+                <div class="ush-kpmon__itemmain">
+                    <div class="ush-kpmon__cname">{{fullname}}</div>
+                    <div class="ush-kpmon__sub">{{shortname}}</div>
+                    <div class="ush-kpmon__sub">{{teachers}} · {{studentslabel}}</div>
+                    <div class="ush-kpmon__summary">{{summaryline}}</div>
+                </div>
+                <span class="ush-kpmon__go">{{detaillabel}}</span>
+            </a>
+            {{/courses}}
+        </div>
+        {{/hascourses}}
+        {{^hascourses}}
+            <p class="ush-kpmon__empty">{{nocourses}}</p>
+        {{/hascourses}}
+        {{/forbidden}}
+    {{/isdetail}}
+</div>
+{{#js}}
+require([], function() {
+    var root = document.querySelector('[data-ush-kpmon-filters]');
+    if (!root) {
+        return;
+    }
+    var acts = document.querySelector('[data-ush-kpmon-acts]');
+    var empty = document.querySelector('[data-ush-kpmon-empty]');
+    if (!acts) {
+        return;
+    }
+
+    var apply = function(filter) {
+        var visible = 0;
+        acts.querySelectorAll('.ush-kpmon__act').forEach(function(card) {
+            var type = card.getAttribute('data-type') || '';
+            var pending = card.getAttribute('data-pending') === '1';
+            var show = true;
+            if (filter === 'pending') {
+                show = pending;
+            } else if (filter === 'assign' || filter === 'quiz' || filter === 'attendance') {
+                show = type === filter;
+            }
+            card.hidden = !show;
+            if (show) {
+                visible++;
+            }
+        });
+        if (empty) {
+            empty.hidden = visible > 0;
+        }
+    };
+
+    root.querySelectorAll('.ush-kpmon__chip').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            root.querySelectorAll('.ush-kpmon__chip').forEach(function(b) {
+                b.classList.remove('is-active');
+            });
+            btn.classList.add('is-active');
+            apply(btn.getAttribute('data-filter') || 'all');
+        });
+    });
+
+    // Default: Ada belum.
+    apply('pending');
+});
+{{/js}}

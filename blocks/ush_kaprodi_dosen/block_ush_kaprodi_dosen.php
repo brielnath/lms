@@ -29,8 +29,8 @@ class block_ush_kaprodi_dosen extends block_base {
         $this->content = new stdClass();
         $this->content->footer = '';
 
-        $view = new \block_ush_kaprodi_dosen\local\view();
-        $data = $view->export($OUTPUT);
+        $monitor = new \block_ush_kaprodi_dosen\local\monitor();
+        $data = $monitor->export_dashboard($OUTPUT);
         if (empty($data['iskaprodi'])) {
             $this->content->text = '';
             return $this->content;
