@@ -3,22 +3,27 @@
  * Buat kategori prodi + cangkang kelas satu semester dari katalog MK SIAKAD.
  * Aman dijalankan di production: default DRY-RUN, menulis hanya jika --confirm.
  *
- * Kredensial SIAKAD tidak ditulis di file ini. Ambil dari environment:
- *   SIAKAD_EMAIL, SIAKAD_PASSWORD
- * atau argumen --email= / --password=.
+ * Katalog MK bisa diambil dua cara:
  *
- * Contoh:
- *   export SIAKAD_EMAIL='email-akademik'
- *   export SIAKAD_PASSWORD='password-akademik'
- *   php admin/cli/ush_prepare_semester_production.php
- *   php admin/cli/ush_prepare_semester_production.php --confirm
+ * 1. Dari file (dianjurkan; server tidak perlu kredensial SIAKAD sama sekali).
+ *    Di lokal : php admin/cli/ush_export_katalog_siakad.php --out=katalog.json
+ *    Unggah katalog.json ke server, lalu:
+ *      php admin/cli/ush_prepare_semester_production.php --from-file=katalog.json
+ *      php admin/cli/ush_prepare_semester_production.php --from-file=katalog.json --confirm
+ *
+ * 2. Langsung dari API SIAKAD, dengan kredensial dari environment
+ *    SIAKAD_EMAIL / SIAKAD_PASSWORD atau argumen --email= / --password=.
  *
  * Opsi:
  *   --semester=20262027Ganjil   Suffix shortname + label tahun (default 20262027Ganjil)
+ *   --from-file=FILE            Baca katalog dari JSON, tidak menghubungi SIAKAD
  *   --confirm                   Benar-benar membuat kategori & kelas
- *   --email= / --password=      Kredensial SIAKAD (kalau tidak pakai environment)
+ *   --email= / --password=      Kredensial SIAKAD (kalau tidak pakai --from-file)
  */
 define('CLI_SCRIPT', true);
+
+// Moodle memindah working directory, jadi catat dulu supaya --from-file relatif tetap ketemu.
+$ushstartcwd = getcwd();
 
 require(__DIR__ . '/../../config.php');
 require_once($CFG->dirroot . '/course/lib.php');
@@ -27,6 +32,7 @@ require_once(__DIR__ . '/ush_course_owner.php');
 
 $SUFFIX = '20262027Ganjil';
 $CONFIRM = false;
+$FROMFILE = '';
 $EMAIL = getenv('SIAKAD_EMAIL') ?: '';
 $PASSWORD = getenv('SIAKAD_PASSWORD') ?: '';
 
@@ -35,6 +41,8 @@ foreach (array_slice($argv, 1) as $arg) {
         $CONFIRM = true;
     } else if (str_starts_with($arg, '--semester=')) {
         $SUFFIX = substr($arg, 11);
+    } else if (str_starts_with($arg, '--from-file=')) {
+        $FROMFILE = substr($arg, 12);
     } else if (str_starts_with($arg, '--email=')) {
         $EMAIL = substr($arg, 8);
     } else if (str_starts_with($arg, '--password=')) {
@@ -56,9 +64,9 @@ $GANJIL = strcasecmp($PERIODE, 'Ganjil') === 0;
 $START = $GANJIL ? mktime(0, 0, 0, 9, 1, (int) $m[1]) : mktime(0, 0, 0, 3, 1, (int) $m[2]);
 $END = $GANJIL ? mktime(0, 0, 0, 2, 28, (int) $m[2]) : mktime(0, 0, 0, 8, 31, (int) $m[2]);
 
-if ($EMAIL === '' || $PASSWORD === '') {
-    mtrace('Kredensial SIAKAD kosong.');
-    mtrace('Set environment SIAKAD_EMAIL dan SIAKAD_PASSWORD, atau pakai --email= --password=');
+if ($FROMFILE === '' && ($EMAIL === '' || $PASSWORD === '')) {
+    mtrace('Katalog MK belum ditentukan.');
+    mtrace('Pakai --from-file=katalog.json (dianjurkan), atau set SIAKAD_EMAIL dan SIAKAD_PASSWORD.');
     exit(1);
 }
 
@@ -66,6 +74,7 @@ mtrace('=== Siapkan semester ' . $LABEL . ' ===');
 mtrace('Site   : ' . $CFG->wwwroot);
 mtrace('Mode   : ' . ($CONFIRM ? 'LIVE (menulis data)' : 'DRY-RUN (tidak menulis)'));
 mtrace('Suffix : *_' . $SUFFIX);
+mtrace('Katalog: ' . ($FROMFILE !== '' ? 'file ' . $FROMFILE : 'API SIAKAD langsung'));
 mtrace('');
 
 function ush_siakad_login(string $email, string $password): ?string {
@@ -103,12 +112,46 @@ function ush_siakad_get(string $url, string $token): array {
     return [$http, json_decode($raw, true)];
 }
 
-$token = ush_siakad_login($EMAIL, $PASSWORD);
-if (!$token) {
-    mtrace('Login SIAKAD gagal. Cek kredensial atau koneksi.');
-    exit(1);
+// Katalog dari file: divalidasi lebih dulu supaya gagal sebelum menyentuh database.
+$filelessons = [];
+$token = null;
+if ($FROMFILE !== '') {
+    if (!is_readable($FROMFILE) && $ushstartcwd && is_readable($ushstartcwd . '/' . $FROMFILE)) {
+        $FROMFILE = $ushstartcwd . '/' . $FROMFILE;
+    }
+    if (!is_readable($FROMFILE)) {
+        mtrace('File katalog tidak terbaca: ' . $FROMFILE);
+        exit(1);
+    }
+    $payload = json_decode(file_get_contents($FROMFILE), true);
+    if (!is_array($payload) || !isset($payload['lessons']) || !is_array($payload['lessons'])) {
+        mtrace('Isi file katalog tidak dikenali. Buat ulang dengan ush_export_katalog_siakad.php');
+        exit(1);
+    }
+    if (empty($payload['complete'])) {
+        mtrace('File katalog ditandai BELUM LENGKAP (unduhan terputus).');
+        mtrace('Jalankan ulang ush_export_katalog_siakad.php di lokal, lalu unggah lagi.');
+        exit(1);
+    }
+    foreach ($payload['lessons'] as $lesson) {
+        $code = strtoupper(trim($lesson['code'] ?? ''));
+        if ($code !== '') {
+            $filelessons[$code] = $lesson;
+        }
+    }
+    if (!$filelessons) {
+        mtrace('File katalog kosong.');
+        exit(1);
+    }
+    mtrace('Katalog dibaca dari file: ' . count($filelessons) . ' kode MK (dibuat ' . ($payload['generated'] ?? '?') . ')');
+} else {
+    $token = ush_siakad_login($EMAIL, $PASSWORD);
+    if (!$token) {
+        mtrace('Login SIAKAD gagal. Cek kredensial atau koneksi.');
+        exit(1);
+    }
+    mtrace('Login SIAKAD: OK');
 }
-mtrace('Login SIAKAD: OK');
 
 // --- Kategori induk tahun akademik ---
 $prodilist = ush_prodi_labels();
@@ -164,10 +207,10 @@ foreach ($prodilist as $kode => $nama) {
 }
 mtrace('Kategori prodi siap: ' . count($catids) . ' ada, ' . $catnew . ($CONFIRM ? ' baru' : ' akan dibuat'));
 
-// --- Katalog MK dari SIAKAD ---
-$lessons = [];
+// --- Katalog MK ---
+$lessons = $filelessons;
 $page = 1;
-while ($page <= 80) {
+while ($token !== null && $page <= 80) {
     [$http, $res] = ush_siakad_get(
         'https://siakad.sugenghartono.ac.id/api/all-lessons?per_page=100&page=' . $page,
         $token
