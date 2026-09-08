@@ -18,6 +18,9 @@
  */
 define('CLI_SCRIPT', true);
 
+// Moodle memindah working directory, jadi catat dulu supaya --out relatif jatuh di tempat yang diharapkan.
+$ushstartcwd = getcwd();
+
 require(__DIR__ . '/../../config.php');
 
 $OUT = __DIR__ . '/katalog_siakad.json';
@@ -38,6 +41,11 @@ foreach (array_slice($argv, 1) as $arg) {
         mtrace('Argumen tidak dikenal: ' . $arg);
         exit(1);
     }
+}
+
+// Path relatif dihitung dari folder tempat perintah dijalankan, bukan folder Moodle.
+if ($ushstartcwd && !preg_match('#^([a-zA-Z]:[\\\\/]|[\\\\/])#', $OUT)) {
+    $OUT = $ushstartcwd . DIRECTORY_SEPARATOR . $OUT;
 }
 
 if ($EMAIL === '' || $PASSWORD === '') {
@@ -94,6 +102,11 @@ $page = 1;
 $lastpage = 0;
 $complete = false;
 $retry = 0;
+// API ini tidak mengirim last_page dan cenderung mengulang halaman terakhir.
+// Katalog dianggap habis kalau beberapa halaman berturut-turut tidak menambah kode baru.
+$nonew = 0;
+$NONEW_LIMIT = 3;
+$lastnewpage = 0;
 
 while ($page <= $MAXPAGES) {
     [$http, $res] = ush_katalog_get(
@@ -117,6 +130,7 @@ while ($page <= $MAXPAGES) {
 
     $retry = 0;
     $items = $res['data'] ?? [];
+    $before = count($lessons);
     foreach ($items as $lesson) {
         $code = strtoupper(trim($lesson['code'] ?? ''));
         if ($code !== '' && !isset($lessons[$code])) {
@@ -128,9 +142,10 @@ while ($page <= $MAXPAGES) {
             ];
         }
     }
+    $baru = count($lessons) - $before;
 
     $lastpage = (int) ($res['meta']['last_page'] ?? $res['last_page'] ?? $lastpage);
-    mtrace("  Page $page/" . ($lastpage ?: '?') . ': ' . count($items) . ' item, unique ' . count($lessons));
+    mtrace("  Page $page/" . ($lastpage ?: '?') . ': ' . count($items) . " item, +$baru baru, unique " . count($lessons));
 
     if (!$items) {
         $complete = true;
@@ -138,6 +153,14 @@ while ($page <= $MAXPAGES) {
     }
     if ($lastpage > 0 && $page >= $lastpage) {
         $complete = true;
+        break;
+    }
+    if ($baru > 0) {
+        $nonew = 0;
+        $lastnewpage = $page;
+    } else if (++$nonew >= $NONEW_LIMIT) {
+        $complete = true;
+        mtrace("  $NONEW_LIMIT halaman berturut-turut tanpa kode baru — katalog dianggap habis.");
         break;
     }
     usleep(300000);
@@ -155,6 +178,7 @@ $payload = [
     'source' => 'siakad.sugenghartono.ac.id/api/all-lessons',
     'pages_fetched' => $page,
     'last_page' => $lastpage,
+    'last_new_page' => $lastnewpage,
     'complete' => $complete,
     'count' => count($lessons),
     'lessons' => array_values($lessons),

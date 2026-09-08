@@ -1,0 +1,2939 @@
+{
+    "generated": "2026-09-08T05:11:39+01:00",
+    "source": "siakad.sugenghartono.ac.id\/api\/all-lessons",
+    "pages_fetched": 4,
+    "last_page": 0,
+    "last_new_page": 1,
+    "complete": true,
+    "count": 488,
+    "lessons": [
+        {
+            "code": "SIF101",
+            "name": "Pengantar Aplikasi Komputer",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF102",
+            "name": "Aljabar Linier",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF103",
+            "name": "Arsitektur Komputer Modern",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF104",
+            "name": "Etika Siber",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF105",
+            "name": "Computational Thinking",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF 108",
+            "name": "Pendidikan Pancasila",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF201",
+            "name": "Bahasa Pemograman Dasar",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF202",
+            "name": "Desain Basis Data",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF203",
+            "name": "Digital Business Development",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF204",
+            "name": "Matematika Diskrit",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF205",
+            "name": "Proses Bisnis",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF206",
+            "name": "English For IT Professional",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF301",
+            "name": "Statistika",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF302",
+            "name": "Algoritma dan Struktur Data",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF303",
+            "name": "Web Dasar",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF304",
+            "name": "Basis Data Lanjut",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF305",
+            "name": "Manajemen Proyek",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "FTB001",
+            "name": "Kecerdasan Bisnis",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF307",
+            "name": "Jaringan Komputer",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF308",
+            "name": "Audit Sistem Informasi",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF401",
+            "name": "Sistem Operasi Komputer",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF402",
+            "name": "Arsitektur dan Keamanan Jaringan",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF403",
+            "name": "Etika Profesi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF404",
+            "name": "Management Sistem Informasi",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "USH001",
+            "name": "Pemikiran Desain",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "FTB002",
+            "name": "Pemasaran Digital",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF406",
+            "name": "Teknologi Multimedia",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF501",
+            "name": "Pemrograman Web Lanjut",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF502",
+            "name": "Metode Penelitian",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF504",
+            "name": "Implementation System and Testing",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF505",
+            "name": "Sistem Komputasi Awan",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF606",
+            "name": "Proyek Inovasi Digital",
+            "semester": 8,
+            "sks_total": 3
+        },
+        {
+            "code": "FTB003",
+            "name": "Desain Antarmuka Pengguna",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF601",
+            "name": "Kerja Praktek-",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF602",
+            "name": "Kewirausahaan Teknologi",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF603",
+            "name": "Distributed Systems-",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF604",
+            "name": "Internet untuk Segala",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF506",
+            "name": "Penglihatan Komputer",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF 901",
+            "name": "Rantai Blok",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF701",
+            "name": "Seminar Proposal Tugas Ahir-",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF702",
+            "name": "KKN-",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF801",
+            "name": "Skripsi-",
+            "semester": 6,
+            "sks_total": 6
+        },
+        {
+            "code": "KGZ106",
+            "name": "Pendidikan Pancasila",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "MKU006",
+            "name": "Kewarganegaraan",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ302",
+            "name": "Matematika",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ303",
+            "name": "Metabolisme Energi dan Gizi Makro",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ305",
+            "name": "Mutu dan Keamanan Pangan",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ306",
+            "name": "Pengantar Psikologi",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ307",
+            "name": "Dasar Manajemen",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ602",
+            "name": "Interaksi Obat dan Makanan",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ304",
+            "name": "Metabolisme Gizi Mikro",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ404",
+            "name": "Dietetika Penyakit Infeksi dan Defisiensi",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ309",
+            "name": "Penilaian Status Gizi",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ502",
+            "name": "Patofisiologi Penyakit Tidak Menular",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ308",
+            "name": "Penilaian Konsumsi Pangan",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ501",
+            "name": "Dietetika Penyakit Tidak Menular",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ507",
+            "name": "Pengembangan Media Komunikasi",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ606",
+            "name": "Nutrigenomik",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ802",
+            "name": "Skripsi",
+            "semester": 8,
+            "sks_total": 4
+        },
+        {
+            "code": "SGZ106",
+            "name": "Biologi Manusia",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ108",
+            "name": "Kimia Dasar",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "MKU002",
+            "name": "Pancasila",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ107",
+            "name": "Pengantar Komunikasi",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "MKU001",
+            "name": "Agama",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ105",
+            "name": "Ekologi Pangan dan Gizi",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ205",
+            "name": "Dasar Biokimia Gizi",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ104",
+            "name": "Sosio Antropologi Gizi",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "MKU005",
+            "name": "Bahasa Inggris",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ103",
+            "name": "Dasar Ilmu Gizi",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ207",
+            "name": "Ilmu Bahan Pangan",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ203",
+            "name": "Epidemiologi Gizi",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ206",
+            "name": "Gizi dalam Daur Kehidupan",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "FIK001",
+            "name": "Anatomi Fisiologi",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "MKU004",
+            "name": "Bahasa Indonesia",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SBD101",
+            "name": "Pengantar Teori Ekonomi",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD102",
+            "name": "Pengantar Akuntansi",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD103",
+            "name": "Pengantar Bisnis Digital",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD104",
+            "name": "Dasar Teknologi Informasi",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD201",
+            "name": "Statistik Bisnis",
+            "semester": 8,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD202",
+            "name": "Literasi digital",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "SBD203",
+            "name": "Pengantar Manajemen",
+            "semester": 8,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD204",
+            "name": "Sistem Basis Data",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD205",
+            "name": "Bahasa Inggris Bisnis",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD206",
+            "name": "Sistem Informasi Akuntansi",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD301",
+            "name": "Etika Bisnis Digital",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD309",
+            "name": "Manajemen Strategi",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD302",
+            "name": "Manajemen SDM dan Organisasi",
+            "semester": 7,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD303",
+            "name": "Manajemen Operasional",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD304",
+            "name": "Manajemen Keuangan",
+            "semester": 7,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD305",
+            "name": "Manajemen Strategi",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD401",
+            "name": "Komunikasi untuk Bisnis",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD402",
+            "name": "Studi Kelayakan Bisnis",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD403",
+            "name": "Manajemen Hubungan Pelanggan",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD404",
+            "name": "Big Data dan Analisis Bisnis",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD405",
+            "name": "Teknologi Finansial",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD507",
+            "name": "Pemrograman Aplikasi Mobile",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD501",
+            "name": "Penggalangan Dana",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD502",
+            "name": "Metodologi Penelitian",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD503",
+            "name": "Sistem Komputasi Awan",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD504",
+            "name": "Analisis Perilaku Konsumen",
+            "semester": 8,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD505",
+            "name": "Manajemen Proyek",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD506",
+            "name": "Pemasaran Merek Digital",
+            "semester": 8,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD409",
+            "name": "Desain Antarmuka Pengguna",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD601",
+            "name": "Internet untuk Segala",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD602",
+            "name": "Manajemen Risiko",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD603",
+            "name": "Kewirausahaan Kreatif Digital",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD604",
+            "name": "Manajemen Investasi",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD605",
+            "name": "PKL \/ Magang",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD701",
+            "name": "Perdagangan Elektronik",
+            "semester": 7,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD702",
+            "name": "Manajemen Media Sosial",
+            "semester": 7,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD703",
+            "name": "Simulasi Bisnis Digital",
+            "semester": 7,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD704",
+            "name": "Kuliah Kerja Nyata",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SBD801",
+            "name": "Skripsi",
+            "semester": 8,
+            "sks_total": 6
+        },
+        {
+            "code": "MKU003",
+            "name": "Pendidikan Anti Korupsi",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ208",
+            "name": "Dasar Kulinari",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "USH009",
+            "name": "Bahasa Mandarin",
+            "semester": 1,
+            "sks_total": 0
+        },
+        {
+            "code": "USH010",
+            "name": "Bahasa Mandarin 2",
+            "semester": 1,
+            "sks_total": 0
+        },
+        {
+            "code": "SGZ301",
+            "name": "Analisis Zat Gizi",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "TES-01",
+            "name": "Tes matkul 1",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "MKU901",
+            "name": "Bahasa Mandarin Lanjutan",
+            "semester": 2,
+            "sks_total": 0
+        },
+        {
+            "code": "SGZ401",
+            "name": "Teknologi Pangan",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ402",
+            "name": "Gizi Olahraga",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ403",
+            "name": "Pendidikan Gizi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ405",
+            "name": "Patofisiologi Penyakit Infeksi dan Defisiensi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ406",
+            "name": "Manajemen Industri Jasa Pangan",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ407",
+            "name": "Gizi Kerja",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ408",
+            "name": "Proses Asuhan Gizi Terstandar (NCP)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ503",
+            "name": "Konsultasi Gizi",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ504",
+            "name": "English Nutrition",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ604",
+            "name": "Statistika",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ505",
+            "name": "Metode Penelitian Gizi",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ506",
+            "name": "Functional Food Development",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ508",
+            "name": "Mikrobiologi Pangan",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ601",
+            "name": "Kewirausahaan Gizi",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ603",
+            "name": "Perkembangan Gizi Terkini",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "FIK002",
+            "name": "Bioetika",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ605",
+            "name": "Makanan Enteral",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ607",
+            "name": "Introduction Technology for Nutrition",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ701",
+            "name": "Seminar Proposal",
+            "semester": 7,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ702",
+            "name": "Praktik Kerja Gizi Masyarakat",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SGZ703",
+            "name": "Praktik Kerja Gizi Institusi",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SGZ704",
+            "name": "Praktik Kerja Gizi Olahraga",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SGZ705",
+            "name": "KKN Tematik",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SGZ801",
+            "name": "Praktik Kerja Dietetik",
+            "semester": 8,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF306",
+            "name": "Business Intelligence -",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF405",
+            "name": "Artificial Intelligence",
+            "semester": 4,
+            "sks_total": 4
+        },
+        {
+            "code": "SBD306",
+            "name": "Pemrograman Web",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD406",
+            "name": "Sistem Informasi Manajemen",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD606",
+            "name": "Pengambilan Keputusan dan Pemecahan Masalah",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "SBD607",
+            "name": "Business Negotiation",
+            "semester": 8,
+            "sks_total": 2
+        },
+        {
+            "code": "SBD608",
+            "name": "Manajemen Retail",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SBD609",
+            "name": "Bisnis Internasional",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "SBD610",
+            "name": "Bahasa Mandarin",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF 902",
+            "name": "Grafika Komputer",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF 903",
+            "name": "Bahasa Asing",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF 1001",
+            "name": "Kota Cerdas",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF 1002",
+            "name": "AR\/VR",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF1003",
+            "name": "Pemrograman Gim",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF 1004",
+            "name": "Pemrograman Mobile",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF507",
+            "name": "Decision Support System",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SGZ608",
+            "name": "Berpikir Desain (Manajemen Program Gizi)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0701",
+            "name": "Introduction of Indonesian Law (Pengantar Hukum Indonesia)",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0702",
+            "name": "Introduction of Law and Business Law (Pengantar Ilmu Hukum dan Hukum Bisnis)",
+            "semester": 9,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0703",
+            "name": "State Science (Ilmu Negara)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0002",
+            "name": "Pancasila Education",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0004",
+            "name": "Religious Education (Pendidikan Agama)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0003",
+            "name": "Civic Education (Kewarganegaraan)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0011",
+            "name": "Academic of English (Bahasa Inggris)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0012",
+            "name": "Design Thinking",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0001",
+            "name": "BAHASA INDONESIA",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0801",
+            "name": "INTRODUCTION TO MANAGEMENT AND BUSINESS",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0802",
+            "name": "INTRODUCTION TO ACCOUNTING",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IUM0005",
+            "name": "MANDARIN LANGUAGE I (PERTEMUAN 1)",
+            "semester": 1,
+            "sks_total": 0
+        },
+        {
+            "code": "IDM0805",
+            "name": "INTRODUCTION TO ECONOMICS",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0806",
+            "name": "INTERNATIONAL BUSINESS",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IFM0202",
+            "name": "ENGLISH FOR BUSINESS",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0807",
+            "name": "INTERNATIONAL FINANCIAL MANAGEMENT",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0808",
+            "name": "NON-PROFIT ORGANIZATION MANAGEMENT",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IUM0006",
+            "name": "MANDARIN LANGUAGE II",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0804",
+            "name": "MULTINATIONAL CORPORATION MANAGEMENT",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0803",
+            "name": "BUSINESS COMMUNICATION",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0501",
+            "name": "Economic Theory",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0502",
+            "name": "Digital Information System",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IUM0008",
+            "name": "Bahasa Inggris",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0009",
+            "name": "Design Thinking",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0301",
+            "name": "Dasar Ilmu Gizi",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0302",
+            "name": "Kimia Dasar",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0601",
+            "name": "Security Policy and Management",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0602",
+            "name": "Computational Thinking",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF508",
+            "name": "Decision Support System",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF605",
+            "name": "Proyek Inovasi Digital",
+            "semester": 6,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF903",
+            "name": "Bahasa Asing (Mandarin)",
+            "semester": 9,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0401",
+            "name": "Kimia Dasar (Anorganik)",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0402",
+            "name": "Pengantar Teknologi Pangan",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0013",
+            "name": "Design Thinking",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0603",
+            "name": "Digital Business Development",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "SIF902",
+            "name": "Grafika Komputer",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0704",
+            "name": "State Administrative Law (Hukum Administrasi Negara)",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0705",
+            "name": "Constitutional Law (Hukum Tata Negara)",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0706",
+            "name": "Civil Law (Hukum Perdata)",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0707",
+            "name": "Legal Theory (Teori Hukum)",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0709",
+            "name": "Criminal Law (Hukum Pidana)",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0710",
+            "name": "Political Law (Politik Hukum)",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0712",
+            "name": "Commercial Law (Hukum Dagang)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0503",
+            "name": "Business & Management Introduction",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0504",
+            "name": "Business Statistic",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0505",
+            "name": "Business Accounting",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0506",
+            "name": "Programming Algorithm & Fundamental",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0507",
+            "name": "Database Management",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0508",
+            "name": "Organizational Behaviour",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0604",
+            "name": "Modern Computer Architecture and Organization",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IFM0102",
+            "name": "English for Foodtech",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM0007",
+            "name": "Bahasa Mandarin II",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0403",
+            "name": "Kimia Fisika",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0404",
+            "name": "Fisika Pangan",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0405",
+            "name": "Biologi",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0404P",
+            "name": "Praktikum Fisika Pangan",
+            "semester": 2,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0405P",
+            "name": "Praktikum Biologi",
+            "semester": 2,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0406",
+            "name": "Kalkulus",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0407",
+            "name": "Kimia Dasar II (Organik)",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0408",
+            "name": "Sifat dan Pengetahuan Bahan Pangan",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0605",
+            "name": "Basic Programming",
+            "semester": 2,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0606",
+            "name": "Database Design",
+            "semester": 2,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0607",
+            "name": "Linear Algebra",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0608",
+            "name": "Business Process",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF901",
+            "name": "Rantai Blok",
+            "semester": 6,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF1001",
+            "name": "Kota Cerdas",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0303",
+            "name": "Analisis Zat Gizi",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0304",
+            "name": "Matematika Statistika",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0305",
+            "name": "Gizi Kulinari",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0306",
+            "name": "Biokimia Gizi",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0308",
+            "name": "Ilmu Bahan Pangan",
+            "semester": 2,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0309",
+            "name": "Pengantar Komunikasi",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0307",
+            "name": "Biologi Manusia",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "SGZ610",
+            "name": "Nutraseutikal",
+            "semester": 6,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0809",
+            "name": "International Human Resource Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0810",
+            "name": "International Operation Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0811",
+            "name": "International Business Law",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0812",
+            "name": "International Marketing Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0813",
+            "name": "Business Statistics",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0815",
+            "name": "Accounting Information Systems",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0814",
+            "name": "International Trade",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0816",
+            "name": "Leadership for Business",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0718",
+            "name": "Licensing Business (Perizinan Bisnis)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0721",
+            "name": "Law on Drafting Legislative Regulations (Hukum Perancangan Peraturan Perundang-undangan)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0719",
+            "name": "Company Law (Hukum Perusahaan)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0714",
+            "name": "Customary Law (Hukum Adat)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0783",
+            "name": "Professional Ethics (Etika Profesi)",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0717",
+            "name": "Compilation of Islamic Law (Kompilasi Hukum Islam)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0713",
+            "name": "Tax Law (Hukum Pajak)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0716",
+            "name": "Introduction of Environmental Law (Pengantar Hukum Lingkungan)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0715",
+            "name": "Employment Law (Hukum Ketenagakerjaan)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0722",
+            "name": "Basics of Legal Research Methods (Dasar-dasar Metode Penelitian Hukum)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0720",
+            "name": "Customary Inheritance Law, Civil Code and Islamic Law - (Hukum Waris BW, Adat dan Islam)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0730",
+            "name": "ADR & Restorative Justice (Alternatif Penyelesaian Sengketa)",
+            "semester": 9,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0609",
+            "name": "Operating System",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0610",
+            "name": "Algorithms and Data Structures",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0611",
+            "name": "Kalkulus",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0612",
+            "name": "Web Programming 1",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0613",
+            "name": "Project Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0614",
+            "name": "Computer Network",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0615",
+            "name": "Discrete Mathematics",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0616",
+            "name": "Information System Audit",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF509",
+            "name": "Kewarganegaraan",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "SIF1002",
+            "name": "Realitas Berimbuh dan Realitas Maya",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "SIF1004",
+            "name": "Mobile Programming",
+            "semester": 7,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0310",
+            "name": "Penilaian Status Gizi",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0311",
+            "name": "Pengantar Psikologi",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0312",
+            "name": "Penilaian Konsumsi Pangan",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0313",
+            "name": "Metabolisme Energi dan Gizi Makro",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0314",
+            "name": "Metabolisme Gizi Mikro",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0315",
+            "name": "Dasar Manajemen",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0316",
+            "name": "Epidemiologi Gizi",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0317",
+            "name": "Anatomi Fisiologi",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0318",
+            "name": "Gizi dalam Daur Kehidupan",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0509",
+            "name": "Marketing Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0510",
+            "name": "Financial Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0511",
+            "name": "Human Resource Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0512",
+            "name": "Operation Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0513",
+            "name": "Strategic Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0514",
+            "name": "Web Development",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0515",
+            "name": "Business Intelligence",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0516",
+            "name": "Risk Management",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0409",
+            "name": "Mikrobiologi Umum",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0409P",
+            "name": "Praktikum Mikrobiologi Umum",
+            "semester": 3,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0410",
+            "name": "Human Nutrition",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0411",
+            "name": "Kimia Pangan",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0411P",
+            "name": "Praktikum Kimia Pangan",
+            "semester": 3,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0412",
+            "name": "Biokimia Pangan",
+            "semester": 3,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0423",
+            "name": "Satuan Operasi Rekayasa Pangan 1",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0423P",
+            "name": "Praktikum Satuan Operasi Rekayasa Pangan 1",
+            "semester": 3,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0413P",
+            "name": "Praktikum Evaluasi Nilai Gizi pada Pengolahan",
+            "semester": 3,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0414",
+            "name": "Food Legal",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0418",
+            "name": "Keamanan Pangan & Sanitasi Industri",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0418P",
+            "name": "Praktikum Keamanan Pangan & Sanitasi Industri",
+            "semester": 3,
+            "sks_total": 1
+        },
+        {
+            "code": "IUM0014",
+            "name": "Entrepreneurial Development : Mindsets & Concept",
+            "semester": 3,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0401P",
+            "name": "Praktikum Kimia Dasar I (Anorganik)",
+            "semester": 1,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0517",
+            "name": "Digital Marketing",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0817",
+            "name": "Digital Business",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0518",
+            "name": "Digital Economic Literacy",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0818",
+            "name": "Web Development",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0519",
+            "name": "UI\/UX",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IFM0201",
+            "name": "Professional Development",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0520",
+            "name": "Mobile Development",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0819",
+            "name": "Content Development",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0521",
+            "name": "Methodology Research",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0820",
+            "name": "Perdagangan Elektronik",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0833",
+            "name": "Organizational Behaviour",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0822",
+            "name": "Business Feasibility Study",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0522",
+            "name": "Financial Information System I",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0523",
+            "name": "Digital Marketing Research & Trend",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0524",
+            "name": "Digital Branding & Reputation",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0525",
+            "name": "Consumer Analytics",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0526",
+            "name": "Digital Marketing Strategic",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0527",
+            "name": "E-commerce",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0528",
+            "name": "Social Media Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0529",
+            "name": "Visual Communication",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0530",
+            "name": "Digital Financial",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0531",
+            "name": "Accounting Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0532",
+            "name": "Business Valuation",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0533",
+            "name": "Investment Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0534",
+            "name": "Financial Accounting",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0535",
+            "name": "Tax of Business",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0536",
+            "name": "Capital Fundraising",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0723",
+            "name": "Legal Philosophy (Filsafat Hukum)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0724",
+            "name": "Criminal Procedure Law (Hukum Acara Pidana)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0726",
+            "name": "Civil Procedure Law  (Hukum Acara Perdata)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0727",
+            "name": "Legal Due Diligence (Penelahaan Hukum)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0728",
+            "name": "Corporate Criminal Offense (Kejahatan Korporasi)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0729",
+            "name": "Commercial Court Procedural Law  (Hukum Acara Pengadilan Niaga)",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IUM0010",
+            "name": "Enterpreneural Development",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0708",
+            "name": "International Law (Hukum Internasional)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0711",
+            "name": "Law and Human Rights (Hukum dan HAM)",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0537",
+            "name": "Big Data for Business",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0319",
+            "name": "Teknologi Pangan",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0538",
+            "name": "Business Statistic II",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0320",
+            "name": "Statistika",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0539",
+            "name": "Business Mathematics",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0321",
+            "name": "Manajemen Industri Jasa Pangan",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0322",
+            "name": "Patofisiologi Penyakit Infeksi dan Defisiensi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0540",
+            "name": "Ethical Hacking for Business",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0323",
+            "name": "Asuhan Gizi dan Dietetik Penyakit Infeksi dan Defisiensi",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0324",
+            "name": "Gizi Olahraga",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0325",
+            "name": "Sosio Antropologi Gizi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0326",
+            "name": "Pendidikan Gizi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0327",
+            "name": "Konseling dan Konsultasi Gizi",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0417",
+            "name": "Satuan Operasi Rekayasa Pangan II",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0417P",
+            "name": "Praktikum Satuan Operasi Rekayasa Pangan 2",
+            "semester": 4,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0416",
+            "name": "Mikrobiologi Pangan",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0420",
+            "name": "Statistika dan Analisis data",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0420P",
+            "name": "Praktikum Statistika dan Analisis Data",
+            "semester": 4,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0419",
+            "name": "Analisis Pangan",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0419P",
+            "name": "Praktikum Analisis Pangan",
+            "semester": 4,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0415",
+            "name": "Evaluasi Sensoris",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0415P",
+            "name": "Praktikum Evaluasi Sensoris",
+            "semester": 4,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0422",
+            "name": "Food Quality System",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0424",
+            "name": "Proses Thermal",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0617",
+            "name": "Network Architecture and Security",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0618",
+            "name": "Management Information System",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0619",
+            "name": "Artificial Intelligence",
+            "semester": 4,
+            "sks_total": 4
+        },
+        {
+            "code": "IDM0620",
+            "name": "Business Intelligence",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0621",
+            "name": "Digital Marketing",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0622",
+            "name": "Web Programming 2",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0416P",
+            "name": "Praktikum Mikrobiologi Pangan",
+            "semester": 4,
+            "sks_total": 1
+        },
+        {
+            "code": "SGZ611",
+            "name": "Bahasa Asing (Mandarin)",
+            "semester": 6,
+            "sks_total": 0
+        },
+        {
+            "code": "GDM501",
+            "name": "Basic Listening Skills",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "GDM502",
+            "name": "basic speaking skills",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "GDM503",
+            "name": "basic reading skills",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "GDM504",
+            "name": "basic grammar skills",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "GDM505",
+            "name": "basic writing skills",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM706",
+            "name": "Listening Comprehension",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM707",
+            "name": "English Spoken Interaction",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM708",
+            "name": "Comprehensive Reading",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM709",
+            "name": "Intermediate Grammar",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM710",
+            "name": "Creative Content Writing",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM711",
+            "name": "Cultural Theories and Studies",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM712",
+            "name": "Introduction to LIterature",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM713",
+            "name": "Introduction to General Linguistics",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM714",
+            "name": "Social Ethics",
+            "semester": 2,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM002605",
+            "name": "Mandarin I",
+            "semester": 1,
+            "sks_total": 0
+        },
+        {
+            "code": "IUM002604",
+            "name": "Religious Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM002602",
+            "name": "Pancasila Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM002603",
+            "name": "Citizenship Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM002601",
+            "name": "Bahasa Indonesia",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM002613",
+            "name": "Academic English",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM032601",
+            "name": "Basic Chemistry",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM032602",
+            "name": "Basic Chemistry Laboratory",
+            "semester": 1,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM032603",
+            "name": "Fundamentals of Nutrition",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM032604",
+            "name": "Food Sciences",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM032605",
+            "name": "Food Sciences Laboratory",
+            "semester": 1,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM032606",
+            "name": "Human Biology",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IFM0101",
+            "name": "Food for Wellness",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IFM0103",
+            "name": "Fungtional Food Development",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0328",
+            "name": "Introduction Technology for Nutrition",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0329",
+            "name": "Digital Marketing Strategy for Nutrition",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0330",
+            "name": "Patofisiologi Penyakit Tidak Menular",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0331",
+            "name": "Asuhan Gizi dan Dietetika Penyakit Tidak Menular",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0332",
+            "name": "Metodologi Penelitian",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0333",
+            "name": "Bioetika",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0334",
+            "name": "Manajemen Program Gizi",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0830",
+            "name": "Supply Chain Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0831",
+            "name": "Supplier Relationship Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0825",
+            "name": "Business Ethics",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0824",
+            "name": "Integrated Business System I",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0832",
+            "name": "Export-Import Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0866",
+            "name": "Law on the Procurement of Goods and Services",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0827",
+            "name": "Strategic Management",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM026801",
+            "name": "Introduction to Management and Business",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM026805",
+            "name": "Introduction to Economics",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM026802",
+            "name": "Introduction to Accounting",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IFM022601",
+            "name": "Artificial Intelligence for Business",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM02026701",
+            "name": "Introduction of Law and Business Law (Pengantar  Ilmu Hukum dan Hukum Bisnis)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM02026702",
+            "name": "Introduction of Indonesian Law (Pengantar Hukum Indonesia)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM02026703",
+            "name": "Commercial Law (Hukum Dagang)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM02026704",
+            "name": "State Science (Ilmu Negara)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IFM02202601",
+            "name": "AI (Artificial Intelligence) for Business Law",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM00202601",
+            "name": "Bahasa Indonesia - Indonesian",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM00202602",
+            "name": "Pancasila Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM00202603",
+            "name": "Civic Education (Kewarganegaraan)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM00202604",
+            "name": "Religious Education (Pendidikan Agama)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM00202613",
+            "name": "Academic of English (Bahasa Inggris)",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM00202605",
+            "name": "Mandarin Language 1 (Bahasa Mandarin 1) - HSK 1",
+            "semester": 1,
+            "sks_total": 0
+        },
+        {
+            "code": "IDM0731",
+            "name": "Economic Law (Hukum Ekonomi)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0732",
+            "name": "Insurance Law (Hukum Asuransi)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0733",
+            "name": "Capital Market Law (Hukum Pasar Modal)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0734",
+            "name": "Collateral Law (Hukum Jaminan)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0735",
+            "name": "Investment Law (Hukum Investasi)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0736",
+            "name": "Engagement and Agreement Law (Hukum Perikatan dan Perjanjian)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0737",
+            "name": "Auction Regulation (Peraturan Lelang)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM05202601",
+            "name": "Business & Management Introduction",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM05202602",
+            "name": "Economic Theory",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM05202603",
+            "name": "Computational Thinking",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0428",
+            "name": "Metode Penelitian dan Rancangan Percobaan",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IFM0103P",
+            "name": "Praktikum Functional Food Development",
+            "semester": 5,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM0426",
+            "name": "Packaging and Product Design",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM0426P",
+            "name": "Praktikum Packaging and Product Design",
+            "semester": 5,
+            "sks_total": 1
+        },
+        {
+            "code": "IDE0402",
+            "name": "Entrepreneurial Development : Product Launch",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDE0406",
+            "name": "Teknologi Minuman dan Bahan Penyegar",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDE0406P",
+            "name": "Praktikum Teknologi Minuman dan Bahan Penyegar",
+            "semester": 5,
+            "sks_total": 1
+        },
+        {
+            "code": "IDE0412",
+            "name": "Food Preservation",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDE0412P",
+            "name": "Praktikum Food Preservation",
+            "semester": 5,
+            "sks_total": 1
+        },
+        {
+            "code": "IDE0414",
+            "name": "Bakery and Confectionary Technology",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDE0414P",
+            "name": "Praktikum Bakery and Confectionary Technology",
+            "semester": 5,
+            "sks_total": 1
+        },
+        {
+            "code": "IDE0422",
+            "name": "Fat and Lipid Technology",
+            "semester": 5,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM042603",
+            "name": "Kimia Dasar \/ Basic Chemistry",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM042603P",
+            "name": "Praktikum Kimia Dasar \/ Basic Chemistry Laboratory",
+            "semester": 1,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM042604",
+            "name": "Pengantar Teknologi Pangan\/ Introduction to Food Technology",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM042605",
+            "name": "Biologi\/ Biology",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM042605P",
+            "name": "Praktikum Biologi\/ Biology Laboratory",
+            "semester": 1,
+            "sks_total": 1
+        },
+        {
+            "code": "IDM062601",
+            "name": "Security Policy and Management",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM062602",
+            "name": "Computational Thinking",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM062603",
+            "name": "Digital Business Development",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0623",
+            "name": "Statistics",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0624",
+            "name": "Implementation System and Testing",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0625",
+            "name": "Innovative Digital Branding",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0626",
+            "name": "UI\/UX",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0627",
+            "name": "3D Design",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0628",
+            "name": "Graphic Design",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0629",
+            "name": "Pemograman Game",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0630",
+            "name": "Enterprise Resource Planning (ERP)",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0541",
+            "name": "Data Mining",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0542",
+            "name": "Data Processing and Visualization",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM0543",
+            "name": "Data Science Introduction",
+            "semester": 5,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092601",
+            "name": "Basic Academic English Communication",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092607",
+            "name": "Grammar for Meaning & Use I",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092603",
+            "name": "Listening and Pronunciation",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092605",
+            "name": "Basic Reading",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "IUM002608",
+            "name": "Mandarin Language IV",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IUM002614",
+            "name": "Design Thinking",
+            "semester": 4,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM092614",
+            "name": "Professional & Academic Writing II",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092615",
+            "name": "Language Data Analytics",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092616",
+            "name": "Applied Linguistics",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092617",
+            "name": "Media & Popular Culture",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092618",
+            "name": "Statistics",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "IDM092619",
+            "name": "Foundations of Multilingual Communication & Learning Analytics",
+            "semester": 4,
+            "sks_total": 3
+        },
+        {
+            "code": "DUM002601",
+            "name": "Bahasa Indonesia",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "DUM002602",
+            "name": "Pancasila Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "DUM002603",
+            "name": "Civic Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "DUM002604",
+            "name": "Religious Education",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "DUM002605",
+            "name": "Mandarin Language I",
+            "semester": 1,
+            "sks_total": 0
+        },
+        {
+            "code": "DUM002613",
+            "name": "Academic English",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "DDM021101",
+            "name": "Introduction to Accounting",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "DDM021102",
+            "name": "Mathematics of Economics and Business",
+            "semester": 1,
+            "sks_total": 3
+        },
+        {
+            "code": "DDM021103",
+            "name": "Economics",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM102602",
+            "name": "Introduction to Tourism Studies",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM102604",
+            "name": "Tourism Communication and Public Relations",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM102603",
+            "name": "Professional Development",
+            "semester": 1,
+            "sks_total": 2
+        },
+        {
+            "code": "IDM102601",
+            "name": "Introduction to Hospitality & Service Excellence",
+            "semester": 1,
+            "sks_total": 3
+        }
+    ]
+}
