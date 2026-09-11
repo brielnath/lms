@@ -248,8 +248,10 @@ $enrolplugin = enrol_get_plugin('manual');
 $created = 0;
 $skipped = 0;
 $ignoredperiode = 0;
+$ignoredkkn = 0;
 $nonofficial = 0;
 $perprodi = [];
+$skipre = '/(kkn|skripsi|kerja praktik|praktik kerja|kuliah kerja|seminar proposal)/i';
 
 foreach ($lessons as $code => $lesson) {
     // Hanya kurikulum resmi (IDM/IUM/IFM/IDE/GDM); kode lama diabaikan.
@@ -265,6 +267,10 @@ foreach ($lessons as $code => $lesson) {
     }
     $name = trim($lesson['name'] ?? '');
     if ($name === '') {
+        continue;
+    }
+    if (preg_match($skipre, $name . ' ' . $code)) {
+        $ignoredkkn++;
         continue;
     }
 
@@ -334,6 +340,7 @@ mtrace('=== RINGKASAN ===');
 mtrace('  Kelas ' . ($CONFIRM ? 'dibuat' : 'akan dibuat') . ' : ' . $created);
 mtrace('  Sudah ada / dilewati    : ' . $skipped);
 mtrace('  MK periode lain         : ' . $ignoredperiode);
+mtrace('  KKN/Skripsi/KP dilewati : ' . $ignoredkkn);
 mtrace('  Kode non-kurikulum baru : ' . $nonofficial);
 foreach ($perprodi as $prodi => $n) {
     mtrace("    $prodi : $n");
