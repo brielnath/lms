@@ -416,12 +416,6 @@
     color: #6b7280;
 }
 
-.ush-kpmon__hint {
-    color: #6b7280;
-    font-size: 0.9rem;
-    margin: 0 0 12px;
-}
-
 .ush-kpmon__tablewrap {
     overflow-x: auto;
 }

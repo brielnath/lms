@@ -4,6 +4,10 @@
  * (user preferences siakad_prodi + siakad_angkatan).
  *
  * php local/siakad_sync/cli/build_cohorts.php
+ *
+ * Hanya menambah dari preferensi SIAKAD. Untuk rapikan anggota salah
+ * (berdasarkan NIM), pakai:
+ *   php admin/cli/ush_rebuild_cohorts.php
  */
 
 define('CLI_SCRIPT', true);

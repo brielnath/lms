@@ -31,7 +31,6 @@ class monitor {
         foreach ($categories as $category) {
             $labels[] = format_string($category->name);
         }
-
         $attention = array_values(array_filter($courses, static function ($c) {
             return !empty($c['haspending']);
         }));

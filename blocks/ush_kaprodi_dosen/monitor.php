@@ -12,7 +12,11 @@ $courseid = optional_param('courseid', 0, PARAM_INT);
 
 $context = context_system::instance();
 $PAGE->set_context($context);
-$PAGE->set_url(new moodle_url('/blocks/ush_kaprodi_dosen/monitor.php', $courseid ? ['courseid' => $courseid] : []));
+$urlparams = [];
+if ($courseid) {
+    $urlparams['courseid'] = $courseid;
+}
+$PAGE->set_url(new moodle_url('/blocks/ush_kaprodi_dosen/monitor.php', $urlparams));
 $PAGE->set_pagelayout('report');
 $PAGE->set_title(get_string('monitortitle', 'block_ush_kaprodi_dosen'));
 $PAGE->set_heading(get_string('monitortitle', 'block_ush_kaprodi_dosen'));
