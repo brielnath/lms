@@ -4,7 +4,7 @@
 # Unggah dulu peserta_20262027Ganjil.json ke folder yang sama (jangan lewat git).
 #
 #   bash admin/cli/ush_production_dryrun.sh
-set -euo pipefail
+set -uo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"

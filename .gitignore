@@ -1,5 +1,10 @@
 # Config Moodle berbeda di setiap server. Jangan di-commit/push.
 /config.php
 
+# Ekspor peserta SIAKAD berisi NIM dan nama. Jangan di-commit/push.
+/peserta_*.json
+/admin/cli/peserta_*.json
+/siakad_cookie.txt
+
 course/format/remuiformat/.gitignore
 course/format/remuiformat/

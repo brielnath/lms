@@ -27,8 +27,15 @@ $prodi_siakad = [
 ];
 
 $mixedshort = 'IUM002602_20262027Ganjil';
-$veronica = $DB->get_record('user', ['username' => 'dosen_8420', 'deleted' => 0], '*', MUST_EXIST);
-$imam = $DB->get_record('user', ['username' => 'dosen_8451', 'deleted' => 0], '*', MUST_EXIST);
+$veronica = $DB->get_record('user', ['username' => 'dosen_8420', 'deleted' => 0]);
+$imam = $DB->get_record('user', ['username' => 'dosen_8451', 'deleted' => 0]);
+if (!$veronica || !$imam) {
+    mtrace('Pecah Pancasila ditunda: akun pengampu belum ada.');
+    mtrace('  dosen_8420 Veronica: ' . ($veronica ? 'ada' : 'BELUM'));
+    mtrace('  dosen_8451 Imam    : ' . ($imam ? 'ada' : 'BELUM'));
+    mtrace('Jalankan dulu enrol dosen --confirm, lalu ulangi skrip ini.');
+    exit(0);
+}
 $teacherrole = (int) $DB->get_field('role', 'id', ['shortname' => 'editingteacher'], MUST_EXIST);
 $studentrole = (int) $DB->get_field('role', 'id', ['shortname' => 'student'], MUST_EXIST);
 $enrolplugin = enrol_get_plugin('manual');
