@@ -1,0 +1,70 @@
+{
+  "code": "IDM0629",
+  "shortname": "IDM0629_20262027Ganjil",
+  "title": "Pemograman Game",
+  "sks": 3,
+  "prodi": "Informatika",
+  "note": "Peta uji OBE satu MK. CPMK draf sampai RPS resmi dikunci kaprodi. Nilai MK ke SIAKAD tetap rumus USH, bukan rata-rata CPMK.",
+  "ush_weights": {
+    "USH_PRESENSI": 0.10,
+    "USH_TUGAS": 0.20,
+    "USH_KUIS": 0.10,
+    "USH_UTS": 0.30,
+    "USH_UAS": 0.30
+  },
+  "cpl": [
+    {
+      "id": "CPL-P",
+      "text": "Menguasai konsep, arsitektur, dan alur kerja game digital."
+    },
+    {
+      "id": "CPL-KK",
+      "text": "Mampu merancang, membangun, dan menguji prototipe game."
+    },
+    {
+      "id": "CPL-S",
+      "text": "Bertanggung jawab pada proses pengerjaan secara mandiri maupun tim."
+    }
+  ],
+  "cpmk": [
+    {
+      "id": "CPMK-1",
+      "text": "Menjelaskan konsep, genre, dan arsitektur game digital.",
+      "cpl": ["CPL-P"],
+      "sources": [{ "idnumber": "USH_KUIS", "weight": 1.0 }]
+    },
+    {
+      "id": "CPMK-2",
+      "text": "Menerapkan logika, input, sprite, dan fisika dasar pada prototipe.",
+      "cpl": ["CPL-KK", "CPL-S"],
+      "sources": [
+        { "idnumber": "USH_TUGAS", "weight": 0.85 },
+        { "idnumber": "USH_PRESENSI", "weight": 0.15 }
+      ]
+    },
+    {
+      "id": "CPMK-3",
+      "text": "Merancang dan membangun prototipe game (mekanik dan antarmuka) pada tengah semester.",
+      "cpl": ["CPL-KK"],
+      "sources": [{ "idnumber": "USH_UTS", "weight": 1.0 }]
+    },
+    {
+      "id": "CPMK-4",
+      "text": "Menyelesaikan, menguji, dan mempresentasikan produk game pada akhir semester.",
+      "cpl": ["CPL-KK", "CPL-S"],
+      "sources": [{ "idnumber": "USH_UAS", "weight": 1.0 }]
+    }
+  ],
+  "cpl_from_cpmk": {
+    "CPL-P": [{ "id": "CPMK-1", "weight": 1.0 }],
+    "CPL-KK": [
+      { "id": "CPMK-2", "weight": 0.4 },
+      { "id": "CPMK-3", "weight": 0.3 },
+      { "id": "CPMK-4", "weight": 0.3 }
+    ],
+    "CPL-S": [
+      { "id": "CPMK-2", "weight": 0.5 },
+      { "id": "CPMK-4", "weight": 0.5 }
+    ]
+  }
+}

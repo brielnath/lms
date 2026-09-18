@@ -153,6 +153,19 @@ if ($frm and isset($frm->username)) {                             // Login WITH 
         $frm = false;
     } else {
         if (empty($errormsg)) {
+            if (!function_exists('theme_academi_ush_login_precheck')) {
+                require_once($CFG->dirroot . '/theme/academi/lib.php');
+            }
+            if (function_exists('theme_academi_ush_login_precheck')) {
+                $ushroleerr = theme_academi_ush_login_precheck($frm);
+                if ($ushroleerr !== '') {
+                    $errormsg = $ushroleerr;
+                    $errorcode = 3;
+                    $user = false;
+                }
+            }
+        }
+        if (empty($errormsg)) {
             $logintoken = isset($frm->logintoken) ? $frm->logintoken : '';
             $loginrecaptcha = login_captcha_enabled() ? $frm->{'g-recaptcha-response'} ?? '' : false;
             $user = authenticate_user_login($frm->username, $frm->password, false, $errorcode, $logintoken, $loginrecaptcha);

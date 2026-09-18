@@ -5,6 +5,8 @@
 /peserta_*.json
 /admin/cli/peserta_*.json
 /siakad_cookie.txt
+/jadwal_*.csv
+/kalender_pertemuan_*.csv
 
 course/format/remuiformat/.gitignore
 course/format/remuiformat/

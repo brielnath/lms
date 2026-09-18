@@ -1,0 +1,4143 @@
+{
+    "generated": "2026-09-17T07:13:10+01:00",
+    "semester": "20262027Ganjil",
+    "first": "2026-09-07",
+    "last": "2026-11-23",
+    "uts_from": "2026-09-26",
+    "uts_to": "2026-10-06",
+    "max_meetings": 10,
+    "slots": {
+        "IUM002601": [
+            {
+                "id_class": 1650,
+                "code": "IUM002601",
+                "nama": "Bahasa Indonesia",
+                "kelas": "A - Bahasa Indonesia",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 27,
+                "multiday": false
+            },
+            {
+                "id_class": 1823,
+                "code": "IUM002601",
+                "nama": "Bahasa Indonesia",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1867,
+                "code": "IUM002601",
+                "nama": "Bahasa Indonesia\/ Indonesian Languange",
+                "kelas": "Indo_Lang",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 17,
+                "multiday": false
+            },
+            {
+                "id_class": 1928,
+                "code": "IUM002601",
+                "nama": "Bahasa Indonesia",
+                "kelas": "Bahasa Indonesia",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            },
+            {
+                "id_class": 1975,
+                "code": "IUM002601",
+                "nama": "Bahasa Indonesia",
+                "kelas": "Bahasa Indonesia",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IUM002604": [
+            {
+                "id_class": 1652,
+                "code": "IUM002604",
+                "nama": "Religious Education",
+                "kelas": "A - Religious Education",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1826,
+                "code": "IUM002604",
+                "nama": "Religious Education",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1864,
+                "code": "IUM002604",
+                "nama": "Agama\/ Religious Education",
+                "kelas": "Religious_Agama",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            },
+            {
+                "id_class": 1923,
+                "code": "IUM002604",
+                "nama": "Religious Education",
+                "kelas": "-",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            },
+            {
+                "id_class": 1934,
+                "code": "IUM002604",
+                "nama": "Religious Education",
+                "kelas": "Religious Education",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            },
+            {
+                "id_class": 1980,
+                "code": "IUM002604",
+                "nama": "Religious Education",
+                "kelas": "Religious Education",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IUM002603": [
+            {
+                "id_class": 1653,
+                "code": "IUM002603",
+                "nama": "Civic Education",
+                "kelas": "A - Civic Education",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1703,
+                "code": "IUM002603",
+                "nama": "Civic Education",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1715,
+                "code": "IUM002603",
+                "nama": "Kewarganegaraan\/ Citizenship Education",
+                "kelas": "Citizenship",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            },
+            {
+                "id_class": 1909,
+                "code": "IUM002603",
+                "nama": "Citizenship Education",
+                "kelas": "Zoom",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            },
+            {
+                "id_class": 1926,
+                "code": "IUM002603",
+                "nama": "Citizenship Education",
+                "kelas": "Citizenship Education",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            },
+            {
+                "id_class": 1974,
+                "code": "IUM002603",
+                "nama": "Civic Education",
+                "kelas": "Civic Education",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM026801": [
+            {
+                "id_class": 1654,
+                "code": "IDM026801",
+                "nama": "Introduction to Management and Business",
+                "kelas": "A - Introduction to Management and Business",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            }
+        ],
+        "IDM026805": [
+            {
+                "id_class": 1655,
+                "code": "IDM026805",
+                "nama": "Introduction to Economics",
+                "kelas": "A - Introduction to Economics",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            }
+        ],
+        "IDM026802": [
+            {
+                "id_class": 1656,
+                "code": "IDM026802",
+                "nama": "Introduction to Accounting",
+                "kelas": "A - Introduction to Accounting",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            }
+        ],
+        "IFM022601": [
+            {
+                "id_class": 1657,
+                "code": "IFM022601",
+                "nama": "Artificial Intelligence for Business",
+                "kelas": "A - Artificial Intelligence for Business",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1827,
+                "code": "IFM022601",
+                "nama": "Implementation of Artificial Intelligence (AI)",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1941,
+                "code": "IFM022601",
+                "nama": "Artificial Intelligence for Accounting",
+                "kelas": "Artificial Intelligence for Accounting",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0809": [
+            {
+                "id_class": 1658,
+                "code": "IDM0809",
+                "nama": "International Human Resource Management",
+                "kelas": "A - International Human Resource Management",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 34,
+                "multiday": false
+            },
+            {
+                "id_class": 1659,
+                "code": "IDM0809",
+                "nama": "International Human Resource Management",
+                "kelas": "B - International Human Resource Management",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0810": [
+            {
+                "id_class": 1660,
+                "code": "IDM0810",
+                "nama": "International Operation Management",
+                "kelas": "A - International Operation Management",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 34,
+                "multiday": false
+            },
+            {
+                "id_class": 1661,
+                "code": "IDM0810",
+                "nama": "International Operation Management",
+                "kelas": "B - International Operation Management",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "22:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0811": [
+            {
+                "id_class": 1664,
+                "code": "IDM0811",
+                "nama": "International Business Law",
+                "kelas": "A - International Business Law",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 33,
+                "multiday": false
+            },
+            {
+                "id_class": 1665,
+                "code": "IDM0811",
+                "nama": "International Business Law",
+                "kelas": "B - International Business Law",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "22:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0812": [
+            {
+                "id_class": 1666,
+                "code": "IDM0812",
+                "nama": "International Marketing Management",
+                "kelas": "A - International Marketing Management",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 34,
+                "multiday": false
+            },
+            {
+                "id_class": 1668,
+                "code": "IDM0812",
+                "nama": "International Marketing Management",
+                "kelas": "B - International Marketing Management",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0813": [
+            {
+                "id_class": 1669,
+                "code": "IDM0813",
+                "nama": "Business Statistics",
+                "kelas": "A - Business Statistics",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 34,
+                "multiday": false
+            },
+            {
+                "id_class": 1670,
+                "code": "IDM0813",
+                "nama": "Business Statistics",
+                "kelas": "B - Business Statistics",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "22:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0814": [
+            {
+                "id_class": 1673,
+                "code": "IDM0814",
+                "nama": "International Trade",
+                "kelas": "A - International Trade",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1674,
+                "code": "IDM0814",
+                "nama": "International Trade",
+                "kelas": "B - International Trade",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "22:00:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 2,
+                "multiday": false
+            }
+        ],
+        "IDM0815": [
+            {
+                "id_class": 1675,
+                "code": "IDM0815",
+                "nama": "Accounting Information Systems",
+                "kelas": "A - Accounting Information System",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 36,
+                "multiday": false
+            },
+            {
+                "id_class": 1676,
+                "code": "IDM0815",
+                "nama": "Accounting Information Systems",
+                "kelas": "B - Accounting Information Systems",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "18:40:00",
+                "jam_selesai": "21:10:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0816": [
+            {
+                "id_class": 1679,
+                "code": "IDM0816",
+                "nama": "Leadership for Business",
+                "kelas": "A - Leadership for Business",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 27,
+                "multiday": false
+            },
+            {
+                "id_class": 1680,
+                "code": "IDM0816",
+                "nama": "Leadership for Business",
+                "kelas": "B - Leadership for Business",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "18:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 2,
+                "multiday": false
+            }
+        ],
+        "IUM002602": [
+            {
+                "id_class": 1681,
+                "code": "IUM002602",
+                "nama": "Pancasila Education",
+                "kelas": "A - Pancasila Education",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1824,
+                "code": "IUM002602",
+                "nama": "Pancasila Education",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1865,
+                "code": "IUM002602",
+                "nama": "Pendidikan Pancasila\/ Pancasila Education",
+                "kelas": "Pancasila",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            },
+            {
+                "id_class": 1915,
+                "code": "IUM002602",
+                "nama": "Pancasila Education",
+                "kelas": "-",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            },
+            {
+                "id_class": 1931,
+                "code": "IUM002602",
+                "nama": "Pancasila Education",
+                "kelas": "Pancasila Education",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            },
+            {
+                "id_class": 1977,
+                "code": "IUM002602",
+                "nama": "Pancasila Education",
+                "kelas": "Pancasila Education",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IUM002613": [
+            {
+                "id_class": 1682,
+                "code": "IUM002613",
+                "nama": "Academic English",
+                "kelas": "A - Academic English",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1828,
+                "code": "IUM002613",
+                "nama": "Academic English",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1868,
+                "code": "IUM002613",
+                "nama": "Academic English",
+                "kelas": "Aca_English",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            },
+            {
+                "id_class": 1930,
+                "code": "IUM002613",
+                "nama": "Academic English",
+                "kelas": "Academic English",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            },
+            {
+                "id_class": 1979,
+                "code": "IUM002613",
+                "nama": "Academic English",
+                "kelas": "Academic English",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0830": [
+            {
+                "id_class": 1683,
+                "code": "IDM0830",
+                "nama": "Supply Chain Management",
+                "kelas": "A - Supply Chain Management",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            }
+        ],
+        "IDM0831": [
+            {
+                "id_class": 1685,
+                "code": "IDM0831",
+                "nama": "Supplier Relationship Management",
+                "kelas": "A - Supplier Relationship Management",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "17:50:00",
+                "duration": 11400,
+                "id_prodi": 31,
+                "jml": 12,
+                "multiday": false
+            }
+        ],
+        "IDM0825": [
+            {
+                "id_class": 1689,
+                "code": "IDM0825",
+                "nama": "Business Ethics",
+                "kelas": "A - Business Ethics",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1690,
+                "code": "IDM0825",
+                "nama": "Business Ethics",
+                "kelas": "B - Business Ethics",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM0824": [
+            {
+                "id_class": 1691,
+                "code": "IDM0824",
+                "nama": "Integrated Business System I",
+                "kelas": "A - Integrated Business System I",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1692,
+                "code": "IDM0824",
+                "nama": "Integrated Business System I",
+                "kelas": "B - Integrated Business System I",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM0832": [
+            {
+                "id_class": 1693,
+                "code": "IDM0832",
+                "nama": "Export-Import Management",
+                "kelas": "A - Export - Import Management",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 12,
+                "multiday": false
+            }
+        ],
+        "IDM0866": [
+            {
+                "id_class": 1697,
+                "code": "IDM0866",
+                "nama": "Law on the Procurement of Goods and Services",
+                "kelas": "A - Law on the Procurement Goods and Services",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1698,
+                "code": "IDM0866",
+                "nama": "Law on the Procurement of Goods and Services",
+                "kelas": "B - Law on the Procurement of Goods and Services",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "21:10:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM0827": [
+            {
+                "id_class": 1699,
+                "code": "IDM0827",
+                "nama": "Strategic Management",
+                "kelas": "A - Strategic Management",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            }
+        ],
+        "IUM00202603": [
+            {
+                "id_class": 1704,
+                "code": "IUM00202603",
+                "nama": "Civic Education",
+                "kelas": "Civic Education",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1756,
+                "code": "IUM00202603",
+                "nama": "Civic Education (Kewarganegaraan)",
+                "kelas": "Civic Education (Kewarganegaraan)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM05202602": [
+            {
+                "id_class": 1705,
+                "code": "IDM05202602",
+                "nama": "Economic Theory",
+                "kelas": "Economic Theory",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "09:40:00",
+                "jam_selesai": "11:20:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            }
+        ],
+        "IDM0510": [
+            {
+                "id_class": 1706,
+                "code": "IDM0510",
+                "nama": "Financial Management",
+                "kelas": "Financial Management A2",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            },
+            {
+                "id_class": 1761,
+                "code": "IDM0510",
+                "nama": "Financial Management",
+                "kelas": "Financial Management A1",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            }
+        ],
+        "IDM0511": [
+            {
+                "id_class": 1707,
+                "code": "IDM0511",
+                "nama": "Human Resource Management",
+                "kelas": "Human Resource Management A2",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            },
+            {
+                "id_class": 1723,
+                "code": "IDM0511",
+                "nama": "Human Resource Management",
+                "kelas": "Human Resource Management A1",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            }
+        ],
+        "IDM0411": [
+            {
+                "id_class": 1708,
+                "code": "IDM0411",
+                "nama": "Kimia Pangan",
+                "kelas": "Kimpang_Reg",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0524": [
+            {
+                "id_class": 1709,
+                "code": "IDM0524",
+                "nama": "Digital Branding & Reputation",
+                "kelas": "DM - Digital Branding & Reputation",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0411P": [
+            {
+                "id_class": 1710,
+                "code": "IDM0411P",
+                "nama": "Praktikum Kimia Pangan",
+                "kelas": "Prak_Kimpang",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IUM0014": [
+            {
+                "id_class": 1711,
+                "code": "IUM0014",
+                "nama": "Entrepreneurial Development : Mindsets & Concept",
+                "kelas": "Entre_Mindset&Concept",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0522": [
+            {
+                "id_class": 1712,
+                "code": "IDM0522",
+                "nama": "Financial Information System I",
+                "kelas": "DM - Financial Information System I",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            },
+            {
+                "id_class": 1713,
+                "code": "IDM0522",
+                "nama": "Financial Information System I",
+                "kelas": "DBA - Financial Information System I",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "IDM0541": [
+            {
+                "id_class": 1714,
+                "code": "IDM0541",
+                "nama": "Data Mining",
+                "kelas": "DBA - Data Mining",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "IDM05202601": [
+            {
+                "id_class": 1716,
+                "code": "IDM05202601",
+                "nama": "Business & Management Introduction",
+                "kelas": "Business & Management Introduction",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            }
+        ],
+        "IDM042603": [
+            {
+                "id_class": 1717,
+                "code": "IDM042603",
+                "nama": "Kimia Dasar \/ Basic Chemistry",
+                "kelas": "Basic_Chemis",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            }
+        ],
+        "IUM00202601": [
+            {
+                "id_class": 1718,
+                "code": "IUM00202601",
+                "nama": "Bahasa Indonesia",
+                "kelas": "Bahasa Indonesia",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1782,
+                "code": "IUM00202601",
+                "nama": "Bahasa Indonesia - Indonesian",
+                "kelas": "Bahasa Indonesia - Indonesian",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM042605": [
+            {
+                "id_class": 1719,
+                "code": "IDM042605",
+                "nama": "Biologi\/ Biology",
+                "kelas": "Biology",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "15:30:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            }
+        ],
+        "IDM042603P": [
+            {
+                "id_class": 1720,
+                "code": "IDM042603P",
+                "nama": "Praktikum Kimia Dasar \/ Basic Chemistry Laboratory",
+                "kelas": "Lab_BasicChemis",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "11:20:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            }
+        ],
+        "IDM0514": [
+            {
+                "id_class": 1721,
+                "code": "IDM0514",
+                "nama": "Web Development",
+                "kelas": "Web Development A2",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            },
+            {
+                "id_class": 1752,
+                "code": "IDM0514",
+                "nama": "Web Development",
+                "kelas": "Web Development A1",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            }
+        ],
+        "IDM042605P": [
+            {
+                "id_class": 1722,
+                "code": "IDM042605P",
+                "nama": "Praktikum Biologi\/ Biology Laboratory",
+                "kelas": "Lab_Biology",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            }
+        ],
+        "IDM0509": [
+            {
+                "id_class": 1724,
+                "code": "IDM0509",
+                "nama": "Marketing Management",
+                "kelas": "Marketing Management A2",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 42,
+                "multiday": false
+            },
+            {
+                "id_class": 1726,
+                "code": "IDM0509",
+                "nama": "Marketing Management",
+                "kelas": "Marketing Management A1",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 39,
+                "multiday": false
+            }
+        ],
+        "IDM0426": [
+            {
+                "id_class": 1725,
+                "code": "IDM0426",
+                "nama": "Packaging and Product Design",
+                "kelas": "Packaging&Design",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0525": [
+            {
+                "id_class": 1727,
+                "code": "IDM0525",
+                "nama": "Consumer Analytics",
+                "kelas": "DM - Consumer Analytics",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0537": [
+            {
+                "id_class": 1728,
+                "code": "IDM0537",
+                "nama": "Big Data for Business",
+                "kelas": "DBA - Big Data for Business",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "SBD701": [
+            {
+                "id_class": 1729,
+                "code": "SBD701",
+                "nama": "Perdagangan Elektronik",
+                "kelas": "Perdagangan Elektronik A",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 51,
+                "multiday": false
+            },
+            {
+                "id_class": 1731,
+                "code": "SBD701",
+                "nama": "Perdagangan Elektronik",
+                "kelas": "Perdagangan Elektronik B",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IDM0426P": [
+            {
+                "id_class": 1730,
+                "code": "IDM0426P",
+                "nama": "Praktikum Packaging and Product Design",
+                "kelas": "Prak_Packaging&Design",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0412": [
+            {
+                "id_class": 1732,
+                "code": "IDE0412",
+                "nama": "Food Preservation",
+                "kelas": "Food_Preserv",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "SBD702": [
+            {
+                "id_class": 1733,
+                "code": "SBD702",
+                "nama": "Manajemen Media Sosial",
+                "kelas": "Manajemen Media Sosial B",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "22:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 3,
+                "multiday": false
+            },
+            {
+                "id_class": 1764,
+                "code": "SBD702",
+                "nama": "Manajemen Media Sosial",
+                "kelas": "Manajemen Media Sosial A",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 52,
+                "multiday": false
+            }
+        ],
+        "IUM00202602": [
+            {
+                "id_class": 1734,
+                "code": "IUM00202602",
+                "nama": "Pancasila Education",
+                "kelas": "Pancasila Education",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1795,
+                "code": "IUM00202602",
+                "nama": "Pancasila Education",
+                "kelas": "Pancasila Education",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM05202603": [
+            {
+                "id_class": 1735,
+                "code": "IDM05202603",
+                "nama": "Computational Thinking",
+                "kelas": "Computational Thinking",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            }
+        ],
+        "IDM0515": [
+            {
+                "id_class": 1736,
+                "code": "IDM0515",
+                "nama": "Business Intelligence",
+                "kelas": "Business Intelligence A1",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            },
+            {
+                "id_class": 1749,
+                "code": "IDM0515",
+                "nama": "Business Intelligence",
+                "kelas": "Business Intelligence A2",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            }
+        ],
+        "IDM0512": [
+            {
+                "id_class": 1737,
+                "code": "IDM0512",
+                "nama": "Operation Management",
+                "kelas": "Operations Management A1",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            },
+            {
+                "id_class": 1739,
+                "code": "IDM0512",
+                "nama": "Operation Management",
+                "kelas": "Operations Management A2",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            }
+        ],
+        "IDM0513": [
+            {
+                "id_class": 1738,
+                "code": "IDM0513",
+                "nama": "Strategic Management",
+                "kelas": "Strategic Management A2",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            },
+            {
+                "id_class": 1750,
+                "code": "IDM0513",
+                "nama": "Strategic Management",
+                "kelas": "Strategic Management A1",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            }
+        ],
+        "IDM0528": [
+            {
+                "id_class": 1740,
+                "code": "IDM0528",
+                "nama": "Social Media Management",
+                "kelas": "DM - Social Media Management",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0529": [
+            {
+                "id_class": 1741,
+                "code": "IDM0529",
+                "nama": "Visual Communication",
+                "kelas": "DM - Visual Communication",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0523": [
+            {
+                "id_class": 1742,
+                "code": "IDM0523",
+                "nama": "Digital Marketing Research & Trend",
+                "kelas": "DM - Digital Marketing Research & Trend",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0540": [
+            {
+                "id_class": 1743,
+                "code": "IDM0540",
+                "nama": "Ethical Hacking for Business",
+                "kelas": "DBA - Ethical Hacking for Business",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "IDM0542": [
+            {
+                "id_class": 1744,
+                "code": "IDM0542",
+                "nama": "Data Processing and Visualization",
+                "kelas": "DBA - Data Processing & Visualization",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "IDM0543": [
+            {
+                "id_class": 1745,
+                "code": "IDM0543",
+                "nama": "Data Science Introduction",
+                "kelas": "DBA - Data Science Introduction",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "15:30:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "SBD703": [
+            {
+                "id_class": 1746,
+                "code": "SBD703",
+                "nama": "Simulasi Bisnis Digital",
+                "kelas": "Simulasi Bisnis Digital A",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 52,
+                "multiday": false
+            },
+            {
+                "id_class": 1755,
+                "code": "SBD703",
+                "nama": "Simulasi Bisnis Digital",
+                "kelas": "Simulasi Bisnis Digital B",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 3,
+                "multiday": false
+            }
+        ],
+        "IUM00202613": [
+            {
+                "id_class": 1747,
+                "code": "IUM00202613",
+                "nama": "Academic English",
+                "kelas": "Academic English",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1805,
+                "code": "IUM00202613",
+                "nama": "Academic of English (Bahasa Inggris)",
+                "kelas": "Academic of English (Bahasa Inggris)",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IUM00202604": [
+            {
+                "id_class": 1748,
+                "code": "IUM00202604",
+                "nama": "Religious Education",
+                "kelas": "Religious Education",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1806,
+                "code": "IUM00202604",
+                "nama": "Religious Education (Pendidikan Agama)",
+                "kelas": "Religious Education (Pendidikan Agama)",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM0516": [
+            {
+                "id_class": 1751,
+                "code": "IDM0516",
+                "nama": "Risk Management",
+                "kelas": "Risk Management A2",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 41,
+                "multiday": false
+            },
+            {
+                "id_class": 1759,
+                "code": "IDM0516",
+                "nama": "Risk Management",
+                "kelas": "Risk Management A1",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            }
+        ],
+        "IDM0526": [
+            {
+                "id_class": 1753,
+                "code": "IDM0526",
+                "nama": "Digital Marketing Strategic",
+                "kelas": "DM - Digital Marketing Strategic",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0538": [
+            {
+                "id_class": 1754,
+                "code": "IDM0538",
+                "nama": "Business Statistic II",
+                "kelas": "DBA - Business Statistic II",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "IDM02026702": [
+            {
+                "id_class": 1757,
+                "code": "IDM02026702",
+                "nama": "Introduction of Indonesian Law (Pengantar Hukum Indonesia)",
+                "kelas": "Introduction of Indonesian Law (Pengantar Hukum Indonesia)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IFM02202601": [
+            {
+                "id_class": 1758,
+                "code": "IFM02202601",
+                "nama": "Implementation of AI for Business",
+                "kelas": "Implementation of AI for Business",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "11:20:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1812,
+                "code": "IFM02202601",
+                "nama": "AI (Artificial Intelligence) for Business Law",
+                "kelas": "AI (Artificial Intelligence) for Business Law",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM02026704": [
+            {
+                "id_class": 1760,
+                "code": "IDM02026704",
+                "nama": "State Science (Ilmu Negara)",
+                "kelas": "State Science (Ilmu Negara)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM0527": [
+            {
+                "id_class": 1762,
+                "code": "IDM0527",
+                "nama": "E-commerce",
+                "kelas": "DM - E-Commerce",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 24,
+                "multiday": false
+            }
+        ],
+        "IDM0539": [
+            {
+                "id_class": 1763,
+                "code": "IDM0539",
+                "nama": "Business Mathematics",
+                "kelas": "DBA - Business Mathematics",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 16,
+                "multiday": false
+            }
+        ],
+        "IDM0713": [
+            {
+                "id_class": 1767,
+                "code": "IDM0713",
+                "nama": "Tax Law (Hukum Pajak)",
+                "kelas": "Tax Law (Hukum Pajak)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0736": [
+            {
+                "id_class": 1774,
+                "code": "IDM0736",
+                "nama": "Engagement and Agreement Law (Hukum Perikatan dan Perjanjian)",
+                "kelas": "Engagement and Agreement Law (Hukum Perikatan dan Perjanjian)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0734": [
+            {
+                "id_class": 1780,
+                "code": "IDM0734",
+                "nama": "Collateral Law (Hukum Jaminan)",
+                "kelas": "Collateral Law (Hukum Jaminan)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM02026701": [
+            {
+                "id_class": 1783,
+                "code": "IDM02026701",
+                "nama": "Introduction of Law and Business Law (Pengantar Ilmu Hukum dan Hukum Bisnis)",
+                "kelas": "Introduction of Law and Business Law (Pengantar Ilmu Hukum dan Hukum Bisnis)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM0717": [
+            {
+                "id_class": 1785,
+                "code": "IDM0717",
+                "nama": "Compilation of Islamic Law (Kompilasi Hukum Islam)",
+                "kelas": "Compilation of Islamic Law (Kompilasi Hukum Islam)",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0718": [
+            {
+                "id_class": 1787,
+                "code": "IDM0718",
+                "nama": "Licensing Business (Perizinan Bisnis)",
+                "kelas": "Licensing Business (Perizinan Bisnis)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IUM00202605": [
+            {
+                "id_class": 1788,
+                "code": "IUM00202605",
+                "nama": "Mandarin Language I",
+                "kelas": "Mandarin Language I",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 50,
+                "multiday": false
+            },
+            {
+                "id_class": 1898,
+                "code": "IUM00202605",
+                "nama": "Mandarin Language 1 (Bahasa Mandarin 1) - HSK 1",
+                "kelas": "Mandarin Language I (HSK 1)",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM0722": [
+            {
+                "id_class": 1790,
+                "code": "IDM0722",
+                "nama": "Basics of Legal Research Methods (Dasar-dasar Metode Penelitian Hukum)",
+                "kelas": "Basics of Legal Research Methods (Dasar-dasar Metode Penelitian Hukum)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IUM0007": [
+            {
+                "id_class": 1791,
+                "code": "IUM0007",
+                "nama": "Mandarin III",
+                "kelas": "Mandarin III",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "15:30:00",
+                "jam_selesai": "17:50:00",
+                "duration": 8400,
+                "id_prodi": 24,
+                "jml": 81,
+                "multiday": false
+            },
+            {
+                "id_class": 1854,
+                "code": "IUM0007",
+                "nama": "Mandarin Language III",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 43,
+                "multiday": true
+            },
+            {
+                "id_class": 1856,
+                "code": "IUM0007",
+                "nama": "Mandarin Language III (PERTEMUAN 1)",
+                "kelas": "A - Mandarin Language III (PERTEMUAN 1)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 40,
+                "multiday": false
+            },
+            {
+                "id_class": 1889,
+                "code": "IUM0007",
+                "nama": "Mandarin Language III (PERTEMUAN 2)",
+                "kelas": "A - Mandarin Language III (PERTEMUAN 2)",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 40,
+                "multiday": false
+            },
+            {
+                "id_class": 1892,
+                "code": "IUM0007",
+                "nama": "Mandarin Language III",
+                "kelas": "B - Mandarin Language III",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "17:50:00",
+                "jam_selesai": "19:30:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 3,
+                "multiday": false
+            },
+            {
+                "id_class": 1897,
+                "code": "IUM0007",
+                "nama": "Mandarin Language 3 (Bahasa Mandarin 3)",
+                "kelas": "Mandarin Language III (HSK 2)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 1,
+                "multiday": false
+            },
+            {
+                "id_class": 1900,
+                "code": "IUM0007",
+                "nama": "Mandarin Language 3 (Bahasa Mandarin 3)",
+                "kelas": "Mandarin Language III (HSK 2)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 8,
+                "multiday": false
+            },
+            {
+                "id_class": 1956,
+                "code": "IUM0007",
+                "nama": "Mandarin III",
+                "kelas": "Mandarin III",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 37,
+                "multiday": true
+            }
+        ],
+        "IDM0732": [
+            {
+                "id_class": 1793,
+                "code": "IDM0732",
+                "nama": "Insurance Law (Hukum Asuransi)",
+                "kelas": "Insurance Law (Hukum Asuransi)",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "11:20:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IUM0009": [
+            {
+                "id_class": 1794,
+                "code": "IUM0009",
+                "nama": "Mandarin V",
+                "kelas": "Mandarin V",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 24,
+                "jml": 40,
+                "multiday": false
+            },
+            {
+                "id_class": 1855,
+                "code": "IUM0009",
+                "nama": "Mandarin Language V",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": true
+            },
+            {
+                "id_class": 1890,
+                "code": "IUM0009",
+                "nama": "Mandarin Language V (PERTEMUAN 1)",
+                "kelas": "A - Mandarin Language V (PERTEMUAN 1)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1891,
+                "code": "IUM0009",
+                "nama": "Mandarin Language V (PERTEMUAN 2)",
+                "kelas": "A - Mandarin Language V (PERTEMUAN 2)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1893,
+                "code": "IUM0009",
+                "nama": "Mandarin Language V",
+                "kelas": "B - Mandarin Language V",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "19:30:00",
+                "jam_selesai": "21:10:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 0,
+                "multiday": false
+            },
+            {
+                "id_class": 1896,
+                "code": "IUM0009",
+                "nama": "Mandarin Language 5 (Bahasa Mandarin 5)",
+                "kelas": "Mandarin Language V (HSK 3)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "15:30:00",
+                "jam_selesai": "17:50:00",
+                "duration": 8400,
+                "id_prodi": 32,
+                "jml": 4,
+                "multiday": true
+            },
+            {
+                "id_class": 1916,
+                "code": "IUM0009",
+                "nama": "Bahasa Mandarin V",
+                "kelas": "mandarin V",
+                "hari": "Sabtu",
+                "dow": 6,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            },
+            {
+                "id_class": 1963,
+                "code": "IUM0009",
+                "nama": "Mandarin V",
+                "kelas": "Mandarin V",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "12:10:00",
+                "duration": 12000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": true
+            }
+        ],
+        "IDM02026703": [
+            {
+                "id_class": 1796,
+                "code": "IDM02026703",
+                "nama": "Commercial Law (Hukum Dagang)",
+                "kelas": "Commercial Law (Hukum Dagang)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 15,
+                "multiday": false
+            }
+        ],
+        "IDM0783": [
+            {
+                "id_class": 1798,
+                "code": "IDM0783",
+                "nama": "Professional Ethics (Etika Profesi)",
+                "kelas": "Professional Ethics (Etika Profesi)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 10,
+                "multiday": false
+            }
+        ],
+        "IDM0719": [
+            {
+                "id_class": 1800,
+                "code": "IDM0719",
+                "nama": "Company Law (Hukum Perusahaan)",
+                "kelas": "Company Law (Hukum Perusahaan)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0735": [
+            {
+                "id_class": 1802,
+                "code": "IDM0735",
+                "nama": "Investment Law (Hukum Investasi)",
+                "kelas": "Investment Law (Hukum Investasi)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0731": [
+            {
+                "id_class": 1804,
+                "code": "IDM0731",
+                "nama": "Economic Law (Hukum Ekonomi)",
+                "kelas": "Economic Law (Hukum Ekonomi)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0714": [
+            {
+                "id_class": 1808,
+                "code": "IDM0714",
+                "nama": "Customary Law (Hukum Adat)",
+                "kelas": "Customary Law (Hukum Adat)",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 8,
+                "multiday": false
+            }
+        ],
+        "IDM0721": [
+            {
+                "id_class": 1809,
+                "code": "IDM0721",
+                "nama": "Law on Drafting Legislative Regulations (Hukum Perancangan Peraturan Perundang-undangan)",
+                "kelas": "Law on Drafting Legislative Regulations (Hukum Perancangan Peraturan Perundang-undangan)",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "11:20:00",
+                "jam_selesai": "13:00:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0737": [
+            {
+                "id_class": 1811,
+                "code": "IDM0737",
+                "nama": "Auction Regulation (Peraturan Lelang)",
+                "kelas": "Auction Regulation (Peraturan Lelang)",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0716": [
+            {
+                "id_class": 1813,
+                "code": "IDM0716",
+                "nama": "Introduction of Environmental Law (Pengantar Hukum Lingkungan)",
+                "kelas": "Introduction of Environmental Law (Pengantar Hukum Lingkungan)",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0715": [
+            {
+                "id_class": 1815,
+                "code": "IDM0715",
+                "nama": "Employment Law (Hukum Ketenagakerjaan)",
+                "kelas": "Employment Law (Hukum Ketenagakerjaan)",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0730": [
+            {
+                "id_class": 1817,
+                "code": "IDM0730",
+                "nama": "ADR & Restorative Justice (Alternatif Penyelesaian Sengketa)",
+                "kelas": "ADR & Restorative Justice (Alternatif Penyelesaian Sengketa)",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 8,
+                "multiday": false
+            }
+        ],
+        "IDM0733": [
+            {
+                "id_class": 1819,
+                "code": "IDM0733",
+                "nama": "Capital Market Law (Hukum Pasar Modal)",
+                "kelas": "Capital Market Law (Hukum Pasar Modal)",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "12:10:00",
+                "jam_selesai": "14:40:00",
+                "duration": 9000,
+                "id_prodi": 32,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM0720": [
+            {
+                "id_class": 1820,
+                "code": "IDM0720",
+                "nama": "Customary Inheritance Law, Civil Code and Islamic Law - (Hukum Waris BW, Adat dan Islam)",
+                "kelas": "Customary Inheritance Law, Civil Code and Islamic Law - (Hukum Waris BW, Adat dan Islam)",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 32,
+                "jml": 8,
+                "multiday": false
+            }
+        ],
+        "IDM062601": [
+            {
+                "id_class": 1821,
+                "code": "IDM062601",
+                "nama": "Security Policy and Management",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            }
+        ],
+        "IDM062603": [
+            {
+                "id_class": 1822,
+                "code": "IDM062603",
+                "nama": "Digital Business Development",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            }
+        ],
+        "IDM062602": [
+            {
+                "id_class": 1825,
+                "code": "IDM062602",
+                "nama": "Computational Thinking",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            }
+        ],
+        "IDM0609": [
+            {
+                "id_class": 1829,
+                "code": "IDM0609",
+                "nama": "Operating System",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0610": [
+            {
+                "id_class": 1830,
+                "code": "IDM0610",
+                "nama": "Algorithms and Data Structures",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0616": [
+            {
+                "id_class": 1831,
+                "code": "IDM0616",
+                "nama": "Information System Audit",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "15:30:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0611": [
+            {
+                "id_class": 1832,
+                "code": "IDM0611",
+                "nama": "Kalkulus",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0612": [
+            {
+                "id_class": 1833,
+                "code": "IDM0612",
+                "nama": "Web Programming 1",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0614": [
+            {
+                "id_class": 1834,
+                "code": "IDM0614",
+                "nama": "Computer Network",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0613": [
+            {
+                "id_class": 1835,
+                "code": "IDM0613",
+                "nama": "Project Management",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0615": [
+            {
+                "id_class": 1836,
+                "code": "IDM0615",
+                "nama": "Discrete Mathematics",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "11:20:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 42,
+                "multiday": false
+            }
+        ],
+        "IDM0629": [
+            {
+                "id_class": 1837,
+                "code": "IDM0629",
+                "nama": "Pemograman Game",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "16:20:00",
+                "duration": 12000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0623": [
+            {
+                "id_class": 1838,
+                "code": "IDM0623",
+                "nama": "Statistics",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0628": [
+            {
+                "id_class": 1839,
+                "code": "IDM0628",
+                "nama": "Graphic Design",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0624": [
+            {
+                "id_class": 1840,
+                "code": "IDM0624",
+                "nama": "Implementation System and Testing",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0625": [
+            {
+                "id_class": 1841,
+                "code": "IDM0625",
+                "nama": "Innovative Digital Branding",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0630": [
+            {
+                "id_class": 1842,
+                "code": "IDM0630",
+                "nama": "Enterprise Resource Planning (ERP)",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0626": [
+            {
+                "id_class": 1843,
+                "code": "IDM0626",
+                "nama": "UI\/UX",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "IDM0627": [
+            {
+                "id_class": 1844,
+                "code": "IDM0627",
+                "nama": "3D Design",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 31,
+                "multiday": false
+            }
+        ],
+        "SIF1001": [
+            {
+                "id_class": 1845,
+                "code": "SIF1001",
+                "nama": "Smart City",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 14,
+                "multiday": false
+            },
+            {
+                "id_class": 1847,
+                "code": "SIF1001",
+                "nama": "Smart City",
+                "kelas": "Reguler B Ilmu Komputer",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "SIF1002": [
+            {
+                "id_class": 1846,
+                "code": "SIF1002",
+                "nama": "AR\/VR",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:50:00",
+                "duration": 12000,
+                "id_prodi": 26,
+                "jml": 14,
+                "multiday": false
+            },
+            {
+                "id_class": 1848,
+                "code": "SIF1002",
+                "nama": "AR\/VR",
+                "kelas": "Reguler B Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "17:00:00",
+                "jam_selesai": "19:30:00",
+                "duration": 9000,
+                "id_prodi": 26,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IUM002605": [
+            {
+                "id_class": 1853,
+                "code": "IUM002605",
+                "nama": "Mandarin Language I",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 13,
+                "multiday": false
+            },
+            {
+                "id_class": 1857,
+                "code": "IUM002605",
+                "nama": "Mandarin Language I",
+                "kelas": "A - Mandarin Language I",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 31,
+                "jml": 29,
+                "multiday": false
+            },
+            {
+                "id_class": 1911,
+                "code": "IUM002605",
+                "nama": "Mandarin Language I",
+                "kelas": "-",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            },
+            {
+                "id_class": 1937,
+                "code": "IUM002605",
+                "nama": "Mandarin I",
+                "kelas": "Mandarin I",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            },
+            {
+                "id_class": 1994,
+                "code": "IUM002605",
+                "nama": "Mandarin Language I",
+                "kelas": "Mandarin Language I",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM042604": [
+            {
+                "id_class": 1869,
+                "code": "IDM042604",
+                "nama": "Pengantar Teknologi Pangan\/ Introduction to Food Technology",
+                "kelas": "Intro_Foodtech",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 18,
+                "multiday": false
+            }
+        ],
+        "IDM0409": [
+            {
+                "id_class": 1870,
+                "code": "IDM0409",
+                "nama": "Mikrobiologi Umum",
+                "kelas": "Mikro_Umum",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0409P": [
+            {
+                "id_class": 1871,
+                "code": "IDM0409P",
+                "nama": "Praktikum Mikrobiologi Umum",
+                "kelas": "Prak_MikroUmum",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0412": [
+            {
+                "id_class": 1872,
+                "code": "IDM0412",
+                "nama": "Biokimia Pangan",
+                "kelas": "Biokimia",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            },
+            {
+                "id_class": 1881,
+                "code": "IDM0412",
+                "nama": "Evaluasi Nilai Gizi pada Pengolahan",
+                "kelas": "ENGP",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0423": [
+            {
+                "id_class": 1875,
+                "code": "IDM0423",
+                "nama": "Satuan Operasi Rekayasa Pangan 1",
+                "kelas": "Satop_1",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0423P": [
+            {
+                "id_class": 1876,
+                "code": "IDM0423P",
+                "nama": "Praktikum Satuan Operasi Rekayasa Pangan 1",
+                "kelas": "Prak_Satop1",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0414": [
+            {
+                "id_class": 1877,
+                "code": "IDM0414",
+                "nama": "Food Legal",
+                "kelas": "Food_Legal",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0410": [
+            {
+                "id_class": 1878,
+                "code": "IDM0410",
+                "nama": "Human Nutrition",
+                "kelas": "Human_Nutr",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0418": [
+            {
+                "id_class": 1879,
+                "code": "IDM0418",
+                "nama": "Keamanan Pangan & Sanitasi Industri",
+                "kelas": "Keamanan_Pangan",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0418P": [
+            {
+                "id_class": 1880,
+                "code": "IDM0418P",
+                "nama": "Praktikum Keamanan Pangan & Sanitasi Industri",
+                "kelas": "Prak_Keamanan_Pangan",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0413P": [
+            {
+                "id_class": 1882,
+                "code": "IDM0413P",
+                "nama": "Praktikum Evaluasi Nilai Gizi pada Pengolahan",
+                "kelas": "Prak_ENGP",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "09:40:00",
+                "jam_selesai": "12:10:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM0428": [
+            {
+                "id_class": 1883,
+                "code": "IDM0428",
+                "nama": "Metode Penelitian dan Rancangan Percobaan",
+                "kelas": "Meto_Pen",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IFM0101": [
+            {
+                "id_class": 1884,
+                "code": "IFM0101",
+                "nama": "Food for Wellness",
+                "kelas": "Food_forWellness",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            },
+            {
+                "id_class": 1968,
+                "code": "IFM0101",
+                "nama": "Food for Wellness",
+                "kelas": "Food for Wellness",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 37,
+                "multiday": false
+            }
+        ],
+        "IFM0103": [
+            {
+                "id_class": 1885,
+                "code": "IFM0103",
+                "nama": "Functional Food Development",
+                "kelas": "Funct_FoodDev",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            },
+            {
+                "id_class": 1967,
+                "code": "IFM0103",
+                "nama": "Fungtional Food Development",
+                "kelas": "Food Fungtional Development",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IFM0103P": [
+            {
+                "id_class": 1886,
+                "code": "IFM0103P",
+                "nama": "Praktikum Functional Food Development",
+                "kelas": "Prak_FunctFoodDev",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "11:20:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0412P": [
+            {
+                "id_class": 1902,
+                "code": "IDE0412P",
+                "nama": "Praktikum Food Preservation",
+                "kelas": "Prak_FoodPreserv",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0402": [
+            {
+                "id_class": 1903,
+                "code": "IDE0402",
+                "nama": "Entrepreneurial Development : Product Launch",
+                "kelas": "Entrepreneur_ProductLaunch",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0414": [
+            {
+                "id_class": 1904,
+                "code": "IDE0414",
+                "nama": "Bakery and Confectionary Technology",
+                "kelas": "BakeryandConfec_Tech",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0414P": [
+            {
+                "id_class": 1905,
+                "code": "IDE0414P",
+                "nama": "Praktikum Bakery and Confectionary Technology",
+                "kelas": "Prak_BakeryTech",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0406": [
+            {
+                "id_class": 1906,
+                "code": "IDE0406",
+                "nama": "Teknologi Minuman dan Bahan Penyegar",
+                "kelas": "Teknologi_Minuman&Penyegar",
+                "hari": "Sabtu",
+                "dow": 6,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0422": [
+            {
+                "id_class": 1907,
+                "code": "IDE0422",
+                "nama": "Fat and Lipid Technology",
+                "kelas": "Fat&Lipid_Tech",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDE0406P": [
+            {
+                "id_class": 1908,
+                "code": "IDE0406P",
+                "nama": "Praktikum Teknologi Minuman dan Bahan Penyegar",
+                "kelas": "Prak_Minuman&Penyegar",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 33,
+                "jml": 6,
+                "multiday": true
+            }
+        ],
+        "IDM092615": [
+            {
+                "id_class": 1910,
+                "code": "IDM092615",
+                "nama": "Language Data Analytics",
+                "kelas": "-",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM092603": [
+            {
+                "id_class": 1912,
+                "code": "IDM092603",
+                "nama": "Listening and Pronunciation",
+                "kelas": "-",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "09:40:00",
+                "jam_selesai": "12:10:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM092619": [
+            {
+                "id_class": 1913,
+                "code": "IDM092619",
+                "nama": "Foundations of Multilingual Communication & Learning Analytics",
+                "kelas": "-",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM092614": [
+            {
+                "id_class": 1914,
+                "code": "IDM092614",
+                "nama": "Professional & Academic Writing II",
+                "kelas": "-",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM092607": [
+            {
+                "id_class": 1917,
+                "code": "IDM092607",
+                "nama": "Grammar for Meaning & Use I",
+                "kelas": "-",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM092616": [
+            {
+                "id_class": 1918,
+                "code": "IDM092616",
+                "nama": "Applied Linguistics",
+                "kelas": "-",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM092605": [
+            {
+                "id_class": 1919,
+                "code": "IDM092605",
+                "nama": "Basic Reading",
+                "kelas": "-",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IDM092617": [
+            {
+                "id_class": 1920,
+                "code": "IDM092617",
+                "nama": "Media & Popular Culture",
+                "kelas": "-",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM092618": [
+            {
+                "id_class": 1921,
+                "code": "IDM092618",
+                "nama": "Statistics",
+                "kelas": "-",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IDM092601": [
+            {
+                "id_class": 1922,
+                "code": "IDM092601",
+                "nama": "Basic Academic English Communication",
+                "kelas": "-",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 34,
+                "jml": 11,
+                "multiday": false
+            }
+        ],
+        "IUM002608": [
+            {
+                "id_class": 1924,
+                "code": "IUM002608",
+                "nama": "Mandarin Language IV",
+                "kelas": "mandarin smt 1",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "15:30:00",
+                "jam_selesai": "17:50:00",
+                "duration": 8400,
+                "id_prodi": 34,
+                "jml": 0,
+                "multiday": false
+            }
+        ],
+        "IUM0005": [
+            {
+                "id_class": 1925,
+                "code": "IUM0005",
+                "nama": "Mandarin Language I",
+                "kelas": "Reguler Ilmu Komputer",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 26,
+                "jml": 2,
+                "multiday": false
+            }
+        ],
+        "IDM032601": [
+            {
+                "id_class": 1927,
+                "code": "IDM032601",
+                "nama": "Basic Chemistry",
+                "kelas": "Basic Chemistry",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            }
+        ],
+        "IDM032604": [
+            {
+                "id_class": 1929,
+                "code": "IDM032604",
+                "nama": "Food Sciences",
+                "kelas": "Food Sciences",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            }
+        ],
+        "IDM032603": [
+            {
+                "id_class": 1932,
+                "code": "IDM032603",
+                "nama": "Fundamentals of Nutrition",
+                "kelas": "Fundamentals of Nutrition",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            }
+        ],
+        "IDM032606": [
+            {
+                "id_class": 1933,
+                "code": "IDM032606",
+                "nama": "Human Biology",
+                "kelas": "Human Biology",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            }
+        ],
+        "IDM032605": [
+            {
+                "id_class": 1935,
+                "code": "IDM032605",
+                "nama": "Food Sciences Laboratory",
+                "kelas": "Food Sciences Laboratory",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            }
+        ],
+        "IDM032602": [
+            {
+                "id_class": 1936,
+                "code": "IDM032602",
+                "nama": "Basic Chemistry Laboratory",
+                "kelas": "Basic Chemistry Laboratory",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "11:20:00",
+                "duration": 9000,
+                "id_prodi": 25,
+                "jml": 26,
+                "multiday": false
+            }
+        ],
+        "DDM021101": [
+            {
+                "id_class": 1939,
+                "code": "DDM021101",
+                "nama": "Introduction to Accounting",
+                "kelas": "Introduction to Accounting",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DDM021102": [
+            {
+                "id_class": 1940,
+                "code": "DDM021102",
+                "nama": "Mathematics of Economics and Business",
+                "kelas": "Mathematics of Economics and Business",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DUM002603": [
+            {
+                "id_class": 1942,
+                "code": "DUM002603",
+                "nama": "Civic Education",
+                "kelas": "Civic Education",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DUM002602": [
+            {
+                "id_class": 1943,
+                "code": "DUM002602",
+                "nama": "Pancasila Education",
+                "kelas": "Pancasila Education",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DUM002601": [
+            {
+                "id_class": 1944,
+                "code": "DUM002601",
+                "nama": "Bahasa Indonesia",
+                "kelas": "Bahasa Indonesia",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM0311": [
+            {
+                "id_class": 1946,
+                "code": "IDM0311",
+                "nama": "Pengantar Psikologi",
+                "kelas": "Pengantar Psikologi",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": false
+            }
+        ],
+        "IDM0318": [
+            {
+                "id_class": 1947,
+                "code": "IDM0318",
+                "nama": "Gizi dalam Daur Kehidupan",
+                "kelas": "Gizi dalam Daur Kehidupan",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:50:00",
+                "jam_selesai": "16:20:00",
+                "duration": 9000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": true
+            }
+        ],
+        "IDM0310": [
+            {
+                "id_class": 1948,
+                "code": "IDM0310",
+                "nama": "Penilaian Status Gizi",
+                "kelas": "Penilaian Status Gizi",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "09:40:00",
+                "jam_selesai": "12:10:00",
+                "duration": 9000,
+                "id_prodi": 25,
+                "jml": 37,
+                "multiday": true
+            }
+        ],
+        "IDM0313": [
+            {
+                "id_class": 1949,
+                "code": "IDM0313",
+                "nama": "Metabolisme Energi dan Gizi Makro",
+                "kelas": "Metabolisme Energi dan Gizi Makro",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IDM0316": [
+            {
+                "id_class": 1950,
+                "code": "IDM0316",
+                "nama": "Epidemiologi Gizi",
+                "kelas": "Epidemiologi",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": false
+            }
+        ],
+        "IDM0312": [
+            {
+                "id_class": 1951,
+                "code": "IDM0312",
+                "nama": "Penilaian Konsumsi Pangan",
+                "kelas": "Penilaian Konsumsi Pangan",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "15:30:00",
+                "duration": 9000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": true
+            }
+        ],
+        "IDM0314": [
+            {
+                "id_class": 1952,
+                "code": "IDM0314",
+                "nama": "Metabolisme Gizi Mikro",
+                "kelas": "Metabolisme Gizi Mikro",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": false
+            }
+        ],
+        "IDM0315": [
+            {
+                "id_class": 1953,
+                "code": "IDM0315",
+                "nama": "Dasar Manajemen",
+                "kelas": "Dasar Manajemen",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": false
+            }
+        ],
+        "IDM0317": [
+            {
+                "id_class": 1954,
+                "code": "IDM0317",
+                "nama": "Anatomi Fisiologi",
+                "kelas": "Anatomi Fisiologi",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 39,
+                "multiday": false
+            }
+        ],
+        "IDM0333": [
+            {
+                "id_class": 1958,
+                "code": "IDM0333",
+                "nama": "Bioetika",
+                "kelas": "Bioetika",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "08:50:00",
+                "jam_selesai": "10:30:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IDM0330": [
+            {
+                "id_class": 1959,
+                "code": "IDM0330",
+                "nama": "Patofisiologi Penyakit Tidak Menular",
+                "kelas": "Patofisiologi PTM",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IUM0013": [
+            {
+                "id_class": 1960,
+                "code": "IUM0013",
+                "nama": "Enterpreneurship",
+                "kelas": "Enterpreneurship",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IDM0328": [
+            {
+                "id_class": 1961,
+                "code": "IDM0328",
+                "nama": "Introduction Technology for Nutrition",
+                "kelas": "Introduction Technology for Nutrition",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IDM0331": [
+            {
+                "id_class": 1962,
+                "code": "IDM0331",
+                "nama": "Asuhan Gizi dan Dietetika Penyakit Tidak Menular",
+                "kelas": "Asuhan Gizi dan Dietetik PTM",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": true
+            }
+        ],
+        "IDM0334": [
+            {
+                "id_class": 1964,
+                "code": "IDM0334",
+                "nama": "Manajemen Program Gizi",
+                "kelas": "Manajemen Program Gizi",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IDM0329": [
+            {
+                "id_class": 1965,
+                "code": "IDM0329",
+                "nama": "Digital Marketing Strategy for Nutrition",
+                "kelas": "Digital Marketing Strategy for Nutrition",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "IDM0332": [
+            {
+                "id_class": 1966,
+                "code": "IDM0332",
+                "nama": "Metodologi Penelitian",
+                "kelas": "Metodologi Penelitian",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 25,
+                "jml": 38,
+                "multiday": false
+            }
+        ],
+        "DUM002604": [
+            {
+                "id_class": 1969,
+                "code": "DUM002604",
+                "nama": "Religious Education",
+                "kelas": "Religious Education",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DUM002613": [
+            {
+                "id_class": 1970,
+                "code": "DUM002613",
+                "nama": "Academic English",
+                "kelas": "Academic English",
+                "hari": "Kamis",
+                "dow": 4,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "09:40:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DUM002605": [
+            {
+                "id_class": 1971,
+                "code": "DUM002605",
+                "nama": "Mandarin Language I",
+                "kelas": "Mandarin Language I",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "14:40:00",
+                "jam_selesai": "16:20:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "DDM021103": [
+            {
+                "id_class": 1972,
+                "code": "DDM021103",
+                "nama": "Economics",
+                "kelas": "Economics",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 36,
+                "jml": 7,
+                "multiday": false
+            }
+        ],
+        "IDM102602": [
+            {
+                "id_class": 1973,
+                "code": "IDM102602",
+                "nama": "Introduction to Tourism Studies",
+                "kelas": "Introduction to Tourism Studies",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM102604": [
+            {
+                "id_class": 1976,
+                "code": "IDM102604",
+                "nama": "Tourism Communication and Public Relations",
+                "kelas": "Tourism Communication and Public Relations",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "13:00:00",
+                "jam_selesai": "14:40:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM102603": [
+            {
+                "id_class": 1978,
+                "code": "IDM102603",
+                "nama": "Professional Development",
+                "kelas": "Professional Development",
+                "hari": "Rabu",
+                "dow": 3,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "12:10:00",
+                "duration": 6000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "IDM102601": [
+            {
+                "id_class": 1981,
+                "code": "IDM102601",
+                "nama": "Introduction to Hospitality & Service Excellence",
+                "kelas": "Introduction to Hospitality & Service Excellence",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 35,
+                "jml": 6,
+                "multiday": false
+            }
+        ],
+        "SBD504": [
+            {
+                "id_class": 1995,
+                "code": "SBD504",
+                "nama": "Analisis Perilaku Konsumen",
+                "kelas": "Analisis Perilaku Konsumen",
+                "hari": "Selasa",
+                "dow": 2,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 1,
+                "multiday": false
+            }
+        ],
+        "SBD506": [
+            {
+                "id_class": 1996,
+                "code": "SBD506",
+                "nama": "Pemasaran Merek Digital",
+                "kelas": "Pemasaran Merek Digital",
+                "hari": "Senin",
+                "dow": 1,
+                "jam_mulai": "10:30:00",
+                "jam_selesai": "13:00:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 2,
+                "multiday": false
+            }
+        ],
+        "SBD602": [
+            {
+                "id_class": 1997,
+                "code": "SBD602",
+                "nama": "Manajemen Risiko",
+                "kelas": "Manajemen Risiko",
+                "hari": "Jum'at",
+                "dow": 5,
+                "jam_mulai": "08:00:00",
+                "jam_selesai": "10:30:00",
+                "duration": 9000,
+                "id_prodi": 24,
+                "jml": 1,
+                "multiday": false
+            }
+        ]
+    }
+}

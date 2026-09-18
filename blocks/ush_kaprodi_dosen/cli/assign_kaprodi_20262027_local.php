@@ -17,6 +17,11 @@ $map = [
     'Bisnis Digital' => 'Bisnis Digital (SBD) - 2026/2027 - Ganjil',
     'Ilmu Gizi' => 'Ilmu Gizi (SGZ) - 2026/2027 - Ganjil',
     'Hukum' => 'Hukum Bisnis (HKM) - 2026/2027 - Ganjil',
+    'Manajemen Bisnis Internasional' => 'Manajemen Bisnis Internasional (MBI) - 2026/2027 - Ganjil',
+    'Teknologi Pangan' => 'Teknologi Pangan (TPN) - 2026/2027 - Ganjil',
+    'Kebudayaan Inggris' => 'Bahasa dan Kebudayaan Inggris (BKI) - 2026/2027 - Ganjil',
+    'Pariwisata' => 'Pariwisata (PAR) - 2026/2027 - Ganjil',
+    'Akuntansi Bisnis Digital' => 'Akuntansi Bisnis Digital (ABD) - 2026/2027 - Ganjil',
 ];
 
 $kaps = $DB->get_records_sql(

@@ -1,0 +1,2378 @@
+{
+    "generated": "2026-09-17T07:13:08+01:00",
+    "semester": "20262027Ganjil",
+    "source": "class_room_lecture + id_lecture",
+    "courses": [
+        {
+            "shortname": "SBD703_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                },
+                {
+                    "username": "dosen_8450",
+                    "name": "Fauzia Dhiyaa' Farros, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0007_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0509_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_61",
+                    "name": "Mutia Ulfa, S.E., M.M"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0510_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8452",
+                    "name": "CHANIA AULIA"
+                },
+                {
+                    "username": "dosen_8444",
+                    "name": "Maudi Rahma Azzahra"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0511_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_839",
+                    "name": "Graceilla Kristia Sheraphim Budiono, S.E, M.B.A"
+                },
+                {
+                    "username": "dosen_63",
+                    "name": "Vincensia Serenade, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0512_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_838",
+                    "name": "Bella Gusniar, SE, MM"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0513_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_839",
+                    "name": "Graceilla Kristia Sheraphim Budiono, S.E, M.B.A"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0514_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8450",
+                    "name": "Fauzia Dhiyaa' Farros, S.Kom., M.Kom."
+                },
+                {
+                    "username": "dosen_8430",
+                    "name": "Deny Prasetyo, S.Pd, M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0515_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_64",
+                    "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0515A2_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0516_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8440",
+                    "name": "Yosephine Dosen USH"
+                },
+                {
+                    "username": "dosen_8413",
+                    "name": "NICKY GILANG W, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0522_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_61",
+                    "name": "Mutia Ulfa, S.E., M.M"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0523_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8440",
+                    "name": "Yosephine Dosen USH"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0524_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8427",
+                    "name": "AGATHA PRICILLIA SEKAR T"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0525_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8412",
+                    "name": "Intan Mustika Jati, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0526_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0527_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8427",
+                    "name": "AGATHA PRICILLIA SEKAR T"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0528_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8427",
+                    "name": "AGATHA PRICILLIA SEKAR T"
+                },
+                {
+                    "username": "dosen_8429",
+                    "name": "Suyahman, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0529_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8440",
+                    "name": "Yosephine Dosen USH"
+                },
+                {
+                    "username": "dosen_8443",
+                    "name": "Muhamad Wisnu Pangestu"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0537_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8431",
+                    "name": "Ardy Wicaksono, S.Kom., M.Kom"
+                },
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0538_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_61",
+                    "name": "Mutia Ulfa, S.E., M.M"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0539_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8452",
+                    "name": "CHANIA AULIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0540_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8450",
+                    "name": "Fauzia Dhiyaa' Farros, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                },
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202602_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202604_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202605_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202613_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8453",
+                    "name": "ADHITYA DARMAWAN, M. Li."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM05202601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8412",
+                    "name": "Intan Mustika Jati, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM05202602_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IFM02202601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM05202603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_64",
+                    "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0541_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8450",
+                    "name": "Fauzia Dhiyaa' Farros, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0542_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8450",
+                    "name": "Fauzia Dhiyaa' Farros, S.Kom., M.Kom."
+                },
+                {
+                    "username": "dosen_8429",
+                    "name": "Suyahman, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0543_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0007_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0310_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_60",
+                    "name": "Yuniars Renowening, M.Gz"
+                },
+                {
+                    "username": "dosen_78",
+                    "name": "Alfan Ridha, S.ST.,M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0311_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_68",
+                    "name": "Himmatunnisak Mahmudah, S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0312_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_68",
+                    "name": "Himmatunnisak Mahmudah, S.Gz., M.Gz"
+                },
+                {
+                    "username": "dosen_8437",
+                    "name": "Elsa Pavita S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0313_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8437",
+                    "name": "Elsa Pavita S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0314_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8437",
+                    "name": "Elsa Pavita S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0315_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8455",
+                    "name": "Berliando Rahmadanto Pamudya"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0316_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_78",
+                    "name": "Alfan Ridha, S.ST.,M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0317_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_68",
+                    "name": "Himmatunnisak Mahmudah, S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0318_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_60",
+                    "name": "Yuniars Renowening, M.Gz"
+                },
+                {
+                    "username": "dosen_78",
+                    "name": "Alfan Ridha, S.ST.,M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002605_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002604_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002602_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002603_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002601_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002613_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM032601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM032602_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM032603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_60",
+                    "name": "Yuniars Renowening, M.Gz"
+                },
+                {
+                    "username": "dosen_73",
+                    "name": "Titik Dwi Noviati,S.Gz.,M.Gz."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM032604_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM032605_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM032606_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_74",
+                    "name": "Fitria hayu Palupi,S.ST.,M.Kes."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_SGZ_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0013_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8439",
+                    "name": "Dr. Anthon Stevanus Tondo, S.E., M.B.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IFM0101_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8449",
+                    "name": "Shofyan Hadi Ramadhan, S.Par., M.Sc."
+                },
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IFM0103_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0328_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8443",
+                    "name": "Muhamad Wisnu Pangestu"
+                },
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0329_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0330_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8437",
+                    "name": "Elsa Pavita S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0331_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_73",
+                    "name": "Titik Dwi Noviati,S.Gz.,M.Gz."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0332_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_73",
+                    "name": "Titik Dwi Noviati,S.Gz.,M.Gz."
+                },
+                {
+                    "username": "dosen_78",
+                    "name": "Alfan Ridha, S.ST.,M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0333_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_68",
+                    "name": "Himmatunnisak Mahmudah, S.Gz., M.Gz"
+                },
+                {
+                    "username": "dosen_8437",
+                    "name": "Elsa Pavita S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0334_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_68",
+                    "name": "Himmatunnisak Mahmudah, S.Gz., M.Gz"
+                }
+            ]
+        },
+        {
+            "shortname": "SIF1002_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8429",
+                    "name": "Suyahman, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0005_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0609_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                },
+                {
+                    "username": "dosen_8443",
+                    "name": "Muhamad Wisnu Pangestu"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0610_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8431",
+                    "name": "Ardy Wicaksono, S.Kom., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0611_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_64",
+                    "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0612_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8431",
+                    "name": "Ardy Wicaksono, S.Kom., M.Kom"
+                },
+                {
+                    "username": "dosen_8430",
+                    "name": "Deny Prasetyo, S.Pd, M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0613_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                },
+                {
+                    "username": "dosen_64",
+                    "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0614_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8431",
+                    "name": "Ardy Wicaksono, S.Kom., M.Kom"
+                },
+                {
+                    "username": "dosen_8429",
+                    "name": "Suyahman, S.Kom., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0615_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8434",
+                    "name": "Jacob F. N. Dethan, S.T, M.Eng.Sc, Ph.D"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0007_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0616_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002601_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002604_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002603_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002602_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002613_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8453",
+                    "name": "ADHITYA DARMAWAN, M. Li."
+                }
+            ]
+        },
+        {
+            "shortname": "IFM022601_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM062601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM062602_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_64",
+                    "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002605_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM062603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                },
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0623_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8443",
+                    "name": "Muhamad Wisnu Pangestu"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0624_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                },
+                {
+                    "username": "dosen_8430",
+                    "name": "Deny Prasetyo, S.Pd, M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0625_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8427",
+                    "name": "AGATHA PRICILLIA SEKAR T"
+                },
+                {
+                    "username": "dosen_8412",
+                    "name": "Intan Mustika Jati, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0626_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_71",
+                    "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+                },
+                {
+                    "username": "dosen_8431",
+                    "name": "Ardy Wicaksono, S.Kom., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0627_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8443",
+                    "name": "Muhamad Wisnu Pangestu"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0628_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8443",
+                    "name": "Muhamad Wisnu Pangestu"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0629_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8430",
+                    "name": "Deny Prasetyo, S.Pd, M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0630_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                },
+                {
+                    "username": "dosen_64",
+                    "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_SIF_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_SIF23_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "SIF1001_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8431",
+                    "name": "Ardy Wicaksono, S.Kom., M.Kom"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0809_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8413",
+                    "name": "NICKY GILANG W, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0810_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_838",
+                    "name": "Bella Gusniar, SE, MM"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0007_MBI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0811_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8455",
+                    "name": "Berliando Rahmadanto Pamudya"
+                },
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0812_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8455",
+                    "name": "Berliando Rahmadanto Pamudya"
+                },
+                {
+                    "username": "dosen_8412",
+                    "name": "Intan Mustika Jati, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0813_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_63",
+                    "name": "Vincensia Serenade, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0815_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8452",
+                    "name": "CHANIA AULIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0814_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_838",
+                    "name": "Bella Gusniar, SE, MM"
+                },
+                {
+                    "username": "dosen_63",
+                    "name": "Vincensia Serenade, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0816_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_63",
+                    "name": "Vincensia Serenade, S.E., M.M."
+                },
+                {
+                    "username": "dosen_8455",
+                    "name": "Berliando Rahmadanto Pamudya"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0830_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_838",
+                    "name": "Bella Gusniar, SE, MM"
+                },
+                {
+                    "username": "dosen_8455",
+                    "name": "Berliando Rahmadanto Pamudya"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0831_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8413",
+                    "name": "NICKY GILANG W, S.E,M.M."
+                },
+                {
+                    "username": "dosen_838",
+                    "name": "Bella Gusniar, SE, MM"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0825_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8413",
+                    "name": "NICKY GILANG W, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0824_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8439",
+                    "name": "Dr. Anthon Stevanus Tondo, S.E., M.B.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0832_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8413",
+                    "name": "NICKY GILANG W, S.E,M.M."
+                },
+                {
+                    "username": "dosen_63",
+                    "name": "Vincensia Serenade, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0866_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0827_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_839",
+                    "name": "Graceilla Kristia Sheraphim Budiono, S.E, M.B.A"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_MBI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002604_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002602_MBI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002605_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM026801_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8412",
+                    "name": "Intan Mustika Jati, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM026805_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM026802_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8444",
+                    "name": "Maudi Rahma Azzahra"
+                }
+            ]
+        },
+        {
+            "shortname": "IFM022601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002613_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8442",
+                    "name": "Dr. Karin Sari Saputra, S.Pd., M.Hum."
+                },
+                {
+                    "username": "dosen_8453",
+                    "name": "ADHITYA DARMAWAN, M. Li."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0783_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0007_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM02026701_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM02026702_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM02026703_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM02026704_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IFM02202601_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202601_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202602_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202603_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202604_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202613_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8442",
+                    "name": "Dr. Karin Sari Saputra, S.Pd., M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM00202605_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0713_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                },
+                {
+                    "username": "dosen_63",
+                    "name": "Vincensia Serenade, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0714_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                },
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0715_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0716_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0717_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0730_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0718_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0719_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0720_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0721_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0722_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0731_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                },
+                {
+                    "username": "dosen_8413",
+                    "name": "NICKY GILANG W, S.E,M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0732_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_838",
+                    "name": "Bella Gusniar, SE, MM"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0733_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8452",
+                    "name": "CHANIA AULIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0734_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0735_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                },
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0736_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                },
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0737_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8435",
+                    "name": "Adhi Luhur Wicaksono,S.H,M.H"
+                },
+                {
+                    "username": "dosen_8411",
+                    "name": "Muhammad Rifzal Alief"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_HKM_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0007_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0409_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0409P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0410_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0411_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0411P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0412_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                },
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0423_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8438",
+                    "name": "Dr. Irvan Setiadi Kartawiria, S.T., M.Sc."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0423P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8438",
+                    "name": "Dr. Irvan Setiadi Kartawiria, S.T., M.Sc."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0413P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0414_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0418_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0418P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0014_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8439",
+                    "name": "Dr. Anthon Stevanus Tondo, S.E., M.B.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0416_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                },
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0416P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                },
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM0009_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0428_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IFM0101_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IFM0103_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IFM0103P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8418",
+                    "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0426_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM0426P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0402_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                },
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0406_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0406P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0412_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0412P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8414",
+                    "name": "Joshua Chrismast NL, S.TP,M.Sc"
+                },
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0414_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0414P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8415",
+                    "name": "SALSABILA AMALIA PUTRI BUMI"
+                }
+            ]
+        },
+        {
+            "shortname": "IDE0422_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8416",
+                    "name": "VIKI HENDI KURNIADITYA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002601_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                },
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002602_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002603_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002604_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002613_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM042603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM042603P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM042604_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8438",
+                    "name": "Dr. Irvan Setiadi Kartawiria, S.T., M.Sc."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM042605_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM042605P_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8441",
+                    "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002605_TPN_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002605_BKI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002604_BKI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002602_BKI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002603_BKI_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM092601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8453",
+                    "name": "ADHITYA DARMAWAN, M. Li."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM092607_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8442",
+                    "name": "Dr. Karin Sari Saputra, S.Pd., M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM092603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM092605_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002603_PAR_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM102602_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8449",
+                    "name": "Shofyan Hadi Ramadhan, S.Par., M.Sc."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002601_PAR_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002605_PAR_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM102604_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8449",
+                    "name": "Shofyan Hadi Ramadhan, S.Par., M.Sc."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002602_PAR_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8451",
+                    "name": "IMAM DWI CAHYO"
+                }
+            ]
+        },
+        {
+            "shortname": "IDM102603_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8445",
+                    "name": "ASSYIFA SHAFIA ADIYANTI"
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002613_PAR_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                },
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IUM002604_PAR_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "IDM102601_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8445",
+                    "name": "ASSYIFA SHAFIA ADIYANTI"
+                },
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "DUM002601_ABD_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8436",
+                    "name": "Anindya Nurul Kusuma Dewi"
+                },
+                {
+                    "username": "dosen_8433",
+                    "name": "M. ADI PRATAMA, S.S., M.A."
+                }
+            ]
+        },
+        {
+            "shortname": "DUM002602_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8420",
+                    "name": "VERONICA KINANTHI S, S.H.M.H"
+                }
+            ]
+        },
+        {
+            "shortname": "DUM002603_ABD_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8410",
+                    "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+                }
+            ]
+        },
+        {
+            "shortname": "DUM002604_ABD_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8454",
+                    "name": "Dr. Budi Purnomo, M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "DUM002605_ABD_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8426",
+                    "name": "MANDARIN USH - LECTURER"
+                }
+            ]
+        },
+        {
+            "shortname": "DUM002613_ABD_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8442",
+                    "name": "Dr. Karin Sari Saputra, S.Pd., M.Hum."
+                }
+            ]
+        },
+        {
+            "shortname": "DDM021101_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8444",
+                    "name": "Maudi Rahma Azzahra"
+                }
+            ]
+        },
+        {
+            "shortname": "DDM021102_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_8452",
+                    "name": "CHANIA AULIA"
+                }
+            ]
+        },
+        {
+            "shortname": "DDM021103_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_65",
+                    "name": "Ahmad Aufar Ribhi, S.E., M.M."
+                }
+            ]
+        },
+        {
+            "shortname": "IFM022601_ABD_20262027Ganjil",
+            "teachers": [
+                {
+                    "username": "dosen_70",
+                    "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+                }
+            ]
+        }
+    ]
+}

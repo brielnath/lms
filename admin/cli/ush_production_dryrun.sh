@@ -61,3 +61,7 @@ echo "  php admin/cli/ush_assign_kaprodi_production.php --confirm"
 echo "  php admin/cli/ush_rebuild_cohorts.php --confirm"
 echo "  php admin/cli/upgrade.php --non-interactive"
 echo "  php admin/cli/purge_caches.php"
+echo
+echo "Delta kerapian lokal (Smart City, BI A2, pengampu ganda, jadwal):"
+echo "  bash admin/cli/ush_production_apply.sh"
+echo "  bash admin/cli/ush_production_apply.sh --confirm"

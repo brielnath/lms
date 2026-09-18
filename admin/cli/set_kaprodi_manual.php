@@ -3,7 +3,8 @@ define('CLI_SCRIPT', true);
 @error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 require(__DIR__ . '/../../config.php');
 
-mtrace("=== SETTING KAPRODI MANUAL PADA KATEGORI PRODI ===\n");
+mtrace("=== SETTING KAPRODI MANUAL PADA KATEGORI PRODI ===");
+mtrace("Lebih aman: php admin/cli/ush_assign_kaprodi_local.php --confirm\n");
 
 // Get Manager Role ID in Moodle
 $manager_role = $DB->get_record('role', ['shortname' => 'manager']);
@@ -21,13 +22,27 @@ $kaprodi_targets = [
     'SIF' => ['search' => 'Dwi Utari', 'label' => 'Kaprodi Sistem Informasi / Informatika'],
     'SGZ' => ['search' => 'Yuniar', 'label' => 'Kaprodi Ilmu Gizi'],
     'SBD' => ['search' => 'Grace', 'label' => 'Kaprodi Bisnis Digital'],
+    'MBI' => ['search' => 'Intan Mustika', 'label' => 'Kaprodi Manajemen Bisnis Internasional'],
+    'HKM' => ['search' => 'Veronica', 'label' => 'Kaprodi Hukum Bisnis'],
+    'TPN' => ['search' => 'Joshua', 'label' => 'Kaprodi Teknologi Pangan'],
+    'BKI' => ['search' => 'Karin Sari', 'label' => 'Kaprodi Bahasa dan Kebudayaan Inggris'],
+    'PAR' => ['search' => 'Irvan', 'label' => 'Kaprodi Pariwisata'],
+    'ABD' => ['search' => 'Nimas Ratna', 'label' => 'Kaprodi Akuntansi Bisnis Digital'],
 ];
 
 // Find matching categories in Moodle
 $categories = $DB->get_records_sql("
     SELECT id, name
     FROM {course_categories}
-    WHERE name LIKE '%Sistem Informasi%' OR name LIKE '%Gizi%' OR name LIKE '%Bisnis Digital%'
+    WHERE name LIKE '%Sistem Informasi%'
+       OR name LIKE '%Gizi%'
+       OR name LIKE '%Bisnis Digital%'
+       OR name LIKE '%Manajemen Bisnis Internasional%'
+       OR name LIKE '%Hukum Bisnis%'
+       OR name LIKE '%Teknologi Pangan%'
+       OR name LIKE '%Kebudayaan Inggris%'
+       OR name LIKE '%Pariwisata%'
+       OR name LIKE '%Akuntansi Bisnis Digital%'
 ");
 
 mtrace("Kategori yang Ditemukan di Moodle:");

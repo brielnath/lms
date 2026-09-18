@@ -365,3 +365,43 @@ function theme_academi_get_extra_scss($theme) {
 
     return $extrascss;
 }
+
+/**
+ * Username tampak akun mahasiswa USH (NIM), termasuk kalau diisi sebagai email.
+ */
+function theme_academi_ush_username_looks_mahasiswa(string $raw): bool {
+    $u = strtolower(trim($raw));
+    if (str_contains($u, '@')) {
+        $u = explode('@', $u, 2)[0];
+    }
+    if (str_starts_with($u, 'dosen_') || str_starts_with($u, 'dosen.') || $u === 'admin' || $u === 'guest') {
+        return false;
+    }
+    if (preg_match('/^06\d{8,}$/', $u)) {
+        return true;
+    }
+    return ctype_digit($u) && strlen($u) >= 8 && strlen($u) <= 12;
+}
+
+/**
+ * Tolak login kalau tab Dosen/Admin vs Mahasiswa tidak sesuai jenis akun.
+ * Dipanggil sebelum password dicek, supaya NIM tidak lolos lewat form staf.
+ *
+ * @param stdClass $frm data form login
+ * @return string pesan error, atau kosong jika boleh dilanjut
+ */
+function theme_academi_ush_login_precheck(stdClass $frm): string {
+    $role = strtolower(trim((string) ($frm->ush_login_role ?? 'staff')));
+    if ($role !== 'student' && $role !== 'staff') {
+        $role = 'staff';
+    }
+    $username = (string) ($frm->username ?? '');
+    $isnim = theme_academi_ush_username_looks_mahasiswa($username);
+    if ($role === 'staff' && $isnim) {
+        return 'Akun mahasiswa tidak bisa masuk lewat Dosen / Admin. Pilih tab Mahasiswa.';
+    }
+    if ($role === 'student' && !$isnim) {
+        return 'Akun dosen atau admin tidak bisa masuk lewat tab Mahasiswa. Pilih Dosen / Admin.';
+    }
+    return '';
+}

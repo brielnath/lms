@@ -40,6 +40,7 @@
             <input id="anchor" type="hidden" name="anchor" value="">
             <script>document.getElementById('anchor').value = location.hash;</script>
             <input type="hidden" name="logintoken" value="{{logintoken}}">
+            <input type="hidden" name="ush_login_role" id="ush-login-role" value="staff">
 
             <div class="login-form-username mb-3">
                 <label for="username" id="ush-user-label">Username / Email</label>
@@ -89,6 +90,7 @@
             $('.ush-login-role[data-ush-role="' + role + '"]').addClass('is-active');
             $('#ush-user-label').text(student ? 'NIM' : 'Username / Email');
             $('#username').attr('placeholder', student ? 'Masukkan NIM Anda' : 'Masukkan username atau email');
+            $('#ush-login-role').val(role);
             try { window.localStorage.setItem('ush_login_role', role); } catch (e) {}
         };
         $(document).on('click', '.ush-login-role', function() {

@@ -221,7 +221,7 @@ class view {
         if (!$start && !$end) {
             return get_string('nodates', 'block_ush_calendar');
         }
-        $fmt = 'd M Y';
+        $fmt = get_string('strftimedate', 'langconfig');
         if ($start && $end && $end !== $start) {
             return userdate($start, $fmt) . ' - ' . userdate($end, $fmt);
         }
