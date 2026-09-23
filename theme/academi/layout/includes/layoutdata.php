@@ -46,9 +46,16 @@ if (isloggedin()) {
     $blockdraweropen = false;
 }
 
+$ushplainattendance = function_exists('theme_academi_ush_attendance_plain_view')
+    && theme_academi_ush_attendance_plain_view();
+
 // Otomatis buka sidebar (course index drawer) di sebelah kiri saat membuka halaman course
-if ($PAGE->pagelayout === 'course' || $PAGE->pagelayout === 'incourse') {
+if (!$ushplainattendance && ($PAGE->pagelayout === 'course' || $PAGE->pagelayout === 'incourse')) {
     $courseindexopen = true;
+}
+if ($ushplainattendance) {
+    $courseindexopen = false;
+    $blockdraweropen = false;
 }
 
 if (defined('BEHAT_SITE_RUNNING')) {
@@ -77,7 +84,10 @@ $forceblockdraweropen = $OUTPUT->firstview_fakeblocks();
 
 $secondarynavigation = false;
 $overflow = '';
-if ($PAGE->has_secondary_navigation()) {
+if (!$ushplainattendance && $PAGE->has_secondary_navigation()) {
+    if (function_exists('theme_academi_ush_adjust_teacher_secondarynav')) {
+        theme_academi_ush_adjust_teacher_secondarynav($PAGE);
+    }
     $tablistnav = $PAGE->has_tablist_secondary_navigation();
     $moremenu = new \core\navigation\output\more_menu($PAGE->secondarynav, 'nav-tabs', true, $tablistnav);
     $secondarynavigation = $moremenu->export_for_template($OUTPUT);
@@ -216,4 +226,5 @@ $templatecontext += [
     'addblockbutton' => $addblockbutton,
     'ush_banner_html' => $ush_banner_html,
     'ush_is_dosen' => $ush_is_dosen,
+    'ushplainattendance' => $ushplainattendance,
 ];

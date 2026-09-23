@@ -405,3 +405,106 @@ function theme_academi_ush_login_precheck(stdClass $frm): string {
     }
     return '';
 }
+
+/**
+ * Dosen di halaman kelas: Settings paling kiri, Course diganti tautan daftar kehadiran.
+ * Bahasa situs id = Kehadiran, selain itu = Attendance.
+ */
+function theme_academi_ush_adjust_teacher_secondarynav(moodle_page $page): void {
+    global $USER;
+
+    if (!isloggedin() || isguestuser()) {
+        return;
+    }
+    $course = $page->course ?? null;
+    if (!$course || empty($course->id) || (int) $course->id <= 1) {
+        return;
+    }
+    $level = (int) $page->context->contextlevel;
+    if ($level !== CONTEXT_COURSE && $level !== CONTEXT_MODULE) {
+        return;
+    }
+    $context = context_course::instance((int) $course->id);
+    if (!has_capability('moodle/course:update', $context)
+            && !has_capability('mod/attendance:takeattendances', $context)
+            && !has_capability('mod/attendance:viewreports', $context)) {
+        return;
+    }
+
+    $nav = $page->secondarynav;
+    if (!$nav || empty($nav->children)) {
+        return;
+    }
+
+    $reporturl = null;
+    try {
+        $modinfo = get_fast_modinfo($course, $USER->id);
+        foreach ($modinfo->get_instances_of('attendance') as $cm) {
+            if ($cm->uservisible) {
+                $reporturl = new moodle_url('/mod/attendance/report.php', [
+                    'id' => $cm->id,
+                    'ushplain' => 1,
+                ]);
+                break;
+            }
+        }
+    } catch (Throwable $e) {
+        $reporturl = null;
+    }
+
+    if ($reporturl && !$nav->get('ushkehadiran')) {
+        $lang = current_language();
+        $label = ($lang === 'id' || str_starts_with($lang, 'id_')) ? 'Kehadiran' : 'Attendance';
+        $node = navigation_node::create(
+            $label,
+            $reporturl,
+            navigation_node::TYPE_CUSTOM,
+            null,
+            'ushkehadiran'
+        );
+        $node->showinflatnavigation = true;
+        $plain = optional_param('ushplain', 0, PARAM_BOOL);
+        if (str_starts_with((string) $page->pagetype, 'mod-attendance') && $plain) {
+            $node->make_active();
+        }
+        $nav->add_node($node);
+    }
+
+    // Tab Course tidak dipakai dosen. Diganti Kehadiran kalau ada presensi.
+    if ($nav->get('coursehome')) {
+        $nav->children->remove('coursehome');
+    }
+
+    $settings = $nav->get('editsettings');
+    if ($settings) {
+        $settings->set_force_into_more_menu(true);
+    }
+
+    $kehadiran = $nav->get('ushkehadiran');
+    if ($kehadiran) {
+        $nav->children->remove('ushkehadiran');
+        $keys = $nav->children->get_key_list();
+        $nav->add_node($kehadiran, $keys[0] ?? null);
+    }
+}
+
+/**
+ * Halaman daftar kehadiran dosen: hanya tabel mahasiswa, tanpa tab kelas.
+ */
+function theme_academi_ush_attendance_plain_view(): bool {
+    global $PAGE;
+
+    if (!isloggedin() || isguestuser()) {
+        return false;
+    }
+    if (!str_starts_with((string) $PAGE->pagetype, 'mod-attendance-report')) {
+        return false;
+    }
+    if (!optional_param('ushplain', 0, PARAM_BOOL)) {
+        return false;
+    }
+    $context = context_course::instance((int) $PAGE->course->id);
+    return has_capability('moodle/course:update', $context)
+        || has_capability('mod/attendance:viewreports', $context)
+        || has_capability('mod/attendance:takeattendances', $context);
+}

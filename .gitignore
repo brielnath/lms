@@ -7,6 +7,10 @@
 /siakad_cookie.txt
 /jadwal_*.csv
 /kalender_pertemuan_*.csv
+*.xlsx
+
+# Dependensi Composer lokal. Jangan di-commit.
+/vendor/
 
 course/format/remuiformat/.gitignore
 course/format/remuiformat/

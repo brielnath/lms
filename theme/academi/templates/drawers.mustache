@@ -55,6 +55,7 @@
     <div id="page-wrapper" class="d-print-block">
         {{{ output.standard_top_of_body_html }}}
         {{> theme_academi/header }}
+        {{^ushplainattendance}}
         {{#courseindex}}
             {{< theme_boost/drawer }}
                 {{$id}}theme_boost-drawers-courseindex{{/id}}
@@ -76,6 +77,8 @@
                 {{/closebuttonicon}}
             {{/ theme_boost/drawer}}
         {{/courseindex}}
+        {{/ushplainattendance}}
+        {{^ushplainattendance}}
         {{#hasblocks}}
             {{< theme_boost/drawer }}
                 {{$id}}theme_boost-drawers-blocks{{/id}}
@@ -98,8 +101,10 @@
                 {{/closebuttonicon}}
             {{/ theme_boost/drawer}}
         {{/hasblocks}}
+        {{/ushplainattendance}}
         <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers {{#courseindexopen}}show-drawer-left{{/courseindexopen}} {{#blockdraweropen}}show-drawer-right{{/blockdraweropen}} drag-container">
             <div id="topofscroll" class="main-inner">
+                {{^ushplainattendance}}
                 <div class="drawer-toggles d-flex">
                     {{#courseindex}}
                         <div class="drawer-toggler drawer-left-toggle open-nav d-print-none">
@@ -136,12 +141,15 @@
                         </div>
                     {{/hasblocks}}
                 </div>
+                {{/ushplainattendance}}
+                {{^ushplainattendance}}
                 {{{ output.full_header }}}
                 {{#secondarymoremenu}}
                     <div class="secondary-navigation d-print-none">
                         {{> core/moremenu}}
                     </div>
                 {{/secondarymoremenu}}
+                {{/ushplainattendance}}
                 <div id="page-content" class="pb-3 d-print-block">
                     <div id="region-main-box">
                         {{#hasregionmainsettingsmenu}}
@@ -150,12 +158,15 @@
                         </div>
                         {{/hasregionmainsettingsmenu}}
                         <section id="region-main" aria-label="{{#str}}content{{/str}}">
+                            {{^ushplainattendance}}
                             {{{ ush_banner_html }}}
 
                             {{#hasregionmainsettingsmenu}}
                                 <div class="region_main_settings_menu_proxy"></div>
                             {{/hasregionmainsettingsmenu}}
                             {{{ output.course_content_header }}}
+                            {{/ushplainattendance}}
+                            {{^ushplainattendance}}
                             {{#headercontent}}
                                 {{> core/activity_header }}
                             {{/headercontent}}
@@ -166,9 +177,12 @@
                                     </div>
                                 </div>
                             {{/overflow}}
+                            {{/ushplainattendance}}
                             {{{ output.main_content }}}
+                            {{^ushplainattendance}}
                             {{{ output.activity_navigation }}}
                             {{{ output.course_content_footer }}}
+                            {{/ushplainattendance}}
 
                         </section>
                     </div>
