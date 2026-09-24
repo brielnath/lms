@@ -69,5 +69,10 @@ $templatecontext = [
     'ushloginurl' => (new \moodle_url('/login/index.php'))->out(false),
     'ushpanduanurl' => (new \moodle_url('/course/index.php'))->out(false),
     'ushsearchurl' => (new \moodle_url('/course/search.php'))->out(false),
+    'ushnavkategori' => theme_academi_ush_en_label('Kategori'),
+    'ushnavall' => theme_academi_ush_en_label('Semua kategori'),
+    'ushnavpanduan' => theme_academi_ush_en_label('Panduan'),
+    'ushnavlogin' => theme_academi_ush_en_label('Masuk'),
+    'ushnavsearch' => theme_academi_ush_en_label('Cari'),
 ];
 $templatecontext += footer();

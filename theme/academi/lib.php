@@ -508,3 +508,30 @@ function theme_academi_ush_attendance_plain_view(): bool {
         || has_capability('mod/attendance:viewreports', $context)
         || has_capability('mod/attendance:takeattendances', $context);
 }
+
+/**
+ * English label for USH menus and course titles when the active language is English.
+ *
+ * @param string $text Indonesian source label.
+ * @return string
+ */
+function theme_academi_ush_en_label(string $text): string {
+    $lang = current_language();
+    if ($lang !== 'en' && !str_starts_with($lang, 'en')) {
+        return $text;
+    }
+    $exact = [
+        'Kategori' => 'Categories',
+        'Semua kategori' => 'All categories',
+        'Panduan' => 'Guide',
+        'Masuk' => 'Log in',
+        'Cari' => 'Search',
+    ];
+    if (isset($exact[$text])) {
+        return $exact[$text];
+    }
+    if (class_exists(\filter_ushlabels\text_filter::class)) {
+        return \filter_ushlabels\text_filter::translate($text);
+    }
+    return $text;
+}

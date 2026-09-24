@@ -52,14 +52,14 @@
 
             <div class="dropdown ush-navbar__kategori">
                 <a class="nav-link dropdown-toggle" href="#" id="ushKategoriMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Kategori
+                    {{ushnavkategori}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="ushKategoriMenu">
                     {{#ushcategories}}
                         <a class="dropdown-item" href="{{url}}">{{name}}</a>
                     {{/ushcategories}}
                     {{^ushcategories}}
-                        <a class="dropdown-item" href="{{{ config.wwwroot }}}/course/index.php">Semua kategori</a>
+                        <a class="dropdown-item" href="{{{ config.wwwroot }}}/course/index.php">{{ushnavall}}</a>
                     {{/ushcategories}}
                 </div>
             </div>
@@ -74,7 +74,7 @@
         </div>
 
         <form class="ush-navbar__search" action="{{{ushsearchurl}}}" method="get" role="search">
-            <label class="sr-only" for="ush-navbar-search">Cari</label>
+            <label class="sr-only" for="ush-navbar-search">{{ushnavsearch}}</label>
             <span class="ush-navbar__search-icon" aria-hidden="true">
                 <i class="fa fa-search"></i>
             </span>
@@ -82,9 +82,9 @@
         </form>
 
         <div class="ush-navbar__right" id="usernavigation">
-            <a class="ush-navbar__link ush-navbar__panduan" href="{{{ushpanduanurl}}}">Panduan</a>
+            <a class="ush-navbar__link ush-navbar__panduan" href="{{{ushpanduanurl}}}">{{ushnavpanduan}}</a>
             {{^ushisloggedin}}
-                <a class="ush-navbar__link ush-navbar__login" href="{{{ushloginurl}}}">Masuk</a>
+                <a class="ush-navbar__link ush-navbar__login" href="{{{ushloginurl}}}">{{ushnavlogin}}</a>
             {{/ushisloggedin}}
             {{#ushisloggedin}}
                 {{{ output.navbar_plugin_output }}}

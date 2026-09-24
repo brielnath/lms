@@ -179,13 +179,21 @@ class prodi {
             if ($url === '') {
                 $url = (new moodle_url('/my/index.php', ['ushcalprodi' => $code]))->out(false);
             }
+            $name = $prodi['label'];
+            if (function_exists('theme_academi_ush_en_label')) {
+                $name = theme_academi_ush_en_label($name);
+            }
             $items[] = [
-                'name' => $prodi['label'],
+                'name' => $name,
                 'url' => $url,
             ];
         }
+        $all = 'Semua kategori';
+        if (function_exists('theme_academi_ush_en_label')) {
+            $all = theme_academi_ush_en_label($all);
+        }
         $items[] = [
-            'name' => 'Semua kategori',
+            'name' => $all,
             'url' => (new moodle_url('/course/index.php'))->out(false),
         ];
         return $items;
