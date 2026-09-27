@@ -16,6 +16,7 @@ require_once($CFG->dirroot . '/course/lib.php');
 require_once($CFG->libdir . '/enrollib.php');
 require_once($CFG->dirroot . '/user/lib.php');
 require_once(__DIR__ . '/ush_course_owner.php');
+require_once(__DIR__ . '/ush_dosen_account.php');
 
 $islocal = strpos($CFG->wwwroot, 'localhost') !== false || strpos($CFG->wwwroot, '127.0.0.1') !== false;
 $isprod = strpos($CFG->wwwroot, 'lms.ush.ac.id') !== false;
@@ -209,7 +210,7 @@ foreach ($want as $code => $info) {
         if ($CONFIRM) {
             $teacherslabel = [];
             foreach (array_keys($info['teachers']) as $lec) {
-                $du = $DB->get_record('user', ['username' => 'dosen_' . $lec, 'deleted' => 0]);
+                $du = ush_find_dosen_user((int) $lec);
                 $teacherslabel[] = $du ? fullname($du) : ('dosen_' . $lec);
             }
             $new = (object) [
@@ -268,11 +269,7 @@ foreach ($want as $code => $info) {
     if ($single) {
         $ctx = context_course::instance($single->id);
         foreach (array_keys($info['teachers']) as $lec) {
-            $du = $DB->get_record('user', [
-                'username' => 'dosen_' . $lec,
-                'mnethostid' => $mnethostid,
-                'deleted' => 0,
-            ]);
+            $du = ush_find_dosen_user((int) $lec);
             if (!$du) {
                 continue;
             }

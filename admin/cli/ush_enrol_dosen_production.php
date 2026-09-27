@@ -24,6 +24,7 @@ $ushstartcwd = getcwd();
 require(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/enrollib.php');
 require_once($CFG->dirroot . '/user/lib.php');
+require_once(__DIR__ . '/ush_dosen_account.php');
 
 $FROMFILE = '';
 $SUFFIX = '20262027Ganjil';
@@ -163,11 +164,7 @@ foreach ($payload['mappings'] as $row) {
         if ($lecid <= 0) {
             continue;
         }
-        $exists = $DB->record_exists('user', [
-            'username' => 'dosen_' . $lecid,
-            'mnethostid' => $CFG->mnet_localhost_id,
-            'deleted' => 0,
-        ]);
+        $exists = (bool) ush_find_dosen_user($lecid, (string) ($lec['email'] ?? ''));
         if (!$exists) {
             $needusers[$lecid] = trim($lec['name'] ?? '');
         }
@@ -217,11 +214,7 @@ foreach ($payload['mappings'] as $row) {
             continue;
         }
 
-        $user = $DB->get_record('user', [
-            'username' => 'dosen_' . $lecid,
-            'mnethostid' => $CFG->mnet_localhost_id,
-            'deleted' => 0,
-        ]);
+        $user = ush_find_dosen_user($lecid, (string) ($lec['email'] ?? ''));
 
         if ($user) {
             $ctx = context_course::instance($course->id);
@@ -247,13 +240,21 @@ foreach ($payload['mappings'] as $row) {
         if (!$user) {
             [$firstname, $lastname] = ush_dosen_split_name($lecname);
             try {
+                $siakadmail = core_text::strtolower(trim((string) ($lec['email'] ?? '')));
+                $loginname = 'dosen_' . $lecid;
+                $mail = 'dosen.' . $lecid . '@sugenghartono.ac.id';
+                if ($siakadmail !== '' && validate_email($siakadmail) && clean_param($siakadmail, PARAM_USERNAME) === $siakadmail) {
+                    $loginname = $siakadmail;
+                    $mail = $siakadmail;
+                }
                 $newid = user_create_user((object) [
-                    'username' => 'dosen_' . $lecid,
+                    'username' => $loginname,
                     'auth' => 'manual',
                     'password' => 'DosenUSH2026!',
                     'firstname' => $firstname,
                     'lastname' => $lastname,
-                    'email' => 'dosen.' . $lecid . '@sugenghartono.ac.id',
+                    'email' => $mail,
+                    'idnumber' => (string) $lecid,
                     'confirmed' => 1,
                     'mnethostid' => $CFG->mnet_localhost_id,
                     'lang' => 'id',
