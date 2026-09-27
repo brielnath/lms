@@ -1,0 +1,336 @@
+{
+    "generated": "2026-09-27T11:57:09+01:00",
+    "note": "Login dosen = email SIAKAD. Tanpa kata sandi.",
+    "lecturers": [
+        {
+            "id": 60,
+            "email": "yuniars@gmail.com",
+            "name": "Yuniars Renowening, M.Gz"
+        },
+        {
+            "id": 61,
+            "email": "mutiaulfa@gmail.com",
+            "name": "Mutia Ulfa, S.E., M.M"
+        },
+        {
+            "id": 62,
+            "email": "nitalailiyah06@gmail.com",
+            "name": "Nita Imliyatul Lailiyah, S.E., M.M"
+        },
+        {
+            "id": 63,
+            "email": "serenadevincensia@gmail.com",
+            "name": "Vincensia Serenade, S.E., M.M."
+        },
+        {
+            "id": 64,
+            "email": "dwi.utari.iswavigra1997@gmail.com",
+            "name": "Dwi Utari Iswavigra, S.T., M.Kom."
+        },
+        {
+            "id": 65,
+            "email": "pakaufar@gmail.com",
+            "name": "Ahmad Aufar Ribhi, S.E., M.M."
+        },
+        {
+            "id": 66,
+            "email": "lovaendriani@gmail.com",
+            "name": "Lova Endriani Zen, S.Kom., M.Kom."
+        },
+        {
+            "id": 67,
+            "email": "zainmaarif@gmail.com",
+            "name": "Mohammad Zainul Ma'arif. S.ST., M.Gz."
+        },
+        {
+            "id": 68,
+            "email": "himmatunnisa.mahmudah@gmail.com",
+            "name": "Himmatunnisak Mahmudah, S.Gz., M.Gz"
+        },
+        {
+            "id": 69,
+            "email": "etik.itsk@gmail.com",
+            "name": "Etik Sulistyorini, S.ST., M.Kes."
+        },
+        {
+            "id": 70,
+            "email": "nimasratna@sugenghartono.ac.id",
+            "name": "Nimas Ratna Sari, S.Kom., M.Sc"
+        },
+        {
+            "id": 71,
+            "email": "yulaikhaam@gmail.com",
+            "name": "Yulaikha Mar'atullatifah, S.Pd., M.Kom"
+        },
+        {
+            "id": 72,
+            "email": "yunitarahmasari87@gmail.com",
+            "name": "Yunita Rahmasari, S.Pd., M.App.Ling."
+        },
+        {
+            "id": 73,
+            "email": "titikdwi.itsk@gmail.com",
+            "name": "Titik Dwi Noviati,S.Gz.,M.Gz."
+        },
+        {
+            "id": 74,
+            "email": "fitriahp45@gmail.com",
+            "name": "Fitria hayu Palupi,S.ST.,M.Kes."
+        },
+        {
+            "id": 75,
+            "email": "darmanto@sugenghartono.ac.id",
+            "name": "Darmanto, S.E., M.M"
+        },
+        {
+            "id": 77,
+            "email": "imamsyafii@sugenghartono.ac.id",
+            "name": "Imam Syafii, S.Kom, M.Kom"
+        },
+        {
+            "id": 78,
+            "email": "alfanridha@sugenghartono.ac.id",
+            "name": "Alfan Ridha, S.ST.,M.Gz"
+        },
+        {
+            "id": 80,
+            "email": "mandarin_ush2@gmail.com",
+            "name": "Wahyuning Sri Widowati"
+        },
+        {
+            "id": 83,
+            "email": "anggara.mahardika.dosen@sugenghartono.ac.id",
+            "name": "Anggara Mahardika, Ph.D"
+        },
+        {
+            "id": 89,
+            "email": "akademik.itsk@gmail.com",
+            "name": "Farida Nurhasanah"
+        },
+        {
+            "id": 91,
+            "email": "pancasila.new@gmail.com",
+            "name": "Wijiyanto Dosen USH"
+        },
+        {
+            "id": 836,
+            "email": "djokos@gmail.com",
+            "name": "Dr. Ir, Djoko Suwarno, M.Si"
+        },
+        {
+            "id": 837,
+            "email": "liyayuniastutik@gmail.com",
+            "name": "Liya Yuni Astutik, S.Tr.T, M.T"
+        },
+        {
+            "id": 838,
+            "email": "bella@gmail.com",
+            "name": "Bella Gusniar, SE, MM"
+        },
+        {
+            "id": 839,
+            "email": "grace-aja@gmail.com",
+            "name": "Graceilla Kristia Sheraphim Budiono, S.E, M.B.A"
+        },
+        {
+            "id": 8409,
+            "email": "azharrashed@gmail.com",
+            "name": "AZHAR RASHED, S.H.M.H"
+        },
+        {
+            "id": 8410,
+            "email": "maranathalisa@gmail.com",
+            "name": "MARANATHA LISATYANINGRUM HAINEKAM FOBIA"
+        },
+        {
+            "id": 8411,
+            "email": "rifzalalieframadhan@gmail.com",
+            "name": "Muhammad Rifzal Alief"
+        },
+        {
+            "id": 8412,
+            "email": "intanmustikajati@gmail.com",
+            "name": "Intan Mustika Jati, S.E,M.M."
+        },
+        {
+            "id": 8413,
+            "email": "nickygilangwicaksono@gmail.com",
+            "name": "NICKY GILANG W, S.E,M.M."
+        },
+        {
+            "id": 8414,
+            "email": "joshuachrstmas@gmail.com",
+            "name": "Joshua Chrismast NL, S.TP,M.Sc"
+        },
+        {
+            "id": 8415,
+            "email": "salsabilaamaliaputribumi@gmail.com",
+            "name": "SALSABILA AMALIA PUTRI BUMI"
+        },
+        {
+            "id": 8416,
+            "email": "vikihendikurniaditya@gmail.com",
+            "name": "VIKI HENDI KURNIADITYA"
+        },
+        {
+            "id": 8417,
+            "email": "elektranandaasidiqi@gmail.com",
+            "name": "Dr. Ellectrananda Anugerah Ash-Shidiqqi, M.H"
+        },
+        {
+            "id": 8418,
+            "email": "windy@gmail.com",
+            "name": "WINDY RIZKAPRILISA, S.TP,M.Sc"
+        },
+        {
+            "id": 8419,
+            "email": "mursalim@gmail.com",
+            "name": "MURSALIM, S.KOM, M.KOM"
+        },
+        {
+            "id": 8420,
+            "email": "veronica@gmail.com",
+            "name": "VERONICA KINANTHI S, S.H.M.H"
+        },
+        {
+            "id": 8421,
+            "email": "daniputri@gmail.com",
+            "name": "Dani Putri Septi, B.Ed, M.TCSOL"
+        },
+        {
+            "id": 8422,
+            "email": "ruthkiana@gmail.com",
+            "name": "Ruth Kiana Nuratri, B.Ed,M.A"
+        },
+        {
+            "id": 8426,
+            "email": "mandarin_ush1@gmail.com",
+            "name": "MANDARIN USH - LECTURER"
+        },
+        {
+            "id": 8427,
+            "email": "agathasekarofficial@gmail.com",
+            "name": "AGATHA PRICILLIA SEKAR T"
+        },
+        {
+            "id": 8428,
+            "email": "muhammadanwarfauzi1999@gmail.com",
+            "name": "Muhammad Anwar Fauzi, S.Kom., M.Kom."
+        },
+        {
+            "id": 8429,
+            "email": "suyahman.id@gmail.com",
+            "name": "Suyahman, S.Kom., M.Kom."
+        },
+        {
+            "id": 8430,
+            "email": "ushdeny@gmail.com",
+            "name": "Deny Prasetyo, S.Pd, M.Kom"
+        },
+        {
+            "id": 8431,
+            "email": "ardywicaksono@gmail.com",
+            "name": "Ardy Wicaksono, S.Kom., M.Kom"
+        },
+        {
+            "id": 8433,
+            "email": "madip.id@gmail.com",
+            "name": "M. ADI PRATAMA, S.S., M.A."
+        },
+        {
+            "id": 8434,
+            "email": "rektor2025@gmail.com",
+            "name": "Jacob F. N. Dethan, S.T, M.Eng.Sc, Ph.D"
+        },
+        {
+            "id": 8435,
+            "email": "adhiluhur@gmail.com",
+            "name": "Adhi Luhur Wicaksono,S.H,M.H"
+        },
+        {
+            "id": 8436,
+            "email": "anindya_nurul@gmail.com",
+            "name": "Anindya Nurul Kusuma Dewi"
+        },
+        {
+            "id": 8437,
+            "email": "elsapavita@gmail.com",
+            "name": "Elsa Pavita S.Gz., M.Gz"
+        },
+        {
+            "id": 8438,
+            "email": "irvankarta@gmail.com",
+            "name": "Dr. Irvan Setiadi Kartawiria, S.T., M.Sc."
+        },
+        {
+            "id": 8439,
+            "email": "anthon.tondo@sugenghartono.ac.id",
+            "name": "Dr. Anthon Stevanus Tondo, S.E., M.B.A."
+        },
+        {
+            "id": 8440,
+            "email": "yosephine@gmail.com",
+            "name": "Yosephine Dosen USH"
+        },
+        {
+            "id": 8441,
+            "email": "kukuh.madyaningrana@gmail.com",
+            "name": "Dr.rer.nat.Kukuh Madyaningrana, M.Biotech"
+        },
+        {
+            "id": 8442,
+            "email": "karinsarisaputra@yahoo.co.id",
+            "name": "Dr. Karin Sari Saputra, S.Pd., M.Hum."
+        },
+        {
+            "id": 8443,
+            "email": "wisnup2902@gmail.com",
+            "name": "Muhamad Wisnu Pangestu"
+        },
+        {
+            "id": 8444,
+            "email": "maudirahmahazz@gmail.com",
+            "name": "Maudi Rahma Azzahra"
+        },
+        {
+            "id": 8445,
+            "email": "syifashafia39@gmail.com",
+            "name": "ASSYIFA SHAFIA ADIYANTI"
+        },
+        {
+            "id": 8449,
+            "email": "shofyanhadi7@gmail.com",
+            "name": "Shofyan Hadi Ramadhan, S.Par., M.Sc."
+        },
+        {
+            "id": 8450,
+            "email": "fauziadhiyaaf@gmail.com",
+            "name": "Fauzia Dhiyaa' Farros, S.Kom., M.Kom."
+        },
+        {
+            "id": 8451,
+            "email": "imam.dc26@gmail.com",
+            "name": "IMAM DWI CAHYO"
+        },
+        {
+            "id": 8452,
+            "email": "chaniaaulia538@gmail.com",
+            "name": "CHANIA AULIA"
+        },
+        {
+            "id": 8453,
+            "email": "adhityadarmawan@sugenghartono.ac.id",
+            "name": "ADHITYA DARMAWAN, M. Li."
+        },
+        {
+            "id": 8454,
+            "email": "budipurnomo989@gmail.com",
+            "name": "Dr. Budi Purnomo, M.Hum."
+        },
+        {
+            "id": 8455,
+            "email": "berliandorp@gmail.com",
+            "name": "Berliando Rahmadanto Pamudya"
+        }
+    ]
+}
