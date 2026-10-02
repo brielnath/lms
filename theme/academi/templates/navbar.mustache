@@ -93,7 +93,9 @@
                         {{> core/user_menu }}
                     {{/usermenu}}
                 </div>
+                {{^ush_is_pimpinan}}
                 {{{ output.edit_switch }}}
+                {{/ush_is_pimpinan}}
             {{/ushisloggedin}}
         </div>
     </div>

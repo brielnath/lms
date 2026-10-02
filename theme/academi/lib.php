@@ -535,3 +535,131 @@ function theme_academi_ush_en_label(string $text): string {
     }
     return $text;
 }
+
+/**
+ * Active semester category shown on "Kursusku".
+ *
+ * Uses theme_academi/ush_active_semester (top category idnumber) when set,
+ * otherwise the latest top-level TA_YYYY_YYYY___Ganjil|Genap category.
+ *
+ * @return stdClass|null Category record with id, idnumber, name.
+ */
+function theme_academi_ush_active_semester(): ?stdClass {
+    global $DB;
+    static $cached = false;
+    if ($cached !== false) {
+        return $cached;
+    }
+    $cats = $DB->get_records_select('course_categories', "parent = 0 AND idnumber LIKE 'TA\\_%'", null, '', 'id, idnumber, name');
+    $configured = trim((string) get_config('theme_academi', 'ush_active_semester'));
+    $active = null;
+    foreach ($cats as $cat) {
+        if ($configured !== '') {
+            if ($cat->idnumber === $configured) {
+                $active = $cat;
+            }
+        } else if (preg_match('/^TA_\d{4}_\d{4}___(Ganjil|Genap)$/', $cat->idnumber)
+                && (!$active || strcmp($cat->idnumber, $active->idnumber) > 0)) {
+            $active = $cat;
+        }
+    }
+    $cached = $active;
+    return $active;
+}
+
+/**
+ * Keep the hidden course custom field "ush_semester" equal to the course's top category idnumber
+ * (or TA_YYYY_YYYY___Ganjil|Genap from a shortname suffix like _20262027Ganjil outside TA categories).
+ *
+ * @param bool $force Skip the throttle.
+ * @return string Field shortname.
+ */
+function theme_academi_ush_sync_semester_field(bool $force = false): string {
+    global $DB;
+    $shortname = 'ush_semester';
+    $last = (int) get_config('theme_academi', 'ush_semester_synced');
+    $fieldid = (int) $DB->get_field_sql(
+        "SELECT f.id FROM {customfield_field} f
+           JOIN {customfield_category} c ON c.id = f.categoryid
+          WHERE f.shortname = ? AND c.component = 'core_course' AND c.area = 'course'",
+        [$shortname]
+    );
+    if ($fieldid && !$force && $last > time() - 300) {
+        return $shortname;
+    }
+
+    if (!$fieldid) {
+        $handler = \core_course\customfield\course_handler::create();
+        $categoryid = $handler->create_category('USH');
+        $category = \core_customfield\category_controller::create($categoryid);
+        $field = \core_customfield\field_controller::create(0, (object) [
+            'type' => 'text',
+            'shortname' => $shortname,
+            'name' => 'Semester',
+            'description' => 'Diisi otomatis dari kategori tahun akademik.',
+            'descriptionformat' => FORMAT_HTML,
+        ], $category);
+        $handler->save_field_configuration($field, (object) [
+            'shortname' => $shortname,
+            'name' => 'Semester',
+            'configdata' => [
+                'required' => 0,
+                'uniquevalues' => 0,
+                'locked' => 1,
+                'visibility' => \core_course\customfield\course_handler::NOTVISIBLE,
+                'defaultvalue' => '',
+                'displaysize' => 50,
+                'maxlength' => 100,
+                'ispassword' => 0,
+                'link' => '',
+            ],
+        ]);
+        $fieldid = (int) $field->get('id');
+    }
+
+    $rows = $DB->get_recordset_sql(
+        "SELECT c.id, c.shortname, cc.path, ctx.id AS contextid, cd.id AS dataid, cd.value
+           FROM {course} c
+           JOIN {course_categories} cc ON cc.id = c.category
+           JOIN {context} ctx ON ctx.instanceid = c.id AND ctx.contextlevel = :ctxlevel
+      LEFT JOIN {customfield_data} cd ON cd.instanceid = c.id AND cd.fieldid = :fieldid
+          WHERE c.id <> :siteid",
+        ['ctxlevel' => CONTEXT_COURSE, 'fieldid' => $fieldid, 'siteid' => SITEID]
+    );
+    $topidnumbers = $DB->get_records_menu('course_categories', ['parent' => 0], '', 'id, idnumber');
+    $now = time();
+    foreach ($rows as $row) {
+        $topid = (int) explode('/', trim($row->path, '/'))[0];
+        $expected = (string) ($topidnumbers[$topid] ?? '');
+        if (!str_starts_with($expected, 'TA_')
+                && preg_match('/_(\d{4})(\d{4})(Ganjil|Genap)$/', $row->shortname, $m)) {
+            $expected = "TA_{$m[1]}_{$m[2]}___{$m[3]}";
+        }
+        if ($row->dataid && (string) $row->value === $expected) {
+            continue;
+        }
+        if ($row->dataid) {
+            $DB->update_record('customfield_data', (object) [
+                'id' => $row->dataid,
+                'value' => $expected,
+                'charvalue' => $expected,
+                'timemodified' => $now,
+            ]);
+        } else {
+            $DB->insert_record('customfield_data', (object) [
+                'fieldid' => $fieldid,
+                'instanceid' => $row->id,
+                'value' => $expected,
+                'charvalue' => $expected,
+                'valueformat' => FORMAT_MOODLE,
+                'valuetrust' => 0,
+                'timecreated' => $now,
+                'timemodified' => $now,
+                'contextid' => $row->contextid,
+            ]);
+        }
+    }
+    $rows->close();
+    set_config('ush_semester_synced', $now, 'theme_academi');
+    return $shortname;
+}

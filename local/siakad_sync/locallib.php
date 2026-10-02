@@ -32,9 +32,10 @@ function siakad_map_prodi(string $prodiname): ?array {
         ['Ilmu Gizi', 'SGZ', 'Ilmu Gizi'],
         ['Gizi', 'SGZ', 'Ilmu Gizi'],
         ['Bisnis Digital', 'SBD', 'Bisnis Digital'],
-        ['Sistem Informasi', 'SIF', 'Sistem Informasi'],
-        ['Informatika', 'SIF', 'Sistem Informasi'],
-        ['SIF', 'SIF', 'Sistem Informasi'],
+        ['Sistem Informasi', 'SIF', 'Ilmu Komputer'],
+        ['Informatika', 'SIF', 'Ilmu Komputer'],
+        ['Ilmu Komputer', 'SIF', 'Ilmu Komputer'],
+        ['SIF', 'SIF', 'Ilmu Komputer'],
         ['SBD', 'SBD', 'Bisnis Digital'],
         ['SGZ', 'SGZ', 'Ilmu Gizi'],
         ['HKM', 'HKM', 'Hukum Bisnis'],
@@ -68,7 +69,7 @@ function siakad_nim_cohort(string $username): ?array {
     }
     $pp = $m[2];
     $map = [
-        '01' => ['SIF', 'Sistem Informasi'],
+        '01' => ['SIF', 'Ilmu Komputer'],
         '02' => ['SBD', 'Bisnis Digital'],
         '03' => ['SGZ', 'Ilmu Gizi'],
         '04' => ['MNJ', 'Manajemen Bisnis Internasional'],

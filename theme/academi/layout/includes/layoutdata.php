@@ -80,6 +80,14 @@ if (!$courseindex) {
 $themestyleheader = theme_academi_get_setting('themestyleheader');
 $extraclasses[] = ($themestyleheader) ? 'theme-based-header' : 'moodle-based-header';
 
+if (isloggedin() && !is_siteadmin() && preg_match('/^mod-([a-z0-9_]+)-mod$/', (string) $PAGE->pagetype, $ushmodmatch)) {
+    $extraclasses[] = 'ush-simple-modform';
+    $extraclasses[] = 'ush-simple-mod-' . $ushmodmatch[1];
+    if (in_array($ushmodmatch[1], ['page', 'resource', 'url', 'folder', 'label'], true)) {
+        $extraclasses[] = 'ush-simple-material';
+    }
+}
+
 $forceblockdraweropen = $OUTPUT->firstview_fakeblocks();
 
 $secondarynavigation = false;
@@ -96,6 +104,7 @@ if (!$ushplainattendance && $PAGE->has_secondary_navigation()) {
         $overflow = $overflowdata->export_for_template($OUTPUT);
     }
 }
+// Pimpinan univ/fak: secondary nav di-handle setelah deteksi role di bawah.
 
 $primary = new core\navigation\output\primary($PAGE);
 $renderer = $PAGE->get_renderer('core');
@@ -113,6 +122,37 @@ $coursefullname = ($PAGE->course?->fullname) ? format_string(
     ['context' => context_course::instance($PAGE->course->id), 'escape' => false],
 ) : '';
 $courseurl = $PAGE->course ? new \core\url('/course/view.php', ['id' => $PAGE->course->id]) : null;
+
+// --- USH PIMPINAN (UNIV & FAKULTAS) ROLE CHECK ---
+// Sembunyikan primary nav, secondary nav, block drawers, dan edit switch
+// untuk user dengan role ushpimpinanuniv atau ushpimpinanfak.
+$ush_is_pimpinan = false;
+if (isloggedin() && !isguestuser()) {
+    try {
+        global $DB;
+        if ($DB) {
+            $pimpinan_roles = $DB->get_records_list('role', 'shortname', ['ushpimpinanuniv', 'ushpimpinanfak'], '', 'id');
+            if (!empty($pimpinan_roles)) {
+                $pimpinan_role_ids = array_keys($pimpinan_roles);
+                [$insql, $inparams] = $DB->get_in_or_equal($pimpinan_role_ids);
+                $ush_is_pimpinan = $DB->record_exists_sql(
+                    "SELECT 1 FROM {role_assignments} ra WHERE ra.userid = ? AND ra.roleid $insql",
+                    array_merge([$USER->id], $inparams)
+                );
+            }
+        }
+    } catch (Exception $e) {
+        $ush_is_pimpinan = false;
+    }
+}
+
+// Untuk pimpinan: paksa tutup semua drawer & nonaktifkan secondary nav.
+if ($ush_is_pimpinan) {
+    $courseindexopen  = false;
+    $blockdraweropen  = false;
+    $secondarynavigation = false;
+    $overflow = '';
+}
 
 // --- USH DOSEN & KAPRODI SERVER-SIDE BANNER ENGINE ---
 $ush_banner_html = '';
@@ -212,8 +252,10 @@ $templatecontext += [
     'hasblocks' => $hasblocks,
     'courseindexopen' => $courseindexopen,
     'blockdraweropen' => $blockdraweropen,
-    'courseindex' => $courseindex,
-    'primarymoremenu' => $primarymenu['moremenu'],
+    // Untuk pimpinan univ/fak: sembunyikan course index drawer.
+    'courseindex' => $ush_is_pimpinan ? '' : $courseindex,
+    // Untuk pimpinan univ/fak: primary nav Moodle (Dasbor, Kursus saya, dll.) disembunyikan.
+    'primarymoremenu' => $ush_is_pimpinan ? false : $primarymenu['moremenu'],
     'secondarymoremenu' => $secondarynavigation ?: false,
     'mobileprimarynav' => $primarymenu['mobileprimarynav'],
     'usermenu' => $primarymenu['user'],
@@ -223,8 +265,10 @@ $templatecontext += [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'overflow' => $overflow,
     'headercontent' => $headercontent,
-    'addblockbutton' => $addblockbutton,
+    // Untuk pimpinan: sembunyikan block drawer (addblockbutton).
+    'addblockbutton' => $ush_is_pimpinan ? '' : $addblockbutton,
     'ush_banner_html' => $ush_banner_html,
     'ush_is_dosen' => $ush_is_dosen,
+    'ush_is_pimpinan' => $ush_is_pimpinan,
     'ushplainattendance' => $ushplainattendance,
 ];

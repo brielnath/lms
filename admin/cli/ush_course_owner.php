@@ -7,7 +7,7 @@ defined('MOODLE_INTERNAL') || die();
 
 function ush_prodi_labels(): array {
     return [
-        'SIF' => 'Sistem Informasi',
+        'SIF' => 'Ilmu Komputer',
         'SBD' => 'Bisnis Digital',
         'SGZ' => 'Ilmu Gizi',
         'HKM' => 'Hukum Bisnis',

@@ -1,0 +1,229 @@
+{{!
+    @template local_ush_pimpinan/dashboard
+}}
+<div class="ush-pimpinan">
+    <header class="ush-pimpinan__banner">
+        <div class="ush-pimpinan__banner-top">
+            <span class="ush-pimpinan__kicker">{{#isuniv}}Tingkat universitas{{/isuniv}}{{#isfaculty}}Tingkat fakultas{{/isfaculty}}</span>
+            <span class="ush-pimpinan__cal {{calendartone}}">{{calendarlabel}}</span>
+        </div>
+        <h1>{{title}}</h1>
+        <p class="ush-pimpinan__meta">{{period}} · {{scope}}</p>
+        <p class="ush-pimpinan__meta">{{calendardetail}}</p>
+        {{#drilled}}
+            <p class="ush-pimpinan__back"><a href="{{{backurl}}}">Kembali ke ringkasan universitas</a></p>
+        {{/drilled}}
+    </header>
+
+    <section class="ush-pimpinan__metrics">
+        <article class="ush-pimpinan__metric">
+            <span>Mahasiswa aktif</span>
+            <strong>{{students}}</strong>
+        </article>
+        <article class="ush-pimpinan__metric">
+            <span>Dosen pengajar</span>
+            <strong>{{teachers}}</strong>
+        </article>
+        <article class="ush-pimpinan__metric">
+            <span>Kelas berjalan</span>
+            <strong>{{classes}}</strong>
+        </article>
+        <article class="ush-pimpinan__metric">
+            <span>{{headlinelabel}}</span>
+            <strong>{{headlinepercent}}</strong>
+        </article>
+    </section>
+
+    {{#isuniv}}
+    <section class="ush-pimpinan__grid">
+        <article class="ush-pimpinan__panel">
+            <h2>Kehadiran dan realisasi antar fakultas</h2>
+            <div class="ush-pimpinan__legend">
+                <span><i class="is-hadir"></i> Kehadiran</span>
+                <span><i class="is-realisasi"></i> Realisasi pertemuan</span>
+            </div>
+            {{#groups}}
+                <div class="ush-pimpinan__compare">
+                    <div class="ush-pimpinan__compare-name">{{name}}</div>
+                    <div class="ush-pimpinan__pairs">
+                        <div class="ush-pimpinan__pair">
+                            <div class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-hadir" style="width: {{hadirvalue}}%"></span></div>
+                            <div class="ush-pimpinan__pct">{{hadir}}</div>
+                        </div>
+                        <div class="ush-pimpinan__pair">
+                            <div class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-realisasi" style="width: {{realisasi}}%"></span></div>
+                            <div class="ush-pimpinan__pct">{{meetings}}</div>
+                        </div>
+                    </div>
+                </div>
+            {{/groups}}
+        </article>
+        <article class="ush-pimpinan__panel">
+            <h2>Mahasiswa dan kelas per fakultas</h2>
+            {{#chartstudents}}
+                <div class="ush-pimpinan__bar">
+                    <span>{{name}}</span>
+                    <span class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-mahasiswa" style="width: {{value}}%"></span></span>
+                    <strong>{{label}}</strong>
+                </div>
+            {{/chartstudents}}
+            {{#chartclasses}}
+                <div class="ush-pimpinan__bar">
+                    <span>{{name}}</span>
+                    <span class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-kelas" style="width: {{value}}%"></span></span>
+                    <strong>{{label}}</strong>
+                </div>
+            {{/chartclasses}}
+        </article>
+    </section>
+
+    <section class="ush-pimpinan__panel">
+        <h2>Monitoring fakultas</h2>
+        <div class="ush-pimpinan__tablewrap">
+            <table class="ush-pimpinan__table">
+                <thead>
+                    <tr>
+                        <th>Fakultas</th>
+                        <th>Kelas</th>
+                        <th>Mahasiswa</th>
+                        <th>Dosen</th>
+                        <th>Realisasi</th>
+                        <th>Jurnal</th>
+                        <th>Kehadiran</th>
+                        <th>Nilai</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#groups}}
+                    <tr>
+                        <td>
+                            {{#hasurl}}<a href="{{{url}}}">{{name}}</a>{{/hasurl}}
+                            {{^hasurl}}{{name}}{{/hasurl}}
+                        </td>
+                        <td>{{classes}}</td>
+                        <td>{{students}}</td>
+                        <td>{{teachers}}</td>
+                        <td>{{meetings}}</td>
+                        <td>{{jurnal}}</td>
+                        <td>{{hadir}}</td>
+                        <td>{{nilai}}</td>
+                        <td><span class="ush-pimpinan__badge {{statusclass}}">{{statuslabel}}</span></td>
+                    </tr>
+                    {{/groups}}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    {{/isuniv}}
+
+    {{#isfaculty}}
+    <section class="ush-pimpinan__grid">
+        <article class="ush-pimpinan__panel">
+            <h2>Progres pertemuan dan kehadiran per prodi</h2>
+            <div class="ush-pimpinan__legend">
+                <span><i class="is-realisasi"></i> Realisasi pertemuan</span>
+                <span><i class="is-hadir"></i> Kehadiran</span>
+            </div>
+            {{#groups}}
+                <div class="ush-pimpinan__compare">
+                    <div class="ush-pimpinan__compare-name">{{name}}</div>
+                    <div class="ush-pimpinan__pairs">
+                        <div class="ush-pimpinan__pair">
+                            <div class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-realisasi" style="width: {{realisasi}}%"></span></div>
+                            <div class="ush-pimpinan__pct">{{meetings}}</div>
+                        </div>
+                        <div class="ush-pimpinan__pair">
+                            <div class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-hadir" style="width: {{hadirvalue}}%"></span></div>
+                            <div class="ush-pimpinan__pct">{{hadir}}</div>
+                        </div>
+                    </div>
+                </div>
+            {{/groups}}
+        </article>
+        <article class="ush-pimpinan__panel">
+            <h2>Kelengkapan RPS dan materi per prodi</h2>
+            {{#groups}}
+                <div class="ush-pimpinan__bar">
+                    <span>{{name}}</span>
+                    <span class="ush-pimpinan__track"><span class="ush-pimpinan__fill is-materi" style="width: {{materivalue}}%"></span></span>
+                    <strong>{{materi}}</strong>
+                </div>
+            {{/groups}}
+        </article>
+    </section>
+
+    <section class="ush-pimpinan__panel">
+        <h2>Monitoring prodi</h2>
+        <div class="ush-pimpinan__tablewrap">
+            <table class="ush-pimpinan__table">
+                <thead>
+                    <tr>
+                        <th>Program studi</th>
+                        <th>Kelas</th>
+                        <th>Mahasiswa</th>
+                        <th>Dosen</th>
+                        <th>Realisasi</th>
+                        <th>Jurnal</th>
+                        <th>Kehadiran</th>
+                        <th>RPS & materi</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#groups}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{classes}}</td>
+                        <td>{{students}}</td>
+                        <td>{{teachers}}</td>
+                        <td>{{meetings}}</td>
+                        <td>{{jurnal}}</td>
+                        <td>{{hadir}}</td>
+                        <td>{{materi}}</td>
+                        <td><span class="ush-pimpinan__badge {{statusclass}}">{{statuslabel}}</span></td>
+                    </tr>
+                    {{/groups}}
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    {{#hasclasses}}
+    <section class="ush-pimpinan__panel">
+        <h2>Kelas berjalan</h2>
+        <p class="ush-pimpinan__hint">Diurutkan dari kehadiran yang paling perlu diperhatikan. Pertemuan dihitung terhadap target {{target}} sesi.</p>
+        <div class="ush-pimpinan__tablewrap ush-pimpinan__tablewrap--tall">
+            <table class="ush-pimpinan__table">
+                <thead>
+                    <tr>
+                        <th>Prodi</th>
+                        <th>Kelas</th>
+                        <th>Dosen pengampu</th>
+                        <th>Pertemuan</th>
+                        <th>Jurnal</th>
+                        <th>Kehadiran</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#classesrows}}
+                    <tr>
+                        <td>{{prodi}}</td>
+                        <td>{{fullname}}</td>
+                        <td>{{teachers}}</td>
+                        <td>{{meetings}}</td>
+                        <td>{{jurnal}}</td>
+                        <td>{{hadir}}</td>
+                        <td><span class="ush-pimpinan__badge {{statusclass}}">{{statuslabel}}</span></td>
+                    </tr>
+                    {{/classesrows}}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    {{/hasclasses}}
+    {{/isfaculty}}
+
+    <p class="ush-pimpinan__note">{{note}}</p>
+</div>

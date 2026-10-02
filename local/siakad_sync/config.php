@@ -41,6 +41,7 @@ define('PRODI_COHORT_MAP', json_encode([
     'Gizi'                  => 'SGZ',
     'Bisnis Digital'        => 'SBD',
     'Sistem Informasi'      => 'SIF',
+    'Ilmu Komputer'         => 'SIF',
     'Informatika'           => 'SIF',
 ]));
 
