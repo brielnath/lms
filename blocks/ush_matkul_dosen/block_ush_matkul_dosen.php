@@ -30,7 +30,8 @@ class block_ush_matkul_dosen extends block_base {
         $this->content->footer = '';
         $this->content->text = '';
 
-        if (!isloggedin() || isguestuser()) {
+        // "My courses" shares the my-index pagetype with the Dashboard but must list the active semester only.
+        if (!isloggedin() || isguestuser() || $this->page->pagelayout === 'mycourses') {
             return $this->content;
         }
 
