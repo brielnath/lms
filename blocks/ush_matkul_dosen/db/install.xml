@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/ush_matkul_dosen/db" VERSION="20261005" COMMENT="XMLDB file for block_ush_matkul_dosen"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_ush_matkul_dosen" COMMENT="Upcoming-semester teaching assignments pulled from SIAKAD">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Resolved Moodle user, 0 if the lecturer has no LMS account"/>
+        <FIELD NAME="lecid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="SIAKAD id_lecture"/>
+        <FIELD NAME="lecname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="code" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" COMMENT="SIAKAD lesson_code"/>
+        <FIELD NAME="lessonname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="tahun" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Academic year of the source data, e.g. 2025/2026"/>
+        <FIELD NAME="periode" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Ganjil or Genap"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Matching LMS course outside the active semester, 0 if none"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userid" UNIQUE="false" FIELDS="userid"/>
+        <INDEX NAME="lecid" UNIQUE="false" FIELDS="lecid"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,46 @@
+{{!
+    @template block_ush_matkul_dosen/main
+
+    Same markup as core_course/coursecard, greyed out. Cards with an LMS course stay clickable for the owner.
+
+    Example context (json):
+    {
+        "note": "Mata kuliah yang Anda ampu menurut SIAKAD.",
+        "badge": "Semester lalu",
+        "courses": [{"name": "Desain Basis Data", "code": "SIF202", "semester": "2025/2026 Genap", "image": "", "url": "#"}]
+    }
+}}
+<div class="ush-matkul">
+    <p class="ush-matkul__note text-muted">{{note}}</p>
+    <div class="card-grid mx-0 row row-cols-1 row-cols-sm-2 row-cols-lg-3" role="list">
+        {{#courses}}
+        <div class="col d-flex px-0 mb-2">
+            <div class="card course-card mx-1 ush-matkul__card {{#url}}ush-matkul__card--link{{/url}}" role="listitem">
+                {{#url}}<a href="{{url}}" tabindex="-1">{{/url}}
+                    <div class="card-img-top" style='background-image: url("{{{image}}}");'></div>
+                {{#url}}</a>{{/url}}
+                <div class="card-body pe-1 course-info-container">
+                    <div class="w-100 text-truncate">
+                        {{#url}}
+                        <a href="{{url}}" class="aalink coursename me-2 mb-1">
+                            <span class="multiline" title="{{name}}">{{name}}</span>
+                        </a>
+                        {{/url}}
+                        {{^url}}
+                        <div class="coursename me-2 mb-1">
+                            <span class="multiline" title="{{name}}">{{name}}</span>
+                        </div>
+                        {{/url}}
+                        <div class="text-muted muted d-flex flex-wrap">
+                            <span class="categoryname text-truncate">{{code}} · {{semester}}</span>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <span class="badge bg-secondary text-white ush-matkul__badge">{{#pix}}i/lock, core{{/pix}}{{badge}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/courses}}
+    </div>
+</div>

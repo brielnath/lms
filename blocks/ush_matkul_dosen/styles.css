@@ -1,0 +1,35 @@
+.ush-matkul__note {
+    font-size: 0.85rem;
+    margin: 0 0 12px;
+}
+
+.ush-matkul__card {
+    cursor: not-allowed;
+    user-select: none;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.ush-matkul__card .card-img-top {
+    filter: grayscale(1);
+}
+
+.ush-matkul__card .coursename {
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.ush-matkul__card--link {
+    cursor: pointer;
+    user-select: auto;
+}
+
+.ush-matkul__card--link:hover,
+.ush-matkul__card--link:focus-within {
+    opacity: 1;
+}
+
+.ush-matkul__badge .icon {
+    font-size: 0.7rem;
+    margin-right: 4px;
+}
