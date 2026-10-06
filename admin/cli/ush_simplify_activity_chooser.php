@@ -15,7 +15,8 @@ $args = array_slice($argv, 1);
 $confirm = in_array('--confirm', $args, true);
 $restore = in_array('--restore', $args, true);
 
-$keep = ['label', 'resource', 'folder', 'forum', 'page', 'attendance', 'quiz', 'assign', 'url'];
+// lti: Google Assignments / Gemini (LTI Advantage) once the admin has registered them under Manage tools.
+$keep = ['label', 'resource', 'folder', 'forum', 'page', 'attendance', 'quiz', 'assign', 'url', 'lti'];
 $roles = ['editingteacher', 'teacher'];
 
 $system = context_system::instance();
