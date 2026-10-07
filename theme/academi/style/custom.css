@@ -173,6 +173,43 @@
     background: transparent !important;
 }
 
+/* ===== TOMBOL MONITORING PIMPINAN DI NAVBAR ===== */
+.ush-navbar .ush-navbar__monitoring-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 16px;
+    border-radius: 20px;
+    text-decoration: none !important;
+    letter-spacing: 0.3px;
+    margin-right: 8px;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35);
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+    white-space: nowrap;
+}
+.ush-navbar .ush-navbar__monitoring-btn:hover {
+    background: linear-gradient(135deg, #4338ca, #6d28d9);
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.5);
+    transform: translateY(-1px);
+}
+.ush-navbar .ush-monitoring-icon {
+    font-size: 15px;
+    line-height: 1;
+}
+@media (max-width: 576px) {
+    .ush-navbar .ush-monitoring-label {
+        display: none;
+    }
+    .ush-navbar .ush-navbar__monitoring-btn {
+        padding: 7px 10px;
+        border-radius: 50%;
+    }
+}
+
 .header-main {
     display: none !important;
 }

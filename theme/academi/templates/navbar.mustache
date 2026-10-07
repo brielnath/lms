@@ -87,6 +87,14 @@
                 <a class="ush-navbar__link ush-navbar__login" href="{{{ushloginurl}}}">{{ushnavlogin}}</a>
             {{/ushisloggedin}}
             {{#ushisloggedin}}
+                {{#ush_is_pimpinan}}
+                <a href="{{{ config.wwwroot }}}/local/ush_pimpinan/index.php"
+                   class="ush-navbar__monitoring-btn"
+                   title="Dashboard Monitoring Pimpinan">
+                    <span class="ush-monitoring-icon">&#9689;</span>
+                    <span class="ush-monitoring-label">Monitoring</span>
+                </a>
+                {{/ush_is_pimpinan}}
                 {{{ output.navbar_plugin_output }}}
                 <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
                     {{#usermenu}}
