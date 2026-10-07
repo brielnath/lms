@@ -1,0 +1,173 @@
+<mxfile host="app.diagrams.net" modified="2026-10-07T14:50:00.000Z" agent="Antigravity" version="21.0.0" type="device">
+  <diagram id="siakad_detailed_flow" name="Alur Integrasi Detail SIAKAD - LMS">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="980" background="#F8FAFC" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Header Banner -->
+        <mxCell id="header" value="&lt;b style=&quot;font-size: 20px; color: #0F172A;&quot;&gt;FLOW LENGKAP INTEGRASI SIAKAD → MOODLE LMS&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 13px; color: #64748B;&quot;&gt;Universitas Sugeng Hartono (USH) — Alur Otomatisasi Sinkronisasi Data Akademik&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;shadow=1;arcSize=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1370" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- KOLOM 1: SUMBER DATA SIAKAD                -->
+        <!-- ========================================== -->
+        <mxCell id="col_siakad" value="1. SUMBER DATA (SIAKAD USH)" style="swimlane;whiteSpace=wrap;html=1;startSize=36;fillColor=#F0F9FF;strokeColor=#0284C7;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#0369A1;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="105" width="280" height="825" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_db" value="&lt;b&gt;Database SIAKAD&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#0284C7;&quot;&gt;https://siakad.sugenghartono.ac.id&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#E0F2FE;strokeColor=#0284C7;strokeWidth=1.5;fontColor=#0369A1;" vertex="1" parent="col_siakad">
+          <mxGeometry x="35" y="55" width="210" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_mhs" value="&lt;b&gt;A. Data Mahasiswa &amp; Dosen&lt;/b&gt;&lt;br&gt;• NIM (Format: 06YYPPxxx)&lt;br&gt;• Nama Lengkap &amp; Status (Aktif)&lt;br&gt;• Dosen PA (DPA) &amp; Kaprodi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAE6FD;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_siakad">
+          <mxGeometry x="20" y="140" width="240" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_mk" value="&lt;b&gt;B. Kurikulum &amp; Mata Kuliah&lt;/b&gt;&lt;br&gt;• Kode Resmi (IDM, IUM, IFM, dll)&lt;br&gt;• Pemilik Fakultas / Prodi&lt;br&gt;• Bobot SKS &amp; Nama MK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAE6FD;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_siakad">
+          <mxGeometry x="20" y="240" width="240" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_krs" value="&lt;b&gt;C. KRS Mahasiswa (Approved)&lt;/b&gt;&lt;br&gt;• Rencana Studi Semester Aktif&lt;br&gt;• Relasi Mahasiswa ↔ Kode MK&lt;br&gt;• Semester: 2026/2027 Ganjil" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAE6FD;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_siakad">
+          <mxGeometry x="20" y="340" width="240" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_jadwal" value="&lt;b&gt;D. Jadwal Kuliah&lt;/b&gt;&lt;br&gt;• Hari &amp; Jam (Mulai - Selesai)&lt;br&gt;• Ruang Kelas Perkuliahan&lt;br&gt;• Penetapan Dosen Pengampu" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAE6FD;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_siakad">
+          <mxGeometry x="20" y="440" width="240" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_rps" value="&lt;b&gt;E. Berkas RPS&lt;/b&gt;&lt;br&gt;• File RPS (PDF / DOC)&lt;br&gt;• Path: /file/rps/{filename}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAE6FD;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_siakad">
+          <mxGeometry x="20" y="540" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s_api" value="&lt;b&gt;F. API &amp; Web Services&lt;/b&gt;&lt;br&gt;• /api/login (Token Auth)&lt;br&gt;• /api/grades-per-course&lt;br&gt;• Session Cookie Absensi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2FE;strokeColor=#0284C7;strokeWidth=1.5;fontColor=#0369A1;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_siakad">
+          <mxGeometry x="20" y="625" width="240" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- KOLOM 2: DETAIL PROSES SINKRONISASI (PIPE) -->
+        <!-- ========================================== -->
+        <mxCell id="col_pipe" value="2. PIPELINE SINKRONISASI OTOMATIS (MIDDLEWARE)" style="swimlane;whiteSpace=wrap;html=1;startSize=36;fillColor=#FFF7ED;strokeColor=#EA580C;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#9A3412;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="360" y="105" width="670" height="825" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_trigger" value="&lt;b&gt;1. Trigger: Windows Task Scheduler / Cron (Setiap 3 Jam)&lt;/b&gt;&lt;br&gt;Menjalankan script: &lt;i&gt;php admin/cli/ush_sync_cron_local.php --live&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEDD5;strokeColor=#F97316;strokeWidth=1.5;fontColor=#7C2D12;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="50" width="630" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_auth" value="&lt;b&gt;2. Autentikasi API SIAKAD&lt;/b&gt;&lt;br&gt;Kirim email &amp; password akademik ke &lt;i&gt;/api/login&lt;/i&gt; → Terima &lt;b&gt;Bearer Token&lt;/b&gt;." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="112" width="630" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_fetch" value="&lt;b&gt;3. Unduh Data Mahasiswa &amp; KRS (/api/grades-per-course)&lt;/b&gt;&lt;br&gt;Iterasi halaman (per_page=100) + penanganan otomatis jika terkena rate-limit (HTTP 429)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="174" width="630" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_filter" value="&lt;b&gt;4. Filter Status &amp; Normalisasi&lt;/b&gt;&lt;br&gt;Hanya proses status &lt;b&gt;AKTIF&lt;/b&gt; (lewati CUTI / DO / LULUS) &amp; bersihkan kode MK ke format resmi." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="236" width="630" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_user" value="&lt;b&gt;5. Manajemen Akun Pengguna &amp; Peran Struktural&lt;/b&gt;&lt;br&gt;• &lt;b&gt;Mahasiswa:&lt;/b&gt; Ekstrak NIM 06YYPP → Akun NIM &amp; Cohort (SIF2023, dll)&lt;br&gt;• &lt;b&gt;Dosen:&lt;/b&gt; Akun Pengajar &amp; penugasan DPA&lt;br&gt;• &lt;b&gt;Kaprodi:&lt;/b&gt; Role Manager per-kategori prodi (kaprodi.[prodi]@...)&lt;br&gt;• &lt;b&gt;Fakultas &amp; Pimpinan:&lt;/b&gt; Role Dekanat (FTHB/FITH) &amp; Rektorat (ush_pimpinan)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="298" width="630" height="65" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_course" value="&lt;b&gt;6. Penyusunan Kategori &amp; Course Shell Kuliah&lt;/b&gt;&lt;br&gt;• Susun Kategori TA (mis. TA 2026/2027 Ganjil) &amp; Kategori Fakultas (FTHB &amp; FITH)&lt;br&gt;• Buat Course Shell resmi: shortname = &lt;i&gt;KODEMK_20262027Ganjil&lt;/i&gt; (contoh: IDM0629)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="372" width="630" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_enrol" value="&lt;b&gt;7. Enrolment Otomatis Mahasiswa &amp; Dosen Pengampu&lt;/b&gt;&lt;br&gt;• Daftarkan mahasiswa ke Course sesuai KRS yang disetujui di SIAKAD (Role: Student)&lt;br&gt;• Daftarkan dosen pengampu sesuai plotting jadwal (Role: Editing Teacher)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="446" width="630" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_presensi" value="&lt;b&gt;8. Pembentukan Presensi 16 Pertemuan (ush_apply_jadwal_*.php)&lt;/b&gt;&lt;br&gt;• Baca slot hari &amp; jam SIAKAD → buat 16 sesi presensi sekuensial di &lt;i&gt;mod_attendance&lt;/i&gt;&lt;br&gt;• Otomatis lewati kalender ujian (jeda UTS 26 Sep–6 Okt 2026 &amp; jeda UAS)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="520" width="630" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_rps" value="&lt;b&gt;9. Download &amp; Lampirkan RPS (download_rps_siakad.php)&lt;/b&gt;&lt;br&gt;Unduh berkas RPS dari server SIAKAD dan unggah otomatis ke modul Resource Section 0." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="594" width="630" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_log" value="&lt;b&gt;10. Audit Log &amp; Email Notifikasi Admin&lt;/b&gt;&lt;br&gt;Catat riwayat sync ke &lt;i&gt;dataroot/siakad_cron/*.log&lt;/i&gt; dan kirim rekap ke &lt;i&gt;admin@ush.ac.id&lt;/i&gt;." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDBA74;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=12;fontSize=11;" vertex="1" parent="col_pipe">
+          <mxGeometry x="20" y="656" width="630" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- Downward Connectors in Pipeline -->
+        <mxCell id="e_p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_trigger" target="p_auth" parent="col_pipe" />
+        <mxCell id="e_p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_auth" target="p_fetch" parent="col_pipe" />
+        <mxCell id="e_p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_fetch" target="p_filter" parent="col_pipe" />
+        <mxCell id="e_p4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_filter" target="p_user" parent="col_pipe" />
+        <mxCell id="e_p5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_user" target="p_course" parent="col_pipe" />
+        <mxCell id="e_p6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_course" target="p_enrol" parent="col_pipe" />
+        <mxCell id="e_p7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_enrol" target="p_presensi" parent="col_pipe" />
+        <mxCell id="e_p8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_presensi" target="p_rps" parent="col_pipe" />
+        <mxCell id="e_p9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#EA580C;strokeWidth=2;" edge="1" source="p_rps" target="p_log" parent="col_pipe" />
+
+        <!-- ========================================== -->
+        <!-- KOLOM 3: HASIL DI MOODLE LMS               -->
+        <!-- ========================================== -->
+        <mxCell id="col_lms" value="3. HASIL TARGET (MOODLE LMS USH)" style="swimlane;whiteSpace=wrap;html=1;startSize=36;fillColor=#F0FDF4;strokeColor=#16A34A;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#166534;rounded=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="105" width="340" height="825" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l_user" value="&lt;b&gt;A. Pengguna (Civitas Akademika)&lt;/b&gt;&lt;br&gt;• &lt;b&gt;Mahasiswa:&lt;/b&gt; Login NIM, Cohort Angkatan&lt;br&gt;• &lt;b&gt;Dosen:&lt;/b&gt; Pengampu MK &amp; Dosen PA (DPA)&lt;br&gt;• &lt;b&gt;Kaprodi:&lt;/b&gt; Manager Kategori Prodi (9 Prodi)&lt;br&gt;• &lt;b&gt;Fakultas:&lt;/b&gt; Dekanat FTHB &amp; FITH&lt;br&gt;• &lt;b&gt;Universitas:&lt;/b&gt; Akun Rektorat / Pimpinan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#86EFAC;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_lms">
+          <mxGeometry x="20" y="60" width="300" height="95" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l_course" value="&lt;b&gt;B. Katalog Kursus Rapi&lt;/b&gt;&lt;br&gt;• Kategori FTHB &amp; FITH rapi per prodi&lt;br&gt;• Shortname standar kurikulum USH&lt;br&gt;• Tidak ada duplikasi kurikulum lama" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#86EFAC;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_lms">
+          <mxGeometry x="20" y="170" width="300" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l_enrol" value="&lt;b&gt;C. Peserta Kelas Otomatis&lt;/b&gt;&lt;br&gt;• Mahasiswa langsung lihat MK di 'Kursusku'&lt;br&gt;• Dosen langsung mengajar kelasnya&lt;br&gt;• Kaprodi dapat memantau seluruh kelas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#86EFAC;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_lms">
+          <mxGeometry x="20" y="260" width="300" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l_presensi" value="&lt;b&gt;D. Presensi 16 Sesi Terjadwal&lt;/b&gt;&lt;br&gt;• Dosen tinggal klik absen per sesi&lt;br&gt;• Jadwal jam &amp; tanggal presisi SIAKAD&lt;br&gt;• Rekap kehadiran mahasiswa realtime" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#86EFAC;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_lms">
+          <mxGeometry x="20" y="350" width="300" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l_rps" value="&lt;b&gt;E. Dokumen RPS Siap Diunduh&lt;/b&gt;&lt;br&gt;• File RPS muncul di Section 0 kelas&lt;br&gt;• Mahasiswa dapat melihat silabus" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#86EFAC;strokeWidth=1.5;fontColor=#1E293B;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_lms">
+          <mxGeometry x="20" y="440" width="300" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l_pimpinan" value="&lt;b&gt;F. Dashboard Pimpinan (local_ush_pimpinan)&lt;/b&gt;&lt;br&gt;• &lt;b&gt;Level Fakultas (FTHB &amp; FITH):&lt;/b&gt; Rekap tatap muka &amp; kehadiran prodi-prodi di fakultasnya&lt;br&gt;• &lt;b&gt;Level Universitas (Rektorat):&lt;/b&gt; Pantau capaian target 16 tatap muka seluruh prodi &amp; ketercapaian OBE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;strokeWidth=2;fontColor=#14532D;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="col_lms">
+          <mxGeometry x="20" y="520" width="300" height="115" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- HUBUNGAN ANTAR KOLOM (INTER-COLUMN EDGES)  -->
+        <!-- ========================================== -->
+        <!-- SIAKAD to Pipe Trigger/Auth -->
+        <mxCell id="edge_s_api" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0284C7;strokeWidth=2.5;fontColor=#0369A1;fontSize=11;fontStyle=1;" edge="1" source="s_api" target="p_auth" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Pipe to LMS Outputs -->
+        <mxCell id="edge_p_user_lms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#16A34A;strokeWidth=2;dashed=1;" edge="1" source="p_user" target="l_user" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_p_course_lms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#16A34A;strokeWidth=2;dashed=1;" edge="1" source="p_course" target="l_course" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_p_enrol_lms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#16A34A;strokeWidth=2;dashed=1;" edge="1" source="p_enrol" target="l_enrol" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_p_presensi_lms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#16A34A;strokeWidth=2;dashed=1;" edge="1" source="p_presensi" target="l_presensi" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_p_rps_lms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#16A34A;strokeWidth=2;dashed=1;" edge="1" source="p_rps" target="l_rps" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_lms_pimp" value="Data Kehadiran Realtime" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#16A34A;strokeWidth=2;fontColor=#14532D;fontSize=10;" edge="1" source="l_presensi" target="l_pimpinan" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

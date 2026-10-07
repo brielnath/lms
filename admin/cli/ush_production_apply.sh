@@ -58,7 +58,11 @@ echo "=== 5/6 Jadwal pertemuan + presensi ==="
 php admin/cli/ush_apply_jadwal_sequential_production.php --from-file=jadwal_slots_20262027Ganjil.json $CONFIRM
 
 echo
-echo "=== 6/6 Upgrade plugin + cache ==="
+echo "=== 6/7 Akun Dekanat & Pimpinan Universitas ==="
+php local/ush_pimpinan/cli/create_accounts_production.php $CONFIRM
+
+echo
+echo "=== 7/7 Upgrade plugin + cache ==="
 if [ -n "$CONFIRM" ]; then
   php admin/cli/upgrade.php --non-interactive
   php admin/cli/purge_caches.php

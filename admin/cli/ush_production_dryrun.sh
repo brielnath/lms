@@ -45,9 +45,10 @@ echo "=== 5/6 Pecah MKU + rapikan anggota (dry-run) ==="
 php admin/cli/ush_finish_kaprodi_sync_20262027_production.php --from-file=peserta_20262027Ganjil.json
 
 echo
-echo "=== 6/6 Kaprodi + cohort (dry-run) ==="
+echo "=== 6/6 Kaprodi + cohort + pimpinan (dry-run) ==="
 php admin/cli/ush_assign_kaprodi_production.php
 php admin/cli/ush_rebuild_cohorts.php
+php local/ush_pimpinan/cli/create_accounts_production.php
 
 echo
 echo "Selesai DRY-RUN. Belum ada data yang ditulis."
@@ -58,6 +59,7 @@ echo "  php admin/cli/ush_enrol_dosen_production.php --from-file=peserta_2026202
 echo "  php admin/cli/ush_split_pancasila_prodi_production.php --confirm"
 echo "  php admin/cli/ush_finish_kaprodi_sync_20262027_production.php --from-file=peserta_20262027Ganjil.json --confirm"
 echo "  php admin/cli/ush_assign_kaprodi_production.php --confirm"
+echo "  php local/ush_pimpinan/cli/create_accounts_production.php --confirm"
 echo "  php admin/cli/ush_rebuild_cohorts.php --confirm"
 echo "  php admin/cli/upgrade.php --non-interactive"
 echo "  php admin/cli/purge_caches.php"
