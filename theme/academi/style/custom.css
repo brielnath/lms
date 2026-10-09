@@ -131,7 +131,7 @@
     fill: currentColor !important;
 }
 
-#header .ush-navbar .editmode-switch-form .input-group > label {
+#header.ush-navbar .editmode-switch-form .input-group > label {
     color: #111 !important;
 }
 
