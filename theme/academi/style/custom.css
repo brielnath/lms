@@ -131,6 +131,10 @@
     fill: currentColor !important;
 }
 
+#header .ush-navbar .editmode-switch-form .input-group > label {
+    color: #111 !important;
+}
+
 .ush-navbar .popover-region .count-container {
     color: #fff !important;
     background: #dc3545 !important;

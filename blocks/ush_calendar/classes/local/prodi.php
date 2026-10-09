@@ -16,7 +16,7 @@ class prodi {
     public static function list(): array {
         return [
             'sif' => [
-                'label' => 'Sistem Informasi',
+                'label' => 'Computer Science',
                 'foldercode' => 'SIF',
                 'prefixes' => ['IDM06', 'SIF'],
                 'needles' => ['Sistem Informasi', '(SIF)'],

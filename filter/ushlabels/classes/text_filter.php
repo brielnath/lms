@@ -13,22 +13,31 @@ class text_filter extends \core_filters\text_filter {
      * @return string
      */
     public function filter($text, array $options = []) {
-        return self::translate($text);
+        return self::translate($text, $options['context'] ?? null);
     }
 
     /**
      * Translate known USH labels when the current language is English.
      *
      * @param string $text
+     * @param \context|null $context
      * @return string
      */
-    public static function translate(string $text): string {
+    public static function translate(string $text, $context = null): string {
         $lang = current_language();
         if ($lang !== 'en' && !str_starts_with($lang, 'en')) {
             return $text;
         }
         if ($text === '' || strlen($text) > 400) {
             return $text;
+        }
+
+        // The Information Systems programme category is now named Computer Science.
+        // Keep this category-specific so similarly named courses are not renamed.
+        if ($context instanceof \context_coursecat && in_array(trim($text), [
+            'Sistem Informasi', 'Information Systems', 'Information System',
+        ], true)) {
+            return 'Computer Science';
         }
 
         $phrases = [
@@ -43,7 +52,6 @@ class text_filter extends \core_filters\text_filter {
             'Ujian Tengah Semester (UTS)' => 'Midterm exam (UTS)',
             'Ujian Akhir Semester (UAS)' => 'Final exam (UAS)',
             'Mata Kuliah Umum' => 'General courses',
-            'Sistem Informasi' => 'Information Systems',
             'Bisnis Digital' => 'Digital Business',
             'Ilmu Gizi' => 'Nutrition Science',
             'Hukum Bisnis' => 'Business Law',
